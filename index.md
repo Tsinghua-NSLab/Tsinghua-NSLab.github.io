@@ -36,7 +36,7 @@
 ## 2017 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 2017/05/10 | Danyang Li   | [Checking Beliefs in Dynamic Networks](./seminar/2017Spring/1/Nsdi15-paper-lopes.pdf)  | NSDI'16 | [slides](seminar/2017Spring/1/Checking_beliefs_in_dynamic_networks.pdf)  | None |
 | 2017/04/26 |	Shuo Wang   | [Bitcoin-NG: A Scalable Blockchain Protocol](seminar/2017Spring/2/Bitcoin-NG_A_Scalable_Blockchain_Protocol.pdf) | NSDI'16 |	[slides](seminar/2017Spring/2/Nsdi16_slides_Bitcoin-NG.pdf) | [review](seminar/2017Spring/2/Seminar-review-20170426.md) |
 | 2017/04/19 |	Dongfang Li | [Splinter: Practical Private Queries on Public Data](seminar/2017Spring/3/Splinter_Practical_Private_Queries_on_Public_Data.pdf) |	NSDI'17 | [slides](seminar/2017Spring/3/Slides_Splinter_Practical_Private_Queries_on_Public_Data.pdf) |	[review](seminar/2017Spring/3/Seminar-review-20170419.md) |
@@ -50,7 +50,7 @@
 ## 2016 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 2016/12/28 | 	Dujuan Gu |	Big Data For Security: Challenges and techniques |	NSFOCUS |	Confidential |	review |
 | 2016/12/07 | 	Jun Yang |	Social Role-Aware Emotion Contagion in Image Social Networks |	AAAI'13 |	slides |	review |
 | 2016/11/30 | 	Ali |	Payload Attribution via Character Dependent Multi-bloom Filters |	IEEE Transactions on Information Forensics and Security'13 |	slides |	review |
@@ -68,7 +68,7 @@
 ## 2016 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 05/18/2016 | Ju Xing | Mobile Web Traffic Optimization(Google Flywheel & Baidu Traffic Guard | NSDI'16 | slides | review |
 | 05/11/2016 | Zhe Fu | DFC: Accelerating String Pattern Matching for Network Applications | NSDI'16 | slides | review |
 | 04/27/2016 | Zhaoguo Wang | Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks | USENIX'14 | slides | review |
@@ -85,7 +85,7 @@
 ## 2015 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 12/24/2015 | Dongfang Li | Poptrie: A Compressed Trie with Population Count for Fast and Scalable Software IP Routing Table Lookup | SIGCOMM'15 | slides | review |
 | 12/17/2015 | Jun Yang | Throughput-Optimal Broadcast on Directed Acyclic Graphs | INFOCOM'15 | slides | review |
 | 12/10/2015 | Chengqi Yi | Global Diffusion via Cascading Invitations: Structure, Growth, and Homophily | WWW'15 | slides | review |
@@ -103,7 +103,7 @@
 
 ## 2015 Spring
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 06/17/2015 | Zhe Fu | Accelerating Regular Expression Matching Over Compressed HTTP | INFOCOM'15 | slides | review |
 | 06/10/2015 | Yiyang Shao | Queues don't matter when you can JUMP them! | NSDI'15 | slides | review |
 | 05/27/2015 | Xiang Wang | Enforcing Customizable Consistency Properties in Software-Defined Networks | NSDI'15 | slides | review |
@@ -121,7 +121,7 @@
 ## 2014 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 01/07/2015 | Zhaoguo Wang | Semantics-Aware Android Malware Classification Using Weighted Contextual API Dependency Graphs | CCS'14 | slides | review |
 | 12/24/2014 | Chengqi Yi | Can cascades be predicted? | WWW'14 | slides | review |
 | 12/17/2014 | Luoshi Zhang | Detecting Malicious Clients in ISP Networks Using HTTP Connectivity Graph and Flow Information | ASONAM'14 | slides | review |
@@ -141,7 +141,7 @@
 ## 2014 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 06/04/2014 | Zhaoguo Wang | Dude, Where’s My Card RFID Positioning That Works with Multipath and Non-Line of Sight | SIGCOMM'13 | slides RFID | review |
 | 05/28/2014 | Luoshi Zhang | Mosaic: Quantifying Privacy Leakage in Mobile Networks | SIGCOMM'13 | slides | review |
 | 05/14/2014 | Feng Xie | Catch-up TV Recommendations: Show Old Favourites and Find New Ones | RecSys'13 | slides | review |
@@ -158,7 +158,7 @@
 ## 2013 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 12/18/2013 | Chang Chen | Real Time Network Policy Checking using Header Space Analysis | NSDI'13 | slides | review |
 | 12/11/2013 | Zhe Fu | GPU Acceleration of Regular Expression Matching for Large Datasets: Exploring the Implementation Space | ICCF'13 | slides | review |
 | 12/04/2013 | Luoshi Zhang | Pass it on: Social Networks Stymie Censors | IPTPS'08 | slides | review |
@@ -176,7 +176,7 @@
 ## 2013 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 06/05/2013 | Kai Wang | Fast Hash Table Lookup Using Extended Bloom Filter: An Aid to Network Processing | SIGCOMM'05 | slides | review |
 | 05/29/2013 | Zhi Liu | Automatic Test Packet Generation | CoNEXT'12 | slides | review |
 | 05/22/2013 | Feng Xie | Matrix Factorization Techniques For Recommender Systems | Netflix Contest | slides | review |
@@ -195,7 +195,7 @@
 ## 2012 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 12/12/2012 | Xiang Wang | Jellyfish: Networking Data Centers Randomly | NSDI'12 | slides | review |
 | 05/12/2012 | Feng Xie | Group Recommendations with Rank Aggregation and Collaborative Filtering | RecSys'10 | slides | review |
 | 28/11/2012 | Zhenlong Yuan | Tor: The Second-Generation Onion Router | SSYM'04 | slides | review |
@@ -214,7 +214,7 @@
 ## 2012 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 05/06/2012 | Kyle Wang | TreeCAM: Decoupling Updates and Lookups in Packet Classification | CoNEXT'11 | slide | review |
 | 29/05/2012 | Feng Xie | The YouTube Video Recommendation System | RecSys'10 | slide | review |
 | 22/05/2012 | Zhenlong Yuan | Tunnel Hunter | S&P'09 | slide | review |
@@ -234,7 +234,7 @@
 ## 2011 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 01/04/2012 | Xiang Wang et al. | Final report on the Network Security course | Presentation | Confidential | review |
 | 12/28/2011 | Baohua Yang | TRILL and VXLAN | RFC | slides | review |
 | 12/21/2011 | Kai Wang | From Regular Expression Chaos to Parallel Universes | Presentation | Confidential | review |
@@ -255,7 +255,7 @@
 ## Before
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | 5/25/2011 | Zhiming Zhang | Network Coding for Distributed Storage systems | INFOCOM'07 | slide | review |
 | 5/9/2011 | Yiyang Shao | Building Extensible Networks with Rule-Based Forwarding | OSDI'10 | slide | review |
 | 3/16/2011 | Fei He | Optimizing Cost and Performance in Online Service Provider Networks | NSDI'10 | slide | review |
