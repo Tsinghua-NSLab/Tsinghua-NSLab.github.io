@@ -1,0 +1,68 @@
+Overview[edit]Title:￼ Bitcoin: A Peer-to-Peer Electronic Cash System
+Source: https://bitcoin.org/en/bitcoin-paper
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Qing Lv,  Danyang Li, Zhi Liu, Ju Xing, Xing Zhang, Shijie Sun, Jiazheng Wang.
+Speaker: Shuo Wang
+Recorder: Danyang Li
+Presentation[edit]Background
+P2P Electronic Cash System
+No trusted 3rd Parties
+Completely non-reversible
+Avoid double-spending problem
+Introduction
+Digital signature as coin
+Blockchain as ledger
+Proof-of-work as consensus
+Transaction
+Theory
+Examples
+Blockchain
+Block
+Contains:
+One block contains many transactions
+Timestamp server (based on PKI)
+Hash
+Examples
+Blockchain
+Proof-of-work
+Consensus
+Byzantine Generals Problem
+Examples
+Network
+New transactions are broadcast to all nodes.
+Each node collects new transactions into a block.
+Each node works on finding a difficult proof-of-work for its block.
+When a node finds a proof-of-work, it broadcasts the block to all nodes.
+what if two nodes find their own proof-of-work at the same time. 
+Nodes accept the block only if all transactions in it are valid and not already spent.
+what & how to verify
+Nodes express their acceptance of the block by working on creating the next block in the chain, using the hash of the accepted block as the previous hash.Incentives for miners
+Bitcoin reward
+Transaction fees
+Roles 
+Bitcoin Core
+Full node
+Independent miner
+SPV wallet
+Use Merkle Tree to simplify payment verification
+Use Bloom Filter to avoid personal information exposure.
+Blockchain 2.0
+Smart contract
+VM
+Decentralized appDiscussion[edit] Jiazheng: If we can create a super-computer with greater computing ability than any other computer in the Bitcoin network,then we can generate all the blocks in BlockChain, is this right?
+ Ju Xing & Zhi Liu: Since Hash (used to find a prove-of-work) is a process with uncertainty, the possibility of node A to find a prove-of-work is decided by its percentage of computing ability in the sum of computing ability of every computer in the Bitcoin network. So we can only make a computer with computing ability greater than the total computing ability of all other computers, which is definitely impossible.
+ Ju Xing: When should we adjust the length of 0s in Hash header?
+ Shuo Wang: We can make an estimation of the total computing ability by investigating the time used to find a prove-of-work by existing network. When it takes too short to find a prove-of-work, we should adjust the length of 0s.
+ Ju Xing: For now, what's the size of total transaction log?
+ Shuo Wang: About 70G.
+ Danyang: If I use Bloom Filter to avoid emitting my personal information, the sniffer can do the same process with the queried bitcoin core to find the entry I am looking for, so what's the meaning of doing this?
+ Shuo Wang: Not clear. Maybe increasing the cost of sniffing.
+ Ju Xing: Is UTXO a logical concept or actually implemented in reality?
+ Shuo Wang: Maybe both.
+ Zhi Liu: How and where is the Transaction Pool maintained?
+ Shuo Wang: No maintenance indeed, users just broadcast their transactions, Bitcoin Cores just choose from what they heard.
+ Ju Xing: How to achieve Fault Tolerance?
+ Shuo Wang: Just synchronic with the latest progress.
+ Zhi Liu: Is the restriction of 1MB on transaction entries influence the usage of BitCoin?
+ Shuo Wang: Surely. But we can't simply change the restriction. It will cause a huge conflict of interest between traders and miners.
+ YiBo: The government is cautious about Bitcoin, but they welcome BlockChain. After all, monetary system has a huge influence on the society.
+ Jun Li: But Bitcoin will surely control the future development of the society.

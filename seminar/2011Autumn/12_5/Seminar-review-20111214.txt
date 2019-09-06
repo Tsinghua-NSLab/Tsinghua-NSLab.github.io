@@ -1,0 +1,40 @@
+Information[edit]Topic:
+RBRA: A Simple and Efficient Rating-Based Recommendation Algorithm to Cope with Sparsityin Recommender Systems
+Attendee:
+Jun Li, Zhen Chen, Yaxuan Qi, Baohua Yang, Kai Wang, Feng Xie, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Lu Li, Xiaoqi Ren
+Speaker: Feng Xie
+Recorder: Yaxuan Qi
+Presentation[edit]Background
+	The world is an over-crowded place
+	Google and experts cannot well help us find our interestsApproaches of RS
+	Collaborative filtering (user-based and item-based)
+	Content-based filtering
+	HybridExisted Problems
+	Data sparse with less correlation
+      Similarity computation in different dimensions
+      Relevance among data
+      Cold startRBRA: Rating-Based Recommender Algorithm
+	Contributions
+     New similarity computation model
+     Adaptively integrate user-based and item-based
+Advantages
+	Not care about the correlation
+	Similarity computation in the same dimension
+	Eliminate the relevanceDiscussion[edit]Q-Baohua: 
+ why sparse? shall we use the u-i matrix?
+A-Feng: 
+ long-tail interest distribution, so they are sparce
+Q-Yiyang: 
+ can we transform the matrix?
+A-Feng: 
+ someone has done this, reduce something
+Q-Prof. Li: 
+ suggest adding more experiments by keeping one of the factor unchanged.
+ Should recommend hot things
+Q-Yiyang: 
+ Should recommend things user will pay for
+ Recommendation based on user behavior?
+A-Feng: 
+ yes
+Q-Yaxuan: 
+ User reordering may help solve the sparse

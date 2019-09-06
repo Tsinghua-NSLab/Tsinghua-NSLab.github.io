@@ -1,0 +1,21 @@
+Overview[edit]Title: Optimizing Cost and Performance for Content Multihoming
+Source: SIGCOMM 2012
+Attendee: Jun Li, Yibo Xue, Zhen Chen, Baohua Yang, Kai Wang, Xiang Wang, Feng Xie, Yiyang Shao, Zhenlong Yuan, Yang Gao, Zhi Liu, Chang Chen and Zhe Fu
+Speaker: Baohua Yang
+Associated Speaker: Xiang Wang, Zhenglong Yuan
+Recorder: Kai Wang
+Presentation[edit]Content multihoming is widely usedWhy content multihoming:
+Performance diversity
+Cost DiversityKey challengesTwo-level ApproachProblem Definition:
+Network Partition
+CDN statistical performanceDeveloping the CMO algorithm:
+BaseCMO key idea:
+Reduction in the outcome space
+Mapping from object assignment to outcome
+ExtensionsInforming active clientHow to select multiple CDNs
+Active clients: Adaptation goals
+Realizing control diagram: Key ideas
+AIMDCMO evaluation setting
+Active client evaluation setting
+Q&A
+熠阳：为什么不直接用cost-only方案，因为CMO虽然是perf-only和cost-only的优化，但是从CDN运营商来看的话，还不如直接用cost-only？

@@ -1,0 +1,46 @@
+Overview[edit]Title: Seeing through Network-Protocol Obfuscation
+Source: Presentation
+Attendee: Yiyang Shao, Zhenlong Yuan, Zhe Fu, Xiaohe Hu, Ju Xing, Jun Yang, Dongfang Li, Changsheng Zhang, Chengqi Yi, Zhaoguo Wang.
+Speaker: Luoshi Zhang.
+Recorder: Chengqi Yi
+Presentation[edit]SSL/TLS HTTPS  其它方式？更安全的数据保护？
+随机化、模仿、隧道（三种协议混淆方式）
+Tor（匿名通信），每天2M用户
+攻击方法：IP过滤、深度包检测、主动探测
+攻击者VS匿名通信
+随机化：Look like nothing，Dust、Obfsproxy3、Obfsproxy4
+模仿：FTE、SkypeMorph、StegoTorus
+隧道：meek
+Obf3、Obf4、Meek目前没有攻击方式
+基于熵和机器学习的方法
+Tor数据集是从校园网络、Home网络采集到的
+分析了已经提出的网络攻击方法的误报率
+新的攻击（熵+数据长度）
+挑战和未来工作Discuss[edit]中间人攻击是不是可以检测HTTPS？
+是的，但是由于CA认证不能通过，用户有感，属于另外问题。
+Dust随机的秘钥跟协议混淆什么关系？
+传之前都加密，属于无效的攻击，SSL有标准数据头，随机的话不管数据包头。属于一对一加密。
+Obfsproxy3中的G、P被看到了怎么办？
+即使知道了Ya、Yb、G、P，也不能推算出Xa和Xb，属于NP-Hard问题。
+Dust混淆目的是什么？
+所有包都是加密，整个数据包都是加密的，让攻击者看起来是随机的。实际上是降低了比例。
+Meek如何保护？
+只能看到Amazon和Google云平台的host域，但是后面URI被TLS加密了。
+Trace代表什么？
+一次Tor访问过程
+Campus数据集作用？
+作为背景流量，更多针对于Meek。
+14M是1400万还是14兆？
+1400万。
+熵值的P是什么？
+每个字节在255中出现的概率。
+按什么分的？单向流还是聚合流？
+单向流。
+blocks和bytes什么区别？
+Blocks是按照一定规则进行切分。
+Meek中ACK心跳传输与网络延迟有没有关系？
+有关系。
+有一个发散性问题，怎么保障用户隐私不被发现，一款医疗软件，可以提供一些建议，但是用户得病不希望被第三方知晓。如何保护网络传输隐私？SSL？Meek？Tor？
+第一点，匿名通信有一个前提，必须是自主性的一个系统，即所有服务器不能存在一个人手中，因此需要有大量的用户。即便是Tor能用，延迟也非常大。第二点，混淆协议和ssl协议功能类似，选一个就可以。
+前面说Dust，但是后面没有针对Dust进行分析，为什么？
+因为Dust没有实际部署。

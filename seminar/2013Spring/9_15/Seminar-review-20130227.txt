@@ -1,0 +1,28 @@
+Overview[edit]Title: Design and Implementation of a Consolidated Middlebox Architecture
+Source: NSDI'12
+Attendee: Prof. Li, Prof. Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu
+Speaker: Xiang Wang
+Recorder: Feng Xie
+Presentation[edit]Motivation
+Increases capital expenses & sprawl
+Increases operating expenses
+Limits extensibility and flexibilityCoMb: System design
+Network-wide Controller (Logically centralized, e.g., NOX, 4D)
+Software-centric (e.g. PacketShader, RouteBricks, ServerSwitch, SwitchBlade)Evaluation
+Low overhead for existing applications
+Controller takes < 1.6s for 52-node topology
+5x better than VM-based consolidationConclusion
+Most network evolution today occurs via middleboxes
+Today: Narrow, point solutions
+High CapEx, OpEx, and device sprawl
+Inflexible, difficult to extend
+Our proposal: Consolidated architecture
+Extensible, general-purpose
+Reduces CapEx, OpEx, and device sprawl
+More opportunities
+Isolation
+APIs (H/W-Apps, Management-Apps, App Stack)Questions
+李老师：32K PC entries在网卡上吗？跑一个Snort速度如何加快？似乎实验设计难以给出CoMb性能优越的结论。
+薛老师：没有考虑下层的Switch，只考虑了Controller。
+陈老师：Pshim主要完成什么功能？基于流级还是包级？王翔：包级。
+王凯：同一App拷贝多次，造成比较大的代价。

@@ -1,0 +1,32 @@
+Information[edit]Topic:
+Frenetic: A High-Level Language for OpenFlow Networks
+Attendee:
+Jun Li, Yibo Xue, Zhen Chen, Baohua Yang, Kai Wang, Xiang Wang, Feng Xie, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Xiaoqi Ren, Lu Li, Qing Xu, Yang Wu, Jingjie Jiang, Fuye Han, Shuai Ding
+Speaker: Xiang Wang
+Recorder: Yiyang Shao
+Presentation[edit]BackgroundOpenFlow ArchitectureProgramming Networks with NOXOpenFlow/NOX Difficulties
+	Multiple task vs. independent modules
+	Low-level abstraction
+	Split architecture
+	Asynchronous interactionsThe Solution
+	Separate network programming into two parts
+	A natural decomposition that mirrors the two fundamental tasks of network managementKey principles
+	Declarative Design
+	Modular Design
+	Single-tier Programming
+	Race-free Semantics
+	Cost ControlFrenetic
+	A High-level Language
+	A Run-time SystemFrenetic Design
+	Frenetic Queries
+	Using Queries
+	Frenetic Forwarding Policies
+	Program CompositionFrenetic Run-time System
+	Implementation Options
+	Run-time ActivitiesEvaluation
+	MicroBench: Lines of Code
+	MicroBench: Controller Traffic
+	Frenetic ScalabilityOngoing and Future WorkDiscussion
+	Q: How Frenetic debug ?
+	Q: What's the meaning of "Declarative Design" ?
+	Q: Does Frenetic solve all the OpenFlow Difficulties ?

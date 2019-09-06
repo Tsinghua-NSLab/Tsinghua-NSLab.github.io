@@ -1,0 +1,28 @@
+Overview[edit]Title: Hiding Amongst the Clouds: A Proposal for Cloud-based Onion Routing
+Source: USENIX FOCI'11
+Attendee: Jun Li, Zhen Chen, Yibo Xue, Kai Wang, Xiang Wang, Feng Xie, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Xiaohe Hu, Chengqi Yi, Xiaoxian Chen, Jingchi Jiang.
+Speaker: Zhenlong Yuan
+Recorder: Zhi LiuPresentation[edit]How Tor works
+Benefits, risks and challenges
+Benefits of Cloud Infrastructure
+Performance
+Scale
+Multi-homing and scale makes eavesdropping difficult
+Elasticity forces censors to make hard choices
+Economics
+Security Challenges and Solutions
+Involved Parities
+Building Tunnels
+Paying for Tunnels
+Learning about relays
+System architectureQ&A[edit]Xiang Wang: Bootstrapping network is control plane of COR?
+Jun Li: Is Bit coin tracable?
+Yibo Xue: Any modification about routing?
+The same with TOR
+A implementation of TOR
+Yibo Xue: What about the latency?
+Zhenlong Yuan: Which DNS requiring method is mainly adopted?
+Mainly recursive method.
+Jun Li: What is variation about domain name?
+Why the TTL shows like this figure?
+IP variation of this application is fast?

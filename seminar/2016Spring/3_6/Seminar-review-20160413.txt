@@ -1,0 +1,14 @@
+Overview[edit]Title:￼ Universal Packet Scheduling
+Attendee: Jun Li, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang, Hang Zhu, Linli Wan.
+Speaker: Xiaohe Hu
+Recorder: Jiaqi Gao
+Presentation[edit] Packet Scheduling
+ Isolation
+ Work-Conserving
+ Non-Work-Conserving
+ Active Queue Management
+ Implicit
+ Explicit Universal Packet Scheduling
+ Network Model
+ UPS Model
+ LSTF

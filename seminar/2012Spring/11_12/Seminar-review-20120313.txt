@@ -1,0 +1,28 @@
+Information[edit]Topic:
+GreenRouter: Saving Power via Router Architecture Redesign
+
+Attendee:
+Jun Li, Bin Liu, Zhen Chen, Yibo Xue, Baohua Yang, Kai Wang, Feng Xie, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Lu Li, Xiaoqi Ren, Qing Xu, Jingjie Jiang etal.
+Speaker: Bin Liu
+Recorder: Feng Xie
+Presentation[edit]Background and Introduction
+	Why need power saving？
+Problem
+	Internet 54% power consumption from router
+Previous Research
+	Overall load balance makes it no stop of all links
+Possible Solution
+      Not adopt load balance strategy when the traffic do not exceed the capability of per link
+Chanllenge
+      architecture redesign
+      Mother-board
+Future Work
+      Router virtualizations
+      Optical interconnection
+      GreenRouter: PrototypeDiscussion:
+	李老师：关一部分vs.降频，关一部分会较好于降频。
+      亚煊：交换机的功耗如何衡量？ 刘老师：从openflow的角度看，控制平面；小区网络utilization不均匀。从任务的角度省电
+      李老师：应用或任务角度考虑省电时，难以衡量功耗，受周围环境影响太大。刘老师：目前功耗主要通过估算，很难实际计算。
+      刘老师：wireless网络领域将是一个非常promising的方向，无线网的应用；datacenter做infrastructure会少些，做应用会多些。
+      刘老师：互联网是一个工具，早起借助工具，当前是通过简单描述就能获取信息——CCN。CCN面临核心问题：CCN与互联网互通。
+      王凯：CCN体系架构是否有利于节能？刘老师：absolutely can

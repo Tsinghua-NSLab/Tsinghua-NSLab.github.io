@@ -1,0 +1,35 @@
+Contents
+
+1 Information
+2 Presentation
+3 Discussion
+4 Appendix
+
+Information[edit]DevoFlow: Scaling Flow Management for High-Performance Networks
+Attendee: Jun Li, Zhen Chen, Yaxuan Qi, Baohua Yang, Xiang Wang, Feng Xie, Zhenlong Yuan, Yang Gao, Xiaoqi Ren, Zhi Liu
+Speaker: Yiyang Shao
+Recorder: Kai Wang
+Presentation[edit]Software-defined networking
+OpenFlow enables innovative management solutions
+But OpenFlow is not perfect
+Characterize overheads of implementing OpenFlow in hardware
+Scaling problem in controller
+Scaling problem in switches
+Propose DevoFlow to enable costeffective, scalable flow management
+Control mechanisms
+Statistics-gathering mechanisms
+Evaluation
+Methodology
+Metrics
+Discussion[edit]Baohua Yang: Why can the size of flow table decrease 100x?
+Yiyang Shao: Because the use of multipath wildcard rules and statistic method, only elephent flow will be sent to controller to set flow entry, so as to reduce the size of flow table
+Yaxuan Qi: To think more about the problem of multipath, which is important to us.Appendix[edit]An Introduction of Network Switches. By Yaxuan Qi
+Fundamentals
+Chips
+Boxes
+State-of-the-Art
+Chassis
+Fabrics
+Future
+OpenFlow
+SDN

@@ -1,0 +1,77 @@
+Overview[edit]Title:￼ SDN: Frontiers and Future Technologies
+Source: Presentation
+Attendee: Students and professors from Tsinghua, people from the industry
+Speaker: Howie Xu, Tianpeng Zhang and Ben Pfaff
+Recorder: Danyang Li
+
+Presentation[edit]Howie Xu:
+ Introduction
+Focus: AI in security and SDN;
+Share: experience and point of views;
+Software industry history
+ how to digitize human: AI
+ AI DEFINITION:
+ Development:
+fun thing: go game;
+facts: AI replacing Jobs;
+True facts: AI filling Jobs; Fill the gap, but not to replace; AI serves as a compensation for the works that can't be finished by human.
+ Security Industry:
+ Definition and Problem:
+ Modern Era AI in Security Industry
+ AI category
+ supervised learning from labeled data;
+ unsupervised learning from labeled date;
+ How to apply AI to good guys
+ anti-spam/phishing
+ anti-virus/ransomware
+ Url-filtering Technology:
+ IP Reputation: blacklist some bad IP
+ Intrusion Hunting/ Detection/Prevention
+ fraud detection
+ incidence response
+ API security
+ data leak
+ SDN
+ AI with SDN
+AI brain and SDN eyes & ears, hands & feet;
+Network is the new security
+ Conclusion: AI with SDN is the 10x Good Guys
+Tianpeng Zhang:
+ 核心技术因素
+ 云网络差异
+ 租户逻辑网络
+ 关键问题
+ 混合云
+ 网络可视化&运营
+ 业务运维支撑
+ Overlay & Underlay
+ 部署模式
+ 资源、位置、流量关联分析
+ 自定义分析内容
+ 流量统计
+ 安全数据分析
+ 云安全问题
+ 基于安全的数据分析
+ 数据分析架构
+ 一个基于SDN的攻击检测实例
+探针技术
+架构
+软件定义探针
+Ben Pfaff:
+ The Power of Compound Caches in the OVS Pipeline
+ Software Switch Performance
+ Distraction: kernel vs. userspace vs. mix
+How OVS achieves high performance for complex pipelines
+ Key #1: Packet I/O Methods
+ Key #2: Low per-packet overhead
+ Key #3: Low Packet Processing Cost
+Caches in Networking Software
+ Simple Caching
+ Compound Caching
+ More About Compound Caching
+ OVS Performance ComparisonDiscussion[edit]Q: How do AI detect malware in detail?
+A: Extract feature : kind of API, Library, time of file modified... many dimension of features. Learned data from millions of malware before.
+Q: Do we have AI applied in network industry?
+A: Sure, for example: google: datacenter, no firewalls no VPNs (past) now: treat everyone as bad guy. no monitor, but use machine learning to analyze the action of the employers.
+Q: What form will the future AI be? Service? Box? Anything else?
+A: AI is a technique itself, but not a product. It's just an implementation detailed work, but not an application. AI in the long term is not likely to be the face of some product, but AI just serve as backplane to do better work.

@@ -1,0 +1,30 @@
+Overview[edit]Title: Detecting Malicious Clients in ISP Networks Using HTTP Connectivity Graph and Flow Information
+Source: ASONAM'14
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Zhen Chen, Kai wang, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Wenxun Zheng, Jun Yang, Dongfang Li, Zhenghui Lai, Yuanyuan Bao, Luoshi Zhang, Chengqi Yi, Zhaoguo Wang, Jingchi Jiang.
+Speaker: Luoshi Zhang
+Recorder: Yiyang Shao
+Presentation[edit]Introduction
+Malware
+Increasing threats
+Limitation of existing techniquesHTTP Connectivity
+Focus on HTTP TrafficApproach
+We weigh the edges of the graph using malicious flow similarity
+Then use the same two step malicious score propagation approach to identify other malicious nodes in the networkSystem Architecture
+HTTP Graph Construction
+Two-phase Alternating Score propagation
+HTTP Flow Features
+Flow Classification
+Flow-based Graph ConstructionExperimental Settings
+Data Sets
+Validation
+Metric
+Results Comparison for All Clients
+Results of Clients that are indirectly Connect to Malicious nodesConclusionDiscussion[edit]Jun Li: 恶意软件控制的客户端和服务器在拓扑上关联的本质意义是什么？
+Luoshi Zhang: 应该是传输一些控制命令、配置策略等
+Jun Li: 那为什么一个被感染的客户端会同时连接很多控制器，是因为同时遭受到很多恶意攻击吗？
+Yiyang Shao: 有可能是因为分布式僵尸网络，同时存在很多控制主机
+Jun Li: 如果是分布式的话，应该属于同一种类型，那么要么都被识别出来，要么都没有识别
+Luoshi Zhang: 应该还是同时遭受多种恶意攻击，这种被感染的节点通常都是防护脆弱的Zhangguo Wang: 本文提出的方法适合所有的恶意攻击吗？
+Luoshi Zhang: 作者认为对于基于HTTP通信的恶意攻击都适用Kai Wang: 本文方法和其他Botnet检测的方法相比效果如何？
+Luoshi Zhang: 作者改善了目前已有的基于图的检测算法
+Xiang Wang: 本文的检测算法除了基于图的方法外，还考虑到利用IDS的检测，和传统上的基于图的方法有所不同

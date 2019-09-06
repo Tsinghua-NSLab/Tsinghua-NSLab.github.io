@@ -1,0 +1,46 @@
+Information[edit]Rating based Recommendation: From Practice to Theory
+Attendee: Jun Li, Zhen Chen, Baohua Yang, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Yang Gao, Zhi Liu, Xiaoqi Ren, Lu Li, Jingjie Jiang, Qing Xu, Yang Wu
+Speaker: Feng Xie
+Recorder: Kai Wang
+Presentation[edit]What is recommender system
+What is good recommender system
+Rating based recommender algorithms
+Two instances
+Conclusions
+What is recommender system
+Information Overload
+Solve
+Search Engine
+Mission
+interest
+deliver item to right user
+History
+MovieLens 100K, 1M, 10M
+Amazon, Netflix, ACM Conference on Recommender System
+Problems
+Top-N Recommendation
+Rating PredictionWhat is good recommender system
+Offline Experiment
+User Survey
+Online Experiment
+Experiment Metrics
+Prediction Accuracy
+Coverage
+Diversity
+Real-time
+Practical Prediction Methods
+Collaborative Filtering
+Existing Problems
+Data Sparsity
+Data Correlation
+Rating PredictionTwo instances
+Video Recommendation
+User Video Graph
+User Needs
+Algorithm DesignEvaluation
+ComparisonConclusion
+Algorithm complexity
+Dataset dependence
+Compromise between accuracy and efficiencyDiscussion[edit]Lu Li: What is the similarity description?
+Prof. Li: What's main difference between your method and the item- or user-based methods?
+Zhenlong Yuan: Is there any recommendation system that use multiple algorithms to rate and vote for it to chose the best result?

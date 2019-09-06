@@ -1,0 +1,51 @@
+Overview[edit]Title:￼ PGA: Using Graphs to Express and Automatically Reconcile Network Policies
+Source: SIGCOMM 2015
+Attendee: Jun Li, Dujun Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Luoshi Zhang, Jun Yang, Dongfang Li, Danyang Li.
+Speaker: Xiaohe Hu.
+Recorder: Zhenlong Yuan.
+Presentation[edit]Part 1: PGA: Using Graphs to Express and Automatically Reconcile Network Policies
+Background
+Network Programming Language
+Policy Graph Abstraction (PGA)
+Target Scenarios
+Challenges in Policy Composition
+Requirements for Policy Framework
+System OverviewGraph Model
+EPG Labeling
+Composition Contraints
+Network Function Box BehaviorGraph Composition
+Normalisation of Input Graph
+Graph UnionCase Study
+Conflict between SDN apps
+Large EnterprisePrototype and Evaluation
+Prototype
+Abstractions
+EPG: member variables, the set of L4 ports and endpoint IPs. 
+Function Box: extended Pyretic.
+WhiteList: arbitrary ranges of values for different flow header fields.
+System operation
+Deployed graph
+Rule generator
+Runtime verification
+EvaluationConclusion and Future WorkPart 2: Policy Compiler
+CoVisor: A Compositional Hypervisor for SDN
+Compiling Policy Composition
+Policy Compilation
+Key challenge: Efficient data plane update
+Incremental Update
+Constraints on Topology Visibility
+Compiling One-to-Many Virtualization
+Compiling Many-to-One Virtualization
+Policy Enforcement
+Palette: Distributing Tables in Software-Defined Networks
+Palette Approach
+Optimizing the “One Big Switch” Abstraction in Software-Defined Networks
+One Big Switch Approach
+Middlebox Policy Enforcement (MBPE)
+E2: A Framework for NFV ApplicationsDiscussions[edit] Jun Li: 图的问题要关注下，拓扑就是一个图，还是挺有用的，注意学习。 Ju Xing: Composition Contraints 三条边是谁画的，用户？
+ Xiaohe Hu: Tenant(用户自己)或者管理员都可能。 Ju Xing: Can Communicate 和Block会不会冲突？
+ Xiaohe Hu: Must和Block会冲突，Must/Can 优先级高于Conditional，Block高于CAN。 Zhe Fu: Merge的哪些？
+ Jun Li: 交叠的，打散之后交叠的就重复了。 Zhi Liu: DPI为何不先走QoS再走DPI?
+ Jun Li: 不同的End Point。 JunLi: 没有overlap就没有order的问题，所以拆的时候就去掉了overlap，拆的时候还是有些会跟优先级有关系。 Zhi Liu: 只看header，算得上第一个提出model the behavior的吗？
+ Jun Li: 因为论文强调了closed middle box，所以应该算是第一个。 Zhi Liu: Palette不知道转发路由的？王翔的文章是假设知道的？
+ Xiaohe Hu: 应该是的。

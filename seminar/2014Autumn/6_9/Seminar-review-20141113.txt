@@ -1,0 +1,23 @@
+Overview[edit]Title: Recommender Systems
+Source: Presentation
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Zhen Chen, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Changsheng Zhang.
+Speaker: Feng Xie
+Recorder: Yiyang Shao
+Presentation[edit]Background
+Collaborative Filtering
+User based
+Item based
+Similarity Measurement
+Cosine Distance
+Pearson Correlation
+Rating Prediction
+Weighted Sum
+Challenges
+Data Sparsity
+Data Correlation
+Matrix Factorization
+PureSVD
+SVD+
+SVD++Two Main Contributions (Confidential)
+Grey Forecast Model based CF
+Item Similarity Learning based CFSummaryDiscussion[edit]Because part of the works in this presentation are unpublished, here we keep the discussion confidential.

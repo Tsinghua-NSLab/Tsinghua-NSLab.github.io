@@ -1,0 +1,15 @@
+Applying NOX to the Datacenter[edit]Spearker: Fei He
+Attendants: Prof. Li, Zhen Chen, Jin Zhou, Li Tang, Yaxuan Qi, Zhiming Zhang, Hui Zhang, Xinming Chen, Ying Guo, Feng Xie, Fan Xiang, Shuai Ding, Yang Gao, Yiyang Shao, Linyun Ruan, Jeffrey Fong
+Recoder: Feng Xie
+Content:
+Datacenter Networking Requirements
+Overview of Networking Research
+What is NOX?
+VL2:  A recent datacenter-specific solution
+Can NOX manage a datacenter?
+Additional Capabilities of NOX
+ConclusionDiscussion:
+Prof. Li：知道全局可以实现更好的功能，但这样会造成openflow网络NOX的负担，怎样权衡信息量和负担。能否支持2minion台虚拟机的如此大规模的Broadcast。
+Yaxuan: NOX需要知道全局信息，但是计算不一定要由NOX来完成。
+Zhen Chen：Datacenter集中控制是否合适？
+Fei He：VL2、Portland都有集中控制，文章考虑的是NOX可以实现相同功能。

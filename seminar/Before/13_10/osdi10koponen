@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta content="text/html; charset=latin-1" http-equiv="Content-Type"/><title>OSDI '10 Koponen Video</title><!--<link href="osdi10.css" rel="stylesheet" type="text/css">--><style type="text/css">
+<!--
+@import url(/legacy/style.css);
+@import url(/legacy/events/conf.css);
+@import url(/legacy/events/osdi10/stream/osdi10_video.css);
+-->
+</style></head><a href="http://www.usenix.org"><img src="/graphics/new_usenix.jpg" width="288" height="232" alt="Check out the new USENIX Web site." align="right"></a><body bgcolor="#ffffff" id="sponsors">
+<center>
+<!--START TABLE 1-->
+<table border="0" cellpadding="0" cellspacing="0" style="background:url(/legacy/events/osdi10/art/back_border2.gif);" width="850">
+<tr>
+<!--banner-->
+<td colspan="2">
+<img alt="OSDI '10 Banner" height="120" src="/legacy/events/osdi10/art/osdi10_banner_850x120.jpg" width="850"/></td>
+<!--end banner-->
+</tr>
+<tr>
+<td bgcolor="#ffffff" colspan="2" valign="bottom">
+<!-- insert topmenu -->
+<ul id="topbar" class="nav">
+<!--<li id="topbar-01"><a href="/legacy/events/osdi10/">OSDI '10 Home</a></li> -->
+
+<li id="topbar-02"><a href="/legacy/events/osdi10/">OSDI '10 Home</a></li>
+
+<li id="topbar-03"><a href="/legacy/">USENIX Home</a></li>
+
+<li id="topbar-04"><a href="/legacy/events/">Conferences</a></li>
+
+<li id="topbar-05"><a href="/legacy/publications/library/proceedings/">Publications</a></li>
+
+<li id="topbar-06"><a href="/legacy/membership/">Membership</a></li>
+
+  </ul>
+</td>
+</tr>
+<!--begin spacer-->
+<tr>
+<td colspan="2" height="6">
+<img alt="" height="6" src="/legacy/events/osdi10/art/longbar.gif" width="850"/>
+</td>
+</tr>
+<!--end spacer-->
+<td align="center" valign="top" width="850">
+<br/><img alt="" height="10" src="/legacy/events/osdi10/art/dot_clear.gif" width="1"/><br/>
+<!-- STREAMING CODE -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td height="555" valign="top" width="1000">
+<a href="http://www.usenix.org/conference/osdi10/onix-distributed-control-platform-large-scale-production-networks"><img height="555" src="http://www.usenix.org/sites/default/files/styles/video-thumbnail/public/conference/video/167294-koponen.jpg" title="Click to watch video" width="960"/></a>
+</td>
+</tr>
+<tr align="center">
+<td class="center">
+<br/><img alt="" height="1" src="/legacy/events/osdi10/art/dot_clear.gif" width="1"/><br/>
+<p style="text-align:center;"> <a href="http://www.usenix.org/conference/osdi10/onix-distributed-control-platform-large-scale-production-networks" target="_blank">
+<img alt="Download the Video" border="0" height="35" src="/legacy/events/osdi10/art/osdi10_download_200x35.jpg" width="200"/></a></p>
+</td>
+</tr>
+</table>
+<!--END MEDIA SPONSORS TABLE-->
+</td>
+</table>
+<!--END TABLE 2-->
+<tr>
+<td colspan="2">
+<!--begin footer-->
+<img alt="" src="/legacy/events/osdi10/art/footer.gif" width="850"/>
+<!--end footer-->
+</td>
+</tr>
+<!--END TABLE 1: END MAIN TABLE-->
+<!--START BOTTOM TABLE-->
+<table width="850">
+<tr>
+<td align="left" valign="top">
+<img align="left" alt="?" height="16" hspace="2" src="/legacy/events/osdi10/art/questmark.gif" width="12"/>Need help? 
+		<a href="/legacy/about/contacts.html">
+		Use our Contacts page.</a>
+<br clear="left"/>
+<img alt="" height="5" src="/legacy/events/osdi10/art/dot_clear.gif" width="1"/><br/>
+<!-- EDIT THE DATE AND YOUR LOGIN NAME BELOW -->
+<i>Last changed: 22 Sept. 2010 jp</i><br/>
+</td>
+</tr>
+</table>
+</center>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3633391-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

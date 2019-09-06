@@ -1,0 +1,25 @@
+Information[edit]The Only Constant is Change: Incorporating Time-Varying Network Reservations in Data Centers 
+Attendee: Jun Li, Yibo Xue, Zhen Chen, Baohua Yang, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Yang Gao, Zhi Liu, Feng Xie, Kyle Wang Chang Chen and Zhe Fu. 
+Speaker: Yang Gao
+Recorder: Zhi Liu
+Presentation[edit]Background and Motivation
+Network Usage for MapReduce Jobs
+Under Fixed-BW Reservation Model
+Under Time-Varying Reservation ModelTemporally-Interleaved Virtual Cluster (TIVC)
+Key idea: Time-Varying BW Reservations
+Compared to fixed-BW reservationChallenges in Realizing TIVC
+What are the right model functions?
+How to automatically derive the models?
+How to efficiently allocate TIVC?Evaluation
+Varying Oversubscription and Job Size
+Dynamically Arriving Jobs
+Analysis: Higher Concurrency
+Tenant Cost and Provider RevenueQ&A
+Feng Xie:profiling需要在数据中心网络实际部署还是模拟?
+Yang Gao:需要实际部署对流量进行观测.
+Kyle Wang:如何考虑多个job之间的流量协调和最大化利用?
+Yang Gao:当存在jobs之间的流量协调余地时，系统会进行调整.
+Prof Li:实现这一系统如何观测到数据中心这么大量的状态数据?
+Prof Li:应该提前了解应用的类型和其流量特征，例如bing中的search. 
+Prof Li:如果scheduling做得不好可能会降低系统整体性能.
+Baohua Yang:需要既有竞争机制又有统一的分配和控制.

@@ -1,0 +1,26 @@
+Information[edit]Topic:
+1) A Multi-Dimensional Progressive Perfect Hashing for High-Speed String Matching
+2) SEAL: Smart Resource Distribution for Multi-tenant Data Centers
+Attendee:
+Jun Li, Zhen Chen, Yaxuan Qi, Baohua Yang, Kai Wang, Feng Xie, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Lu Li, Xiaoqi Ren, Qing Xu, Jingjie Jiang
+Speaker: Kai Wang and Yang Gao
+Recorder: Xiang Wang
+Presentation[edit]Background
+	AC algorithm (un-optimized <-> classic and optimized <-> DFA)
+	transition-to-state ratio is normally between 1 and 2
+	usually sparse automaton
+	distribution of state size is un-evenPerfect Hashing goal:
+	fast hash index generation: No storage overhead; No memory access
+	compact, perfect hash table: No collision; High hash table utilizationPerfect Hashing procedure:
+	divide all transitions of AC into many small sets according to two dims (src state id, input character)
+	place the sets of transition progressively into hash table in decreasing order of state degreesTwo-dimension improvement:
+	step1: Model AC automaton as a bipartite graph
+	step2: decompose the bipartite graph to independent edge sets
+	step3: place edge sets in hash tablePerformance evaluation:
+	Hash trials
+	Construction time
+	Memory usageDiscussion:
+	what's the hash function? universal hash function family
+	try all input char, always conflict? If hash function does not change, it may not find out un-conflicted key.
+	why not directly design a perfect hash function？
+	the hash trials of AC-DFA both using and not using 2-dims are almost same, why?

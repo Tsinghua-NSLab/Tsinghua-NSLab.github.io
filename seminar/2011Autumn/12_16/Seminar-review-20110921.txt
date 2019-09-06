@@ -1,0 +1,23 @@
+Information[edit]Recommender System and Link Prediction
+Attendee: Prof. Li, Zhen Chen, Yibo Xue Feng Xie, Xiang Wang, Yiyang Shao, Yang Gao, Zhenlong Yuan, Fuye Han, Yong Liang, Jiaxing Shang
+Speaker: Feng Xie
+Recorder: Fuye Han
+Presentation[edit]Content
+Recommender SYstem (RS)
+Link Prediction (LP)
+Group DiscoveryWhat do RS do, exactly?
+Predict how much you may like a certain product / service 
+Compose a list of N best items for you
+Compose a list of N best users for a certain product / service
+Explain to you why these items are recommended to you
+Adjust the prediction and recommendation based on your feedback and other peopleApproaches of RS
+Collaborative filtering
+User-based
+Item-based
+Content-based filtering
+Hybrid
+Linear/Switching combination/SequentialLP Algorithms
+Attributes
+Network structure
+Node-based
+Path-based

@@ -1,0 +1,24 @@
+Overview[edit]Title: Leveraging Parallelism for Multi-dimensional Packet Classification on Software Routers
+Source: SIGMETRICS'10
+Attendee: Prof. Li, Prof. Xue, Zhen Chen, Yang Xiang, Xiang Wang, Kai Wang, Feng Xie, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen (陈昌), Xiaohe Hu, Xiwei Feng, Chang Chen (陈畅), Chen Chen, Group of Prof. Xue
+Speaker: Chang Chen
+Recorder: Zhi Liu
+Presentation[edit]Introduction
+Software system classification
+High line rate speed
+Overview of Storm
+Parallelism design
+Thread assignment
+Rule Cache Updater
+Storm Design
+Thread Assignment
+Rule Cache Updater
+Micro Benchmarks
+Experimental ResultsQuestion[edit]Jun Li:关于pipeline的处理latency是各个stage中latency最长的,throughput由此确定。
+Jun Li:当规则增多时，cache hit rate降低的原因与规则数目和规则之间的关系有关。
+Jun Li:两个包的范围当可能占用两个rule的时候，如何避免拉下来的规则出现冲突？算法是否能在下来前判断这种情况？
+Kai Wang:当有高优先级在低优先级中间位置时，是worst case。
+Jun Li:采样是如何进行的？采样会造成一开始miss比较大，但是这种方式可以调节大小流，避免小的flow（如DNS）造成无用的下拉。
+Jun Li:OVS cache的是如何做的？怎么建立cache和查询?对应到几何图上是怎样的表示？
+Chang Chen:OVS 算法设计流程。
+Yang Xiang:OVS的算法可以进一步优化下来的效率，扩大块的规模。

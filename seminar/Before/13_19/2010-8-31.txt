@@ -1,0 +1,29 @@
+Hash Based Data Structure and Functions,Bloom Filters and further[edit]Spearker: Zhen Chen
+Attendants: Prof. Li, Ying Guo, Xinming Chen, Li Tang, Hui Zhang, Zhiming Zhang, Jian Du, Kai Wang, Jinli Meng, Fei He
+Recoder: Li Tang
+Content:
+Open Source Cloud
+Simple
+Extensible
+Free for use and pay as you go
+Easily to install and maintainChallenges
+Extensibility
+Client-side interface
+Networking
+Security
+Packaging, installation, maintenanceEucalyptus
+Open Stack
+Supported by Rackspace
+http://nova.openstack.org
+http://swift.openstack.org
+Discussion:
+李老师：Cloud和Grid进行对比的道理何在？
+陈震：Cloud是提供给大众的服务平台，而Grid是提供给研究机构用超级计算平台
+张辉：Grid是由参与者提供计算资源，而Cloud是由集中服务器提供计算资源，参与者一般是轻载终端
+李老师：我们应该明细各种概念的区别，对于本身就难以区分存在密切联系的概念不必刻意区分，但强调Cloud不是Grid难以让人信服
+张辉：Cloud是按需获取资源，而Grid是预先分配好资源
+李老师：没有那么大的区别，只是在谈Grid时，技术还没有发展到这种程度，Grid也是按需分配资源和计费
+何飞：Grid的出发点是将闲置计算资源利用起来，而Cloud是提供灵活、经济的方法
+李老师：Grid的起源是这样，但现在Grid的应用已经不局限于此，很多Grid平台也是在利用专用硬件在提供计算资源；难以为Grid和Cloud划定清晰的界限
+李老师：Eucalyptus对我们的研究有什么启发？他保持了EC的interface，但是配置仍然是静态的，无法动态分配计算资源。
+李老师：我们需要从中发掘出适合我们研究的问题。

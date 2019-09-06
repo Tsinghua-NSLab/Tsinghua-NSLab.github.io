@@ -1,0 +1,43 @@
+Overview[edit]Title: Deep Packet Inspection as a Service
+Source: CoNEXT 2014
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Zhen Chen, Xiang Wang, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Ju Xing, Yuanjun Yao, Wenxun Zheng, Dongyu Meng, Jun Yang, Yuanyuan Bao, Luoshi Zhang, Chengqi Yi, Zhaoguo Wang, Dongfang Li.
+Speaker: Yiyang Shao
+Recorder: Zhe Fu
+Presentation[edit]NFV and Innovation
+NFV enables virtualizing network building blocks such as: FW, NAT, IDS, Monitoring, LB, Network AV
+Increases network deployment flexibility, and also product introduction times
+Opens market for new vendors for network functions (Middleboxes)
+About 400 SDN-NFV listed companiesMiddleboxes Policy Chains
+SDN allows building policy chain via traffic steeringDPI Engine – Complicated Challenge
+DPI Engine is considered a system bottleneck in many of todays MBs (30%-80%)Middleboxes Policy Chains
+Each MB implements its own DPI engine (higher MB costs, reduced features)
+Each packet is scanned multiple times causing waste of computation resourcesPassing Results Alternative 1
+Network Service Header (NSH)
+Supports a header per network service
+Not limited in size
+Resize MTUPassing Results Alternative 2
+Separate result-packet
+Mark original packet upon match (set ECN)
+Delay packet until result-packet arrivesDPI Algorithms are Scalable
+String Matching
+Aho-Corasick Algorithm
+Regular Expressions Matching
+string matching w/global DFA >> single regex DFA
+CompactDFA, ToN 2014: Encode DFA in TCAM 
+ACCH, ToN  2012: Resilient Multi-Core DPI
+MCA2, ANCS 2012: DPI over Compressed TrafficConclusions
+DPI is a common service used by today’s MB
+Thanks to its scalability it may be easily exported as a stand-alone network service
+DPI as a Service provides:
+Innovation (Lower entry barriers)
+Network scalability
+Lower costs (Cheaper MB Hardware)Discussion[edit]Prof. Li: traffic steering如何翻译？导流？
+Xiang: 流量牵引。Prof. Li: MB和traffic steering controller怎么实现的？
+Yiyang: 这两个controller可以看做是SDN appProf. Li: 规则合在一起规则集会小吗？为什么？
+Yiyang: 作者没有说这个问题。
+Prof. Xue: 回避了很多问题。正则表达式有可能变大。可以用硬件做。
+Xiang: 可以把预过滤做一个service，后面的MB放小的DPI。Feng: 作者有没有调研需要经过多少个MB service？如果只经过一两个的话合在一起是不是开销太大。
+Prof. Li: PC可能重复比较多。每一个MB可能都要做五元组的匹配，是重复的。
+Yiyang: 可以把五元组抽出来，后面的MB可能没啥用了。Ju: 实验是不是太简单了？
+Xiaohe: 实验仅仅是验证，复杂的工作应该是留给其他工作做的。Jun: 规则分布到底怎么样，需要充分的了解。Feng: 是不是会带来不安全问题？
+Yiyang: 在网络内部是可控的

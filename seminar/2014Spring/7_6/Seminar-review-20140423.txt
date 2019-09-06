@@ -1,0 +1,33 @@
+Overview[edit]Title: NetworkProfiler: Towards Automatic Fingerprinting of Android Apps
+Source: INFOCOM 2013
+Attendee: Prof. Yibo Xue, Zhen Chen, Xiang Wang, Kyle Wang, Feng Xie, Yiyang Shao, Zhi Liu, Zhe Fu, Chang Chen, Xiwei Feng, Chang Chen, Chen Chen, Luoshi Zhang, Chengqi Yi, Jingchi Jiang, Xiaoxian Chen, Wenchong Bi.
+Speaker: Zhenlong Yuan
+Recorder: Yiyang Shao
+Presentation[edit]Motivation
+Mobile Device vs. PC
+Mobile traffic is up to 5000% over past three years
+Identifying applicationsChallenges In Mobile App IdentificationState of the art techniques
+User-Agent
+Host
+Manually running appsKey Idea: Network Profile of Apps
+Network profile of apps analogous to DNA profiles of people
+Network fingerprintObjectiveDesign ConsiderationOur Solution: NetworkProfiler
+A system for automatic generations of NetworkProfiles for Android apps
+ChallengeCase Study: ZedgeExamples of Network ProfilesNetwork Profiler Overview
+Random Tester
+Directed Tester
+Path Recorder
+Heuristic Path Generator
+Path RepalyerFingerprint Extractor
+Step 1: Tokenize
+Step 2: ClusterEvaluation
+Ad Information in Android Apps
+Ads Identifiers
+Non-Ad trafficDiscussion[edit]Feng Xie: 安卓市场中的10 Billion指的是下载量还是应用数量？Zhenlong Yuan: 应该是下载量。
+Xiang Wang: HTTP app flow中Origin和CDN+Cloud指的是什么？Zhenlong Yuan: Origin应该指的是APP开发者或公司的服务器，Cloud应该是一些存储的数据资源。Yiyang Shao: CDN可能是一些视频APP访问产生的。
+Xiang Wang: Directed Tester和Random Tester的区别？Zhenlong Yuan: Random Tester是通过工具自动的随机触发事件，Directed Tester是人工的使用APP并记录下行为。
+Luoshi Zhang: 这篇文章是想识别所有的五元组网络流量还是识别网络中是否有人使用某APP？Zhenlong Yuan: 这篇文章的主要目的应该是识别网络中是否存在某APP的流量。
+Yibo Xue: 如果一个应用有很多行为模式，会怎么处理？Zhenlong Yuan: 所有的行为特征共同形成一个APP的状态机。
+Zhi Liu: Cluster时初始状态时什么样？Zhenlong Yuan: 初始时应该是每个样本自成一类，通过Jaccard系数计算距离不断迭代。
+Yiyang Shao: 作者在实验中为何只生产了6个APP的Profile，而大部分的APP都是利用广告识别的？Zhenlong Yuan: APP的广告应该是获取商业价值的重要手段，所以具有特异性，通过Ads Libraries和Key可以有效识别APP。
+Xiang Wang: Ads Libraries和Key的关系是如何获得的？Zhenlong Yuan: 一部分是通过官方的Document获取，另一部分是作者之前文章的工作。

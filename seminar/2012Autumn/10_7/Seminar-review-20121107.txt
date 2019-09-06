@@ -1,0 +1,32 @@
+Overview[edit]Title: Abstractions for Network Update
+Source: SIGCOMM' 12
+Attendee: Prof. Li, Prof. Xue, Zhen Chen, Baohua Yang, Kai Wang, Xiang Wang, Yang Gao, Yiyang Shao, Zhe Fu, Chang Chen, Zhenlong Yuan, Zhi Liu, Jiaji Hu
+Speaker: Xiang Wang
+Associated Speaker: Yang Gao
+Recorder: Yiyang Shao
+Presentation[edit]Network Updates
+Maintenance
+Failures
+ACL UpdatesDesired Invariants
+No black-holes
+No loops
+No sercurity violationsNetwork Update Abstractions
+Goal: Tools for whole network update
+Develop update abstractions
+Endow them with strong semantics
+Engineer efficient implementationsUniversal Property Preservation
+Trace Property
+Formal VerificationMechanisms
+2-Phase Update
+2-Phase Update in Action
+Optimized Mechanisms
+Subset OptimizationCorrectness
+Unobservable
+One-touchImplementation
+Runtime
+Verfication ToolEvaluationConclusionQ & A
+Prof. Li: 如何评价这篇文章的工作？本文对网络设备更新问题的抽象是否确切？在实际中一般不会用的本文的应用场景。
+Kai Wang: Worst-Case Rule Overhead是指的什么？
+Yaxuan Qi: 交换机流表过大的问题
+Baohua Yang: 文中F1、F2指的是交换机还是防火墙？Session表对其的影响？
+Prof. Li: 交换和路由，转发和安全，这两对问题越来越统一，重点在用户体验角度如何解决问题。

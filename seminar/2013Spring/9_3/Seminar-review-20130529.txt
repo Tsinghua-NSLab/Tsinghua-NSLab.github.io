@@ -1,0 +1,7 @@
+Title: Automatic Test Packet Generation
+Source: CoNEXT'12
+Attendee: Prof. Li, Prof. Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu, Chen Liu
+Speaker: Zhi Liu
+Recorder: Kai Wang
+Presentation[edit]Recall Head Space Analysis FrameworkIntroduction
+ATPG WorkflowReachability AnalysisTest packet generation and selectionFault localizationImplementation and EvaluationQ&A[edit]Prof. Li: 不是检测规则本身是不是正确，而是这些规则是不是在对应节点上被正确执行，达到最终的连通性要求

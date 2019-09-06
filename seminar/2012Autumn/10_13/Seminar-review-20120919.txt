@@ -1,0 +1,32 @@
+Information[edit]Rethinking Software-Defined Networking 
+Attendee: Jun Li, Yibo Xue, Zhen Chen, Yaxuan Qi, Baohua Yang, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Yang Gao, Zhi Liu, Feng Xie, Kyle Wang, Chang Chen and Zhe Fu.
+Speaker: Yaxuan Qi
+Recorder: Yang Gao
+Presentation[edit]Background
+times
+technology
+industrialDirection
+SDN 2010
+SDN 2012Industrial
+Cisco
+NTT
+OthersInnovation
+Google Fiber
+Nicira
+Yunshan -- Scale out & Scale up
+motivation
+architecture
+work
+benefitsQ&A
+Kyle Wang:does VMware develop networking virtualization?The different with Livecloud?
+Yaxuan Qi:yes, but only on the VMware's hypervisor. Almost the same but solving different problems.
+Prof Xue:why google has an all-time-the-same bandwidth?
+Yaxuan Qi:One datacenter can serve for many request from different places whose time zone is different.
+Prof Li:what is the distribution controller?
+Yaxuan Qi:the distribution controller with resources are one part that can be used. Kernel accessing into the resources will pay a heavy price. 
+Xiang Wang:what is the different between Network hypervisor and network os?
+Yaxuan Qi:NH acts as a flowvisor. And OS will use the flow entry which is distributed by NH to realise network control.
+Prof Li: is nos a controller?
+Yaxuan Qi:livecloud is an application that is different with nos and NH.
+Kyle Wang:NH will control the netowrk slicing or be controled.
+Yaxuan Qi: The administrator will control the NH but this work is different with the upper networking.

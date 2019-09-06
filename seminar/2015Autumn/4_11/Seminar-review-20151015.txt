@@ -1,0 +1,38 @@
+Overview[edit]Title:￼ Rollback-Recovery for Middleboxes
+Source: SIGCOMM 2015
+Attendee: Dujuan Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Jun Yang, Changsheng Zhang, Dongfang Li.
+Speaker: Zhi Liu.
+Recorder: Xiaohe Hu.
+Presentation[edit]Part 1: Recent Trends about NFV
+NFV: network function virtualisation
+Reason for carriers moving to NFV
+Example of vNFsCellular Core Network Architecture
+Example of service provider policies
+ QoS, Service Chain, etc.
+Cellular core networks are not flexible
+ Demands: different vendors, new functionality, expanding bottlenecked functionalityUsing SDN to enable NFV: Softcell (CoNEXT'13)
+Part 2: Rollback-Recovery for Middleboxes
+ Motivation
+ Fail over to a back-up device after a mb goes offline
+ Challenge: correctness vs performance
+ Related work
+ Cold restart, Snapshot/Checkpoint, Active-active Implementation
+ Snapshot
+ Log
+ Input logger
+ Output logger
+ Check Key design
+ nondeterminism due to parallelism and shared state
+ Packet Access Logs
+ Check for safe release
+ Ordered logging and parallel release
+ Replay EvaluationDiscussion[edit] Yiyang Shao: Input logger每个包都要复制两遍，开销大？
+ Zhi Liu: 实验结果下降不多，开销不大，可能用buffer代替copy。 Yiyang Shao: 四部分的物理分布？
+ Zhi Liu: master和backup在不同物理设备的虚拟机，input output logger在另外的同一个物理机上。 Zhe Fu: master和slave都挂了没办法了，logger挂了也不成？
+ Zhi Liu: 是的，input/output logger类似于网络转发设备，failure几率小于mb。 Zhe Fu: 有没有可能虽然蓝包先到，但是黑包PAL先生成？
+ Zhi Liu: 不会的，要拿锁，先拿锁先generate PAL。 Xiaohe Hu: PAL里面有对应packet的信息?
+ Zhi Liu: 是的，有对应的sequence信息。Zhe Fu: PAL是什么时候发到output logger的？
+ Zhi Liu: 看master的driver了，但是在enqueue之前counter就生成了。 Zhe Fu: Throughput下降的原因?
+ Zhi Liu: Xen对snapshot支持的好，但是vm的drivers的性能不高。Xiaohe Hu: 可不可以在output logger处做sort，master的PAL直接发？
+ Zhi Liu: PAL先于packet完成enqueue操作，到达output logger保留了顺序要求，尽量简化判断。 Zhi Liu: 需要改mb的code。 Zhenlong Yuan: replay的思想是第一次提出的？
+ Zhi Liu: 之前有过。 Dujuan Gu: 并行处理会有不确定性但工业界中出现的不多。active-active的HA方案，switch镜像流，存在一个主状态，copy状态的时候主状态需要freeze。 Dujuan Gu: 现在网络设备中都会有buffer，一段时间。

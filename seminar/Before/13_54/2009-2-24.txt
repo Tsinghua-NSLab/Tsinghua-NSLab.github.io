@@ -1,0 +1,16 @@
+学术活动题目：Above the Clouds——UCB RAD Lab
+主讲：陈震
+记录：张辉
+时间：2009-02-24
+地点：FIT1-312
+出席会议人员：李老师，薛老师，周晋，陈震，法超，马旭，志明，张英，张辉，唐力, 王凯，魏冰, 槐寅，杜建
+内容：
+ What：Hardware, Infrastrure, Plateform as a service
+ Why: Experience with very large datacenters
+ Microsoft Azure简介
+讨论：
+ 杜建：云计算与计算能力强的计算机和分布式计算的区别？
+ 陈震：云计算是Software, Infracture, Hardware的集成
+      分布式计算是一种架构；云计算是一种有规模效应的服务，实现方式可以是分布式的
+ 周晋：云计算是一个叫老的概念，现在我们应该从技术和业务两方面认识这个问题。许多公司和研究机构提出这一概念是为了大家认识到云计算的优势，进一步推广云计算产品。
+ 薛老师：云计算为用户提供服务，以后可能会出现为大用户小用户提供的服务不用，出现用户歧视现象。

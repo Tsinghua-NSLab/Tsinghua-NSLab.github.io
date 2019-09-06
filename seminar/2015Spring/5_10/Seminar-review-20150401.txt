@@ -1,0 +1,27 @@
+Overview[edit]Title: Meta-algorithms for Software-based Packet Classfication
+Source: ICNP 2014
+Attendee: Prof. Jun Li, Zhen Chen, Xiang Wang, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Ju Xing, Yuanjun Yao, Wenxun Zheng, Dongyu Meng, Jun Yang, Dongfang Li, Changsheng Zhang.
+Speaker: Chang Chen
+Recorder: Yiyang Shao
+Presentation[edit]Motivation
+Packet Classification
+Classifier
+Two Solutions
+TCAM based Solutions
+RAM based (algorithmic) Solutions
+ContributionsKey Observations
+Geometric View of rulesets
+An Example (HiCutsand HyperSplit)
+Non-uniformly distributed ranges
+Sparse rules and orthogonal structure rules
+EffiCuts
+Orthogonal Structures can be invalid
+DiscussionsTwo Meta Methods
+Memory Consumption Model
+Characterizing range distribution uniformity
+The shape of Interval trees
+The threshold of range distribution uniformityThe AutoPC framework and SmartSplit algorithm
+The AutoPC frameworkExperiment ResultsConclusionDiscussion[edit]Xiang Wang: throughput是一个引擎测的还是多个引擎一起跑的？
+Chang Chen: 文中没有提到这一点Zhe Fu: Table III中的值时什么意思？
+Chang Chen: MPLS, million lookup per second，相当于吞吐率Jun Li: 均匀切分(cut)应该是不均匀切割(split)的一种特例，如果是这样，HyperSplit的性能为什么会比HiCuts低？是因为HyperSplit的切分不够智能吗？
+Xiang Wang: 不均匀切分的情况需要额外的开销用于存储切分点信息，可能会导致性能下降

@@ -1,0 +1,58 @@
+Date：2009-01-15
+Place：FIT4-402
+Present：李老师
+Attend：李老师，薛老师，陈震，亚烜，法超，徐波，李国栋，黄石海，魏冰，王翔，马旭，志明，张瑛，张辉，唐力，杨保华，何飞，杜建，吴亦尧，周燕
+record：bhyang
+About the paper:
+	Topic：A Policy-aware Switching Layer for Data Centers
+	From：SIGCOMM 2008
+	Author：Dilip Joseph
+	Why to choose?
+	Data center is and will be very important!
+The content of the paper
+Problem
+	Middleboxes are hard to deploy -- On path placement fails to achieve.
+	Give some examples to show:
+	Flexibility 
+		(Re)configurable network topology
+	Efficiency
+		No middlebox resource wastage
+	Correctness 
+		Guaranteed middlebox traversal
+Solution
+	Overview
+		Two principles:
+		1.	Take middleboxes off-path
+		2.	Separate policy from reachability 
+		Four phases:
+		1.	PSwitch explicitly forwards packets to middleboxes
+		2.	Distributed forwarding 
+		3.	Loadbalancing middleboxes 
+               4.	Different policies for different traffic 
+Challenges
+	1.	Minimizing infrastructure changes
+	2.	Non-transparent middleboxes 
+	3.	Guaranteeing correctness under churn
+Limitations
+	1.	Indirect paths
+	2.	Policy specification complexity
+Implementation & evaluation
+	Compared to software Ethernet switch
+		82% TCP throughput
+		16% latency increase
+Related work
+Conclusion
+	Deploying middleboxes  is hard
+	A new layer-2 with explicit middlebox support
+What can we learn?
+1.	李老师：SIGCOMM更关注问题大的方面，而不是具体的技术细节
+2.	亚烜、唐力等：Churn的问题
+	缺乏session的概念，
+	但也可以引入session的概念
+3.	亚烜：跟Open Flow的区别
+	是做在防火墙上
+4. 李老师文章考虑的角度
+大规模的data center：上万台机器
+低延迟
+5.	李老师：发现问题比解决问题更重要
+	80%和20%的关系

@@ -1,0 +1,64 @@
+Topic: Algorithms for Advanced Packet Classification with TCAMs
+Speaker: Yaxuan Qi
+Attendants: Prof. Li, Prof. Xue, Zhen Chen, Fachao Deng, Ying Zhang, Yiyao Wu, Guodong Li, Baohua Yang, Fei He, Guangyu Zhu, Xiang Wang, Xinming Chen, Kai Wang, Jin Zhou, Hui Zhang, Chunlu Yan, Lianghong Xu, Bing Wei, Yin Huai, Li Tang
+Recorder: Li Tang
+Content:
+ Packet Processing Environment
+    Packet matches a set of rules based on the header
+ Ternary Content Addressable Memory
+    Memory device with fixed width arrays
+    Each bit is 0, 1 or x (don’t care)
+    Search is performed against all entries in parallel and the first result is returned
+ TCAM: Benefits and Disadvantages
+    Benefits: Deterministic Search Throughput—O(1) search
+    Disadvantages: Cost and Power Consumption
+ Current TCAM usage:
+    6 million TCAM devices deployed (2005)
+    Used in multi-gigabit systems that have O(10,000) rules
+    TCAMs can support a table of size 128K (18Mbits/144bits) ternary entries and 133 million (133M/15M=88Gbps 64B packets) searches per second for 144-bit keys
+ Range Representation Problem
+    Representing prefixes in ternary is trivial
+    Representing arbitrary ranges is not easy though
+    Problem Statement: given a range R, find the minimum number of ternary entries to represent R
+ Earlier Approaches
+    1. Prefix expansion of ranges
+        Express ranges as a union of prefixes; have a separate TCAM entry for each prefix
+        Worst-case expansion for a single W-bit field is 2W-2
+    2. Database-dependent encoding
+        observation: TCAM array has some unused bits
+        use these additional bits to encode commonly occurring ranges in the database
+        TCAMs with IP ACLs have ~36 extra bits (144-bit wide TCAMs, 104 bits + 4 bits for IP ACL rules		
+        Disadvantages
+            extra bits is limited
+            number of unique ranges is increasing
+            incremental update is hard
+ Database-Independent Range Pre-Encoding
+    Key insight
+        use additional bits in a database independent way
+        wider representation of ranges
+        reduce expansion in the worst-case
+    Fence encoding
+        With 2W-1 bits, fence encoding achieves an expansion of 1    
+        For achieving a worst-case row expansion of 1 for a W-bit range, 2W-1 bits are necessary	
+    Using all available extra bits
+        Two extremes
+            no extra bits -> worst case expansion is 2W-2
+            2^W-W-1 extra bits -> worst case expansion is 1
+        Something in between: appropriate worst-case based on a number of extra bits available
+            Split W-bit field into multiple chunks 
+            Encode each chunk using fence coding
+            Combine the chunks to form ternary entries
+ Summary
+    ↑ Database independent
+    ↑ Scales well for large databases
+    ↑ Good incremental update properties
+    ↓ Additional bits needed
+    ↓ Small logic needed for modifying search key
+Discussion:
+ 1. 李老师：Update TCAM的内容需要很长时间，导致流需要等候和停滞，除非使用两个TCAM的Ping、Pong机制来缩短Update时间。
+
+ 2. 亚煊：证明所需bit数的下限比较精彩，值得仔细了解。 
+
+ 3. 陈震：Fence coding应该是他人已有工作。
+
+ 4. 李老师：在最高端网络设备中一般都需要TCAM来实现高速处理。

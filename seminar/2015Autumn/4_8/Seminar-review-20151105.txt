@@ -1,0 +1,57 @@
+Overview[edit]Title: Recent trend of Docker and related techniques of container
+Attendee: Jun Li, Dujuan Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Luoshi Zhang, Zhaoguo Wang, Chengqi Yi, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang.
+Speaker: Baohua Yang.
+Recorder: Zhi Liu.
+Presentation[edit]Part 1: Container 101
+Brief History from 1982 to 2015 
+Abstraction of virtualization: Hardware (SR-IOV), OS(VM), Runtime(JVM, Virtual ENV), App(Process/Thread). independent(lower) vs shippable(upper)
+Operating System-level Abstraction
+Share host’s kernel
+More agile/light approach (MBs vs GBs, resize almost instantaneous)
+Much higher density per node (1000 vs 10)
+Reaching maturity in terms of security and usability
+Leverage Cgroups and namespacesCGroups and Namespaces
+Cgroups (currently 12): CPU memory, IO, network bandwidth
+Namespace (currently 6): Network, UTS:hostnameContainer Category
+System Container (treat as VM, e.g. LXC OpenVZ, long time)
+Used by peopleApplication 
+only one application
+software based applicationDocker
+Image/UFS
+Libcontainer: 库，原来依赖LXC，更general，统一接口，支持多个OS
+DockerHub: Management of imageOther emerging container
+LXC (Linux)
+W/Garden
+AppC/Rkt   both based on Cgroup, name spaceContainer based OS 每个应用都是一个namesapce，云计算里面的server就应该跑这样的
+CoreOS
+Atomic
+LXD （ubuntu）
+Photon （VMware）Docker Image
+layered filesystem: save storage, one of the greatest contritubitonDocker Component
+Docker Daemon
+Client
+Registry
+Docker Engine*
+Excution driver/environment for contaienr
+LXC -> libcontainer
+Storage driversPart 2: Container networking
+Libnetwork: very new and still in development
+CNM
+Sandbox container’s network stack
+EndpointFlannel
+Currently pretty popular than others like weaveKubernetes: An Orchestration tool for containersPOD：
+group of container on same host
+IP per pod, same namespace
+service:
+proxy, load balancing
+IP per service
+replication controller: maintain exact number of pods (main the number is 2)proxy:
+Distributed load-balanceOther projects about Docker
+Cloud Native Application: 12 tipsDIscussion[edit]Jun Li: System container或Application container与VM有本质区别吗？
+Baohua Yang: 只是区别于container的用法，System container是用于代替原来的VM，生命周期长，而Application container生命周期短
+Zhaoguo Wang: 关于Layered FS，如何保证不同用户之间文件的安全
+Baohua Yang：不同用户看到的物理文件是隔离的，相互不能修改
+Jun Li: 分层文件系统每次修改的时候就会叠加新的一层？
+Baohua Yang：是的
+Zhi Liu: Libnetwork里面是否支持container的迁移？
+Baohua Yang：像application container一般container生命周期都比较短，down了问题也不是太大（stateless），所以一般不会出现迁移的情况，有需要就新启一个

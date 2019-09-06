@@ -1,0 +1,49 @@
+时间：2009-03-10
+地点：FIT 1-312
+报告人：刘然
+记录人：张志明
+报告题目：Internet Data Center--Insight into IDC Node
+
+ 基本概念：
+   Bisection bandwidth(二分带宽) 
+   Oversubscription（超额订购）此概念来自于经济领域
+ 传统IDC node system architecture（分层结构）：
+   Core Layer（核心层）;
+   Aggregation Layer（汇聚层）;
+   Access Layer（接入层）
+ small IDC Node:
+   350~500 servers 主要为下载和流媒体服务，也为公司提供服务
+ medium IDC Node：
+   1500~2500 servers 主要为公司服务，银行、证券、政府等等 可扩展性强
+ Large IDC Node：
+   超过25000 servers，客户主要是大型公司。大型节点的出现与云计算离不开（google约46万台，微软近100万台）
+ 中型IDC方法构建大型IDC时的问题：
+   COST；
+   STP complexity（最小生成树算法的实时收敛性和复杂性）；
+   Routing latency 
+ 解决办法：
+   fat-tree：
+     最小生成树；路由；容错（Fault Tolerance）
+     优点：只需要1G容量的交换机，而不是10G的，价格低（Fat-tree vs. Hierarchy）
+     缺点：与端口相关，受到端口数量的限制，有一定的扩展限制，只能扩展至两万台服务器；使用三层路由，浪费资源
+   DCell：
+     使用网卡组的技术，定义了自己的IP层协议，无法与TCP/IP协议兼容，协议转换复杂。
+     可以扩展为300多万台
+     错误保障机制：
+     递归构建拓扑，较复杂。
+   fat-tree vs. DCell：
+     跳数：Fat-tree 最多需要6跳，但Dcell需要2lognN-1跳。
+     BiW：
+     Oversubscription：
+ 趋势：近年大型IDC Node增长较快。
+   Consolidation 整合：
+   Virtualization 虚拟化：
+   Automation：自动化管理：（这方面Cisco做得比较好，还有HP等。只有真正实现了虚拟化，才能使得自动化管理更有意义。Berkeley 提出了一个自动化管理方案）
+
+提问：
+ 李老师：有公开信息知道几个大型的IDC中心使用了什么架构吗？
+ 刘然：没有公开信息，但有部分其它渠道的信息，但实际上要远远大于这些资料提供的信息。
+ 唐力：是否可以使用fat-tree构建更多层次的架构,突破扩展性限制?
+ 刘冉：初衷是保持兼容性，降低成本，如果那样的话就会牺牲这些性能。
+ 唐力：外部带宽和内部带宽，哪个是系统的瓶颈？
+ 刘然：应该是内部，外部可以采用多种负载均衡的方案解决。

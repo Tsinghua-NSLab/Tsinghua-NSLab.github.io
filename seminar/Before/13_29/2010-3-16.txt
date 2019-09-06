@@ -1,0 +1,38 @@
+Topic: 
+Speaker: Zhiming Zhang
+Attendants: Prof. Li, Jin Zhou, Ying Guo, Hui Zhang, Jeffrey Fong, Kai Wang, Guodong Li, Feng Xie, Jian Du, Baohua Yang, Xinming Chen, Xiang Wang, Rongxiao Liang
+Recorder: Li Tang 
+Content:
+<1> Background of P2P Streaming
+<2> Outline of PhD Thesis Work
+<3> Paper
+Rationale of Applying Network Coding
+Design Objectives
+Minimized server bandwidth cost
+Minimized buffering delay after a random seek
+Consistently satisfactory playback quality
+Challenges
+Determining block size
+Determining number of blocks per segment
+Evaluations
+Three Representative Videos
+Buffering Delay
+Server bandwidth consumption
+Peer bandwidth consumption
+Signaling overhead
+Breaking redundancy
+Conclusion
+Achieved three design objectives
+Minimized server bandwidth costs
+Minimized buffering delay after a random seek
+Consistently satisfactory playback quality
+Future works
+Decrease overhead
+Decrease coding complexity
+Evaluate theoretical advantages in Networking CodingDiscussion:
+1. 李老师：作者在其早期工作中已经使用过这些评价指标，他把不同层面的指标综合到一起，并没有把各种因素的逻辑关系说清楚；把相关的指标放在一起讨论，作为评价指标并不清晰；不同的系统存在很多差异，都可能对系统性能造成影响，并不能都归功于网络编码。为什么作者不在UUSee系统中比较两种方案？
+志明：即使在同是在UUSee中，使用网络编码的系统是后期特殊设计的。作者选择的评价方法是充分发挥网络编码最大吞吐量的能力。
+2. 杜剑：作者用一张图试图说明种子数减少时对延时的影响不大，为什么没有提供不用网络编码时种子数对延时的影响？
+志明：对，作者未在文中比较。
+3. 周晋：在实际系统中比较是否使用网络编码比较困难，你在仿真实验中是否可以更好地设定对等条件？
+志明：对，仿真时能设定尽量相似的用户环境。

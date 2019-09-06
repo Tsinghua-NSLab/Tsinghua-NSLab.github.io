@@ -1,0 +1,43 @@
+Overview[edit]Title:￼ Towards Automatic Generation of Security-Centric Descriptions for Android Apps
+Source: ACM IMC 2015
+Attendee: Prof. Jun Li, Dujuan Gu, Qing Lv, Shuo Wang, Jun Yang, Dongfang Li, Danyang Li, Zhe Fu, Zhi Liu, Ju Xing, Shijie Sun, Jiazheng Wang.
+Speaker: Zhaoguo Wang
+Recorder: Dongfang Li
+Presentation[edit]Security overview of telecom fraud
+Some stats
+Technical trend
+Ways of spreading
+Security problems, requirements and research background
+Research directionsSurvey of Research
+Static inspection
+Dynamic inspection
+Summary of traditional inspection method
+Introduction of Research 
+Malicious Application Modeling
+Definitions of malicious behavior 
+Examples
+Rapid similarity analysis
+Research on Anti-obfuscation similarity
+Introduction of Anti-obfuscation method
+Code features-Ming's absolute distance
+Activity Hijack Vulnerability
+Examples
+Principle, the problem is very serious
+Behavior-Based inspection
+Behavioral chain diagramIntroduction of the Paper
+Introduction of the tool
+The Limitations of existing methods
+Application description, introduce what is Call relationship
+Introduction of the Algorithm 
+Experimental Results
+Correctness
+Security-Awareness
+Improvement of Conciseness
+Readability
+Human-Understandability
+Conclusion
+Use automated method to describe the potential behavior of the softwareDiscussion[edit] Jun: Is there anyboby care about Authority Description？
+ Zhaoguo: Few, but there are such person reviewing the instructions carefully before installing. The Problem is permission management mechanism is not so good.
+ Dujuan：The original method is marked by experts,and now we want to use machine learning to solve this probelm,but it's very hard.
+ Jun: This is the confrontation between people,really difficult.
+ Zhaoguo:The KEY to judging malware is to see whether it is known for the user.

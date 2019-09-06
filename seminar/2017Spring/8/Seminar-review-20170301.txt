@@ -1,0 +1,22 @@
+Overview[edit]Title:￼ O3FA: A Scalable Finite Automata-based Pattern-Matching Engine for Out-of-Order Deep Packet Inspection
+Source: ANCS'16
+Attendee: Professor Jun Li, Professer Yibo Xue, Ali, Zhi Liu, Jun Yang, Dongfang Li, Danyang Li, Shuo Wang, Shijie Sun, Hang Zhu, Linli Wan, Jiazheng Wang, Nan Zhou.
+Speaker: Ali
+Recorder: Zhi Liu
+Presentation[edit] Introduction to Signature Matching
+ DFA vs NFA
+ Re-ordering Packets
+ O^3FA Design
+ Overview
+ 2 Observations
+ One or more DFAs
+ Supporting FAs
+ Example
+ Optimization
+ Using Index tags to avoid false positive
+ Compressing Suffix FAs
+ Creating DFA instead of NFA from suffix or prefix sets
+ Components
+ EvaluationDiscussion[edit]Prof. Jun Li: After matching the prefix and suffix, how is the contents in between used?
+Ali: There is still cases for false positive, several DFAs that contain full patterns are still needed for further matching Prof. Jun Li: How is the reassemble triggered?Prof. Jun Li: There should be a window size that the system determines where to stop.Ali: If the order of the incoming packets is bad, in the worst case the system should buffer all the packets.Shuo Wang: How does the tagging help?
+Ali: This could help remove one kind of false positive that prefix/suffix of different patterns match. Prof. Jun Li: The out of order packets could be generated because of multi-path issue, and systems should be able to handle such packets. On the other hand, networking middle boxes should always guarantee to send out in-order packets.

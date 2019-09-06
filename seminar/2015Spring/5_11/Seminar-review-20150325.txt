@@ -1,0 +1,51 @@
+Overview[edit]Title: Screenmilker: How to Milk Your Android Screen for Secrets
+Source: NDSS 2014
+Attendee: Prof. Jun Li, Zhen Chen, Xiang Wang, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Ju Xing, Yuanjun Yao, Wenxun Zheng, Dongyu Meng, Jun Yang, Zhaoguo Wang, Dongfang Li, Changsheng Zhang.
+Speaker: Zhaoguo Wang
+Recorder: Chang Chen
+Presentation[edit]Background
+Android Security VS. App Demands
+One Solution: Root the phone
+An Legitimate Alternative: ADB ProxyADB Proxy
+Android Debug Bridge (ADB)
+An native executable implemented by developer 
+Runs on the phone as shell user to provide privileged services to other apps
+ADB proxy is legitimate
+Use
+1. Turn on USB Debugging and Connect Android to a PC
+2. Run a Script on the PC to Install a ADB Proxy on Android
+3. Disconnect Android from the PC
+Apps Using ABD proxy
+Security Implications
+Naive attackes are not stealthyOur Attack: Screenmilker
+Detect Screenshot Proxy
+Runtime Situation Detection
+Detecting Application States
+Real-Time Keystroke Analysis
+Fingerprinting the Soft Keyboard
+Determining the Keystroke
+Real-Time Contact CollectionEvaluations
+Effectiveness: Single Key Stroke Capture Ratio
+Password Extraction
+Rounds to Extract Entire Password
+CPU run time
+Memory Consumption
+Power Consumption
+Mitigations: Access Control on ADB ProxyConclusionsAppendix
+ADB Interfaces
+ADB Attack
+Pattern Puzzle
+Precondition: Root
+Implementation
+ADB: CVE-2006-2607
+ADB WirelessDiscussion[edit]Yiyang Shao: 文章没怎么提防护方法？
+Zhaoguo Wang: 目前很难做好防护。可以检测/识别恶意软件。Zhe Fu: 截屏不保存？
+Zhaoguo Wang: 存的是一些状态（即提取出来的信息）。Zhe Fu: 类似方法可以用在Linux上？
+Zhaoguo Wang：在PC终端思路也适用。趋势是PC机的恶意行为方式在向移动终端迁移。Prof. Jun Li: 截屏/扫屏方式在终端安全里属于主要问题吗？
+Zhaoguo Wang: 占了很小的比例。属于终端安全下隐私数据窃取分支。Ju Xing: 植入方式有没有可能通过常规通信网络变为主动式？
+Zhaoguo Wang: GSM有可能被恶意监听，那么基站范围内可拿到所有短信；通话相对困难，因为被加密。
+Zhen Chen: 短信和打电话协议/方法不同？
+Zhaoguo Wang: 是的。Prof. Jun Li: 终端上研究（如学校）主要集中在哪儿？
+Zhaoguo Wang: 应用安全（如应用软件行为研究）、操作系统安全（如找漏洞）。
+Prof. Jun Li: 目前这些工作像一道一道解题。很难找到通用性的方法？不容易系统地做这个问题。
+Zhaoguo Wang: 是研究对象导致的；另外研究与工业界也脱节。

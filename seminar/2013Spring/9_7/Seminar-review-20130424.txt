@@ -1,0 +1,26 @@
+Overview[edit]Title: StegoTorus: A Camouflage Proxy for the Tor Anonymity System
+Source: CCS'12
+Attendee: Prof.Li, Prof.Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu, Cheng Liu
+Speaker: Zhenlong Yuan
+Recorder: Xiang Wang
+Presentation[edit]Problem: How to conceal Tor traffic from censorship?
+Censors could detect Tor traffic by checking packet size
+Solution: Disguise Tor traffic as an innocuous cover protocol, such as P2P and HTTP
+Say steganography:
+Hide a hiddentext in a covertext
+An adversary shouldn’t be able to tell that the hiddentext is present
+Assumption
+Censor doesn’t install spyware on users’ computers
+Censor doesn’t operate Tor relays
+Censor wishes to avoid collateral damage
+Censor has to make decisions at backbone scale
+Implementation
+Chopping + Steganography at both StegoTorus Client and Server side
+Evaluation
+StegoTorus + chopping: close to the performance of vanilla Tor
+StegoTorus + chopping + HTTP Steganography: goodput is about 30KB/s; both connection length and connection payload are similar to vanilla TorQuestion:
+Zhenlong: Fingerprinting的方法对于有些协议识别问题比较有效，例如Skype
+Prof Xue: 不能解决针对IP/节点的封锁问题
+Prof Li: steganography指在正常流量中隐蔽信息通讯，本文中的用法并非是在正常的流量中使用，仅是嵌入了正常协议格式
+Prof Li: SRI是从Stanford独立出来的一个非盈利性研究机构，做出来的东西会有一定分量（本文的工作比较想学生的初步成果）
+Yiyang: 将内容隐藏在图片而不是JS中更好？Prof Li: 对图像进行频域分析，或许能够比较容易揪出来。Zhenlong: JS解释执行比较麻烦，需要交互响应，不容易探测。

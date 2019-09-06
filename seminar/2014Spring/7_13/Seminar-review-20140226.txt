@@ -1,0 +1,29 @@
+Overview[edit]Title: Network Virtualization in Multi-tenant Datacenters
+Source: VMWare TR
+Attendee: Prof. Xue, Zhen Chen, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Xiaohe Hu, Group of Prof. Xue
+Speaker: Xiang Wang
+Recorder: 
+Presentation[edit]Background
+Two Technology Trends: Datacenters & Virtualization
+NVP: provides NV solution with full generality
+System Design
+Overview
+Control abstraction: logical datapath(pipeline, a sequence of lookup tables)
+Packet abstraction: same switching, routing, and filtering services
+Network Edge Support
+Open vSwitch: multiple logical datapath -> single OvS table with metadata match and resubmit action
+STT: matching mechanism is not a big problem, encapsulation is a significant overhead
+Forwarding State Computation
+Input and output are complex
+nlog separates logical specification from state transition
+Controller Cluster
+Tow-layer hierarchy: logical controller(logical datapath granularity), physical controller(transport node granularity)
+Hot standbys for availability
+Service distribution is built on top of zookeeper for leader election, label allocation and configuration storage
+Evaluation
+Controller Cluster: correctness, memory and cpu load
+Transport nodes: cpu load and throughput
+DiscussionQuestion[edit]刘值：预先计算的流表是否存在冗余？ 
+A：应该有进一步优化的空间，但是优化之后可能不太适应two-layer controller增量处理
+向阳：NVP是否真能达到真实网络的行为？是否有必要完全还原真实网络行为？
+A：不太清楚NVP目前能做到多大程度，完全还原可能不是非常必要（网络中有不少协议是面对日益复杂的网络环境而新增的，虚拟网络应用本身还达不到这样的复杂度）

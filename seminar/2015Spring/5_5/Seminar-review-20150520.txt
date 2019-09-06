@@ -1,0 +1,18 @@
+Overview[edit]Title:￼ RecMax: Exploiting Recommender Systems for Fun and Profit
+Source: KDD 2012
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Jun Yang, Yuanjun Yao, Dongyu Meng, Dongfang Li, Changsheng Zhang, Luoshi Zhang.
+Speaker: Feng Xie
+Recorder: Yiyang Shao
+Presentation[edit]Recommender SystemsRecMax – Recommendation Maximization
+Consider an item in a Recommender System
+RecMax – Problem FormulationBenefits of RecMax
+Targeted marketing in Recommender Systems
+Beneficial to seed users
+Helpful to other usersA key Challenge – Wide diversity of Recommender SystemsDoes Seeding Help? – Preliminary ExperimentsTheoretical Analysis of RecMax
+Key Theoretical Results
+Why is RecMax so hard?
+DiscussionExperimentsConclusions and Future WorkDiscussion[edit]Yiyang Shao: 作者评价seed用户的选择时，用的评价标准只有Hit score吗？
+Feng Xie: 是的，只用了Hit score，因为作者论证的就是如何通过seed的选择最大化推广Yibo Xue: 为什么Hit score的曲线会随着seed的规模而下降？
+Feng Xie: 因为Hit score的最大值等于总用户数减去seed数量，随着seed增加，Hit score的最大值下降了Jun Li: 如何在实际的系统中使用RecMax方法？被选为seed的用户为什么不一定会给出评分？
+Feng Xie: 作者提到可以通过给予seed用户促销、优惠的方式激励他们完成评分Yiyang Shao: 作者的实验数据集包含的物品类型都比较一致？如何将RecMax推广至淘宝等平台使用？
+Feng Xie: 对，如果要推广到这种商品类别繁多的平台，可能需要考虑到seed和物品的关系

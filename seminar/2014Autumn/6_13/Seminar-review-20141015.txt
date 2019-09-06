@@ -1,0 +1,26 @@
+Overview[edit]Title: SAX-PAC (Scalable And eXpressive PAcket Classification)
+Source: SIGCOMM 2014
+Attendee: Prof. Yibo Xue, Zhen Chen, Xiang Wang, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, YuanYuan Bao, Chengqi Yi, Wenxun Zheng, Jun Yang, Changsheng Zhang.
+Speaker: Xiang Wang
+Recorder: Xiaohe Hu
+Presentation[edit]Motivation
+scalable and expressive classifier
+number of rules and fields
+from prefix to arbitrary range
+state of the art PC
+breakthrough: order-independenceApproach
+order-independence
+impact
+theorem: field expansion and reduction 
+five problems:
+field subset minimization
+multi-group representation
+maximum rules coverage for fields
+maximum rules coverage for fields and groups
+maximum rules coverage for fields and ordered groupsAlgorithm
+exact: traversal binary search
+greedy: reducible to setcoverEvaluation
+comparison: MinDNF, classifiers as boolean expressionsDiscussion[edit]Chang: 为什么大部分规则是order-independence？
+Xiang: 文章对cisco和classbench规则集分析的结果。Yiyang: 文章并没有说怎么进行实际分类，主要在对规则集做处理？
+Xiang: 对，文章重点在讲如何对order-independence规则进行field维度的化简。Prof. Xue: 层次化思想：先解决order-independence，再处理order-dependence。对规则压缩提供了一种不同的思路。Zhe: 每个分组中化简后的field是否相同？
+Xiang: 相同，要一起存

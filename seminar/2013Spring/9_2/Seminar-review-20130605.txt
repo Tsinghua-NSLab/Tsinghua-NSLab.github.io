@@ -1,0 +1,20 @@
+Overview[edit]Title: Fast Hash Table Lookup Using Extended Bloom Filter: An Aid to Network Processing
+Source: SIGCOMM'05
+Attendee: Prof. Li, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Chang Chen, Jiaji Hu, Cheng Liu
+Speaker: Kai Wang
+Recorder: Xiang Wang
+Presentation[edit]Why hash?
+achieve O(1) memory access
+Hash methods:
+MD5/SHA-1
+perfect hash
+multiple hash functions
+This paper leverages bloom filter to avoid looking up the items in all buckets pointed to by the multiple hash functions.
+Naive Hash Table: simple one hash function
+Basic Fast Hash Table: multiple hash functions + refer counting
+Pruned Fast Hash Table: based on BFHT, only keep the copy associated with the minimum counter value
+List-balancing Optimization: artificially increse the refer counting which dose not result in other collisionsQuestion:
+Jun Li: 查找的内容大部分在数据结构中时多用Hash，大部分不在数据结构中是多用Bloom filter快速排除
+Xiang Wang: counting bloom filter是一种引用计数的思想，在资源的申请/释放过程中应用非常广泛
+Yiyang Shao: counting bloom filter在这里是一种非常规的用法？
+Xiang Wang: 这篇文章的主题侧重多Hash实现的优化，具体技术上与bloom filter类似

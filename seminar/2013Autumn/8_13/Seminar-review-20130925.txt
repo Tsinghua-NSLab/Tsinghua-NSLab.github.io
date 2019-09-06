@@ -1,0 +1,41 @@
+Overview[edit]Title: Simple-fying Middlebox Policy Enforcement Using SDN
+Source: SIGCOMM'13
+Attendee: Prof. Xue, Zhen Chen，Wenmao Liu, Yang Xiang, Kai Wang, Xiang Wang, Feng Xie, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Chang Chen, Zhe Fu, Xiaohe Hu, Group of Prof. Xue, Group of Zhen Chen
+Speaker: Xiang Wang
+Recorder: Kai Wang
+Presentation[edit]Background
+Middlebox introduction
+Middleboxes management is hard
+Number of Personals
+Misconfig/Overload
+SDN introduction
+Can SDN simplify middlebox management?
+Firewall->IDS->Proxy
+How does OpenFlow work?
+Our Work
+SIMPLE
+Challenge
+Policy Composition
+Resource Constraints
+Dynamic Modifications
+SIMPLE System Overview
+Composition
+Tunnel Compression
+Constraints
+Joint Optimization
+Slow Offline + Fast Online Steps
+ILP
+Evaluation
+System Benchmarks
+Load
+Overhead
+Scalability and Optimality
+Accuracy of DynHandler
+ConclusionQuestion[edit]Zhen Chen: Switch是不是需要先学好状态了才能跟controller通信？in-band模式
+Xiang Wang: 数据中心中实际是两张网
+Wenhao Liu：tag打在哪？多租户环境怎么办？
+Xiang Wang：打在vlan所在域，不是多租户环境
+
+Yang Xiang：如果认为策略是有一定序列过的，那这个交换机之间可以将tag扔掉，避免影响交换机之间链路上的其他设备
+Prof. Xue：带来的代价？
+Xiang Wang：会上也是有很多人challenge这个

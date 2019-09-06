@@ -1,0 +1,35 @@
+Overview[edit]Title: Chatty Tenants and the Cloud Network Sharing Problem
+Source: NSDI'13
+Attendee: Prof.Li, Prof.Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu
+Speaker: Feng Xie
+Recorder: Yang Gao
+Presentation[edit]Introduction
+How to share the network in multi-tenant datacenters?
+Requirements
+Minimum bandwidth guarantee
+Proportionality
+High utilization
+Methodology
+Hadrian
+Virtual network abstraction
+Hose-compliant bandwidth allocation
+Greedy heuristic that guarantees min bandwidth
+Evaluation
+Network sharing requirements
+Minimum bandwidth guarantee 
+Upper-bound proportionality
+High-utilization
+Benefits of Hadrian
+Metric: acceptance ratio
+Comparison with 
+Baseline: per flow sharing
+Existing approaches: Oktopus , FairCloud
+Conclusions
+Hadrian meets three network sharing requirements
+Hadrian delivers predictability and higher efficiency
+Question:
+Zhi Liu: worst case指的是？ Yang Gao：网络带宽使用饱和状态
+Prof Xue: 系统命名的意义？ Yiyang Shao:Hadrain是个人名？
+Xiang Wang: 主讲五篇文章包括资源分配和资源共享两个问题是否是同一问题？ Yang Gao:都属于网络共享
+Xiang Wang: 文章所提三个目标是否是大家都关心的？ Yang Gao: 最小带宽保障和最大利用率是所有算法需要达到的目标，Proportionality不同
+Prof. Li:带宽有最小和最大限制（QoS）

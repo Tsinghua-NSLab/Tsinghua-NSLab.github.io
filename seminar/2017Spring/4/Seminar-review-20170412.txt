@@ -1,0 +1,30 @@
+Overview[edit]Title:￼ Exploiting Order Independence for Scalable and Expressive Packet Classification
+Source: TON 2016
+Attendee: Professor Jun Li, Professer Yibo Xue, Zhi Liu, Jun Yang, Dongfang Li, Danyang Li, Shuo Wang, Shijie Sun, Hang Zhu, Linli Wan, Jiazheng Wang, Nan Zhou, Qing Lyu.
+Speaker: Qing Lyu
+Recorder: Dongfang Li
+Presentation[edit]Introduction to Packet Classification
+TCAM vs Software(SW)
+Introduction to Ranges 
+What is Order-independence and the denotation 
+Model Description & Denotation
+Defination of Order-independence
+Examples
+Binary Encoding vs SRGE
+Examples
+Problem formulation and theorem
+Tested classifiers introduction
+Fields Expansion Theorem 1 and examples
+Fields Reduction Theorem 2 and examples
+Fields Subset Minimization problem(FSM)
+Maximum Rules Coverage
+Examples
+Approximate Solutions 
+Exact Algorithm and Examples
+Classifier Configuration
+Simulations & Evaluation
+ConclusionDiscussion[edit]Zhi Liu: There are some problems with the transitively of order-dependent R1,R2 R2,R3Prof. Jun Li: Order-independence means no overlap, which is relatively rare in the practical application.
+Zhi Liu: There will be such situation in some cases, which makes the work meaningful.
+Prof. Jun Li:  The overlap leads to many problems in the practical applicaitons,if there is no overlap, many interesting things can be done.Prof. Yibo Xue: Is there any evalutaion about the work?
+Qing Lyu: No. Becuase only after the processing as shown in article, TCAM is used.Prof. Jun Li: If we just look at the results, the classification effect has been good enough.
+Zhi Liu: Maybe the dataset has been well-classified from the kmrc.Zhi Liu: The greedysetcover algorithm is not the best choose, it can be improved by Intelligent optimization.

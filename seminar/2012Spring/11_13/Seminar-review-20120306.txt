@@ -1,0 +1,12 @@
+Information[edit]Topic:
+Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center
+
+Attendee:
+Jun Li, Zhen Chen, Yibo Xue, Baohua Yang, Kai Wang, Feng Xie, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Lu Li, Xiaoqi Ren, Qing Xu, Jingjie Jiang
+Speaker: Xiang Wang & Zhenlong Yuan
+Recorder: Feng Xie
+Presentation[edit]Discussion:
+	李老师：framework里头仍然需要划分task，基本的unit还是task，疑问：为什么要kill掉长的task，是否会造成deadlock？
+      薛老师：allocation把所有资源给schedule是否会全部用完？王翔：只会选择一部分
+      保华：hadoop迭代时间不长，数据拉取、交互。共享消耗时间较多
+      王翔：尽量保证数据本地存储以减少开销

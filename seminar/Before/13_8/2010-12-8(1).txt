@@ -1,0 +1,12 @@
+Towards High-performance IPsec on Cavim OCTEON Platform[edit]Spearker: Jinli Meng
+Attendants: Prof. Li, Zhen Chen, Jin Zhou, Li Tang, Yaxuan Qi, Zhiming Zhang, Hui Zhang, Jian Du, Xinming Chen, Ying Guo, Feng Xie, Fan Xiang, Shuai Ding, Yang Gao, Yiyang Shao, Linyun Ruan, Fuye Han, Jeffrey Fong
+Recoder: Kai Wang
+Content:
+Background and the introduction of Cavium OCTEON
+State of work flowing
+IPsec
+Performance Envaluation
+Conclusion
+Future workDiscussion:
+Prof. Li: working flow (not work flowing), packet size figure should be bar (not line or dot), cannot "guess", more pictures or words (English is not native language)
+Yaxuan: Should be how to better utilize the platform, should explain run-to-completion and pipeline (not explain the concept of IPsec), the performance explanation

@@ -1,0 +1,61 @@
+Topic: Supercharging PlanetLab – A High Performance, Multi-Application, Overlay Network Platform
+Speaker: Yaxuan Qi
+Attendants: Prof. Li, Prof. Xue, Jin Zhou, Li Tang, Zhiming Zhang, Fei He, Baohua Yang, Guodong Li, Chunlu Yan, Guanglu Sun, Jian Du, Xinming Chen, Jeffrey Fong
+Recorder: Kai Wang
+Content:
+<1> Review of Overlay and Planetlab (Group of computers over the Internet)
+<2> Paper motivations
+Planetlab limitations
+Limited throughput
+High, unpredictable latency
+solution
+Better IO and processing performances
+Not too hard for users to take advantage of the modifications
+Current PlanetLab should run on the new nodes<3> Supercharging PlanetLab
+Macro-view
+ATCA-based system
+Hardware Component
+Architecture of a supercharged node
+NPE
+Intel IXP2800 NP
+Sharing the NP
+NP fast path
+GPE
+GPE improvements<4> Evaluation
+IPv4 & Internet Indirection Infrastructure (i3)
+Comparison between GPE and NPE
+IPv4 Throughput
+IPv4 Latency
+i3 Latency
+IPv4/i3 Fast-Path Throughput<5> Summary
+Base platform intended for overlay hosting service
+An SPP node removes performance limitations found in conventional PlanetLab nodes
+Standard fast-path/slow-path application structure eases deployment<6> Future work
+Discussion:
+1. 保华：为什么要多设计出一个GPE来？
+亚烜：
+2. 李老师：现有ATCA上已经有部署这些架构了吗？
+亚烜：
+3. 李老师：2850上的程序怎么控制？资源如何分配？别人如何去用？
+亚烜：
+4. 唐力：NPE上能否像windows/linux那样提供系统调用来构造一个开发环境？
+亚烜：
+何飞：中间件可以搭好，进出可以定义好，可以通过进程来改。
+亚烜：
+李老师：access还是很难控制的。
+亚烜：
+5. 保华：每个node都是一台PC吗？
+亚烜：
+6. 唐力：部署下来后，到底要做什么？
+李老师：利用这些平台可以做一些原来在其他平台上做不了的实验。
+7. 薛老师：他们还在做这些东西吗？
+亚烜：
+李老师：openroute在这么大的范围收集数据，不影响其他人的运营，还是很厉害的，想法很好。
+8. 志明：延时达到100ms或1000ms以上是什么个情况？
+亚烜：
+志明：10ms左右时为什么是曲线是平的？
+亚烜：
+9. 唐力：NP的处理能力能估计出可以达到多少吗？
+亚烜：
+10. 唐力：Planet的虚拟模式下，一天只能传2G，总会达到峰值，怎么解决这个上限问题？
+亚烜：

@@ -1,0 +1,16 @@
+Topic: Survival Analysis
+Speaker: Jian Du
+Attendants: Prof. Li, Zhen Chen, Ying Zhang, Yiyao Wu, Guodong Li, Baohua Yang, Fei He, Guangyu Zhu, Xiang Wang, Xinming Chen, Jin Zhou, Hui Zhang, Chunlu Yan, Lianghong Xu, Bing Wei, Yin Huai, Li Tang, Zhiming Zhang
+Recorder: Zhiming Zhang
+Focus of this paper: Distilling Superior Peers in Large-Scale P2P Streaming Systems
+The content of the paper
+讲解带有截尾数据的生存分析，以Baochun Li的一篇文章作为应用的例子。（“Distilling Superior Peers in Large-Scale P2P Streaming Systems”）
+可以借鉴的两点：
+		1. COX回归：不要求无记忆性，相对于指数回归来说具有一定的优势
+		2. Log-Rank方法：检验两个生存函数的相似度
+Baochun Li文章的目的：找出对系统贡献比较大的和在线时间比较长的节点
+贡献：通过预测公式，可以预测节点的贡献和在线时间
+预测公式的三个输入参数或关键参数：流的质量（初始缓冲时间），观看人数和加入网络的时间。
+Discussion: 
+Baochun Li文章的结论是什么？黄金时间加入的节点比较重要
+如何验证模型的正确性？800个频道取了4天的trace数据，用80个频道训练，剩余频道检验。

@@ -1,0 +1,32 @@
+Overview[edit]Title: Robust Feature Selection and Robust PCA for Internet Traffic Anomaly Detection
+Source: INFOCOM'12
+Attendee: Zhen Chen, Xiang Wang, Kai Wang, Feng Xie, Yang Gao, Zhi Liu, Yiyang Shao, Zhenlong Yuan, Chen Chen, Jiaji Hu, Cheng Liu, Chang Chen, Zhe Fu.
+Speaker: Yiyang Shao
+Recorder: Zhenlong Yuan
+Presentation[edit]Introduction
+Outlier Detection
+PCA
+Feature Selection
+Robust mutual information
+Automatic method to select features
+Results
+Objects and features
+Performance evaluation
+ConclusionsMain idea
+An outlier is a point very far from the majority of the data, projected into a proper space.
+Filter method
+Selects the most informative features to detect anomalies.
+Based on a measure of association between features and classes (anomalous or regular)
+We use Mutual InformationConclusions
+Feature selection is found to be an important preprocessing step, based on robust MI, which leads to better results
+The combination of robust feature selection and robust PCA outlier detection:
+Achieves very high performance
+Adaptive to different traffic conditions
+Robust statistics brings effective tools for anomaly detection
+Can be helpful in addressing other related network problemsQuestions
+Yang Gao：小的数据代表什么问题，提出几处小错误。
+Xiang Wang：正常流量和异常流量的比率是否存在影响？作者认为自己的标定只要正确，空间距离会是足够远的。
+Xiang Wang：出流量大还是入流量大？因为Nmap是扫描对方端口，所以应该出流量大。
+Xiang Wang：之前讲的几篇流量特征的文章，有没有说明过容易区分的特征？可能以前都没做过特别详细的特征选择和分析。
+Zhen Chen：数据集多大？2011年3月2日采集8个小时的流量。
+Zhen Chen：Snapshot怎么做的攻击？模拟FTP上传文件的攻击手段。

@@ -1,0 +1,32 @@
+Overview[edit]Title: Packet Scheduling for Deep Packet Inspection on Multi-Core Architectures
+Source: ANCS'10
+Attendee: Prof.Li, Prof.Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu, Cheng Liu
+Speaker: Zhi Liu
+Recorder: Xiang Wang
+Presentation[edit]Introduction
+Packet scheduling problem among multi-thread DPI
+Packet based scheduling
+round-robin
+Packets evenly distributed but cache inefficient
+Flow based scheduling
+Maintains a table of active flows, new flows assigned based on load
+Per-flow packet order maintained
+Fixed flow-thread affinity, flow table maybe largeDPI Packet Scheduler
+Ideal packet scheduler properties
+Load balancing: work evenly distributed across all threads
+Low scheduling overhead
+Per-flow ordering
+Cache affinity
+Minimal packet delay variation
+Evaluating three scheduling algorithms
+Direct hash
+Packet handoff
+Last flow bundleAlgorithms Comparison
+Direct Hash: well-known
+Packet Handoff: using thread for scheduling
+Last Flow Bundle: receive queue for buffering, bundle queue for order preservingQuestions
+Xue: Throughput, Latency在文中的定义与常识不符
+Xue: Direct Hash从dominant的throughput上看扩放行较好
+Jun: LFB的解决问题的思路与Fei He的Flow Slice的思路有相似之处
+Jun: Throughput的定义（到达丢包临界时的系统处理带宽），Latency定义（网包1st bit进系统与last bit出系统之间的时间差）
+Jun: input queue / output queue上的操作有不少文章可参考

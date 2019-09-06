@@ -1,0 +1,4 @@
+Title: Scalable Rule Management for Data Centers[edit]Zhi Liu: Device包括物理Server吗？ 包括。
+Kai Wang: 规则下发的先后顺序如何处理？在迁移之前，先去算。
+Kai Wang：亚烜在邮件中的问题，是否作者算错了还是其它原因？无结论。
+Prof.Xue: Overhead greedy和Benefit greedy区别是什么？机制不同导致流量开销上降低了。

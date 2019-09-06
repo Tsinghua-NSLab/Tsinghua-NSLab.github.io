@@ -1,0 +1,33 @@
+Overview[edit]Title: Tor: The Second-Generation Onion Router
+Source: SSYM'04
+Attendee: Prof. Li, Prof. Xue, Prof. Chen Baohua Yang, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu
+Speaker: Zhenlong Yuan
+Recorder: Feng Xie
+Presentation[edit]Tor: The Second-Generation Onion Router
+Outline
+Second Generation of Onion Routing
+Focus on deployability
+Perfect forward secrecy
+Separation of “protocol cleaning” from anonymity
+No mixing, padding or traffic shaping
+TCP Streams can share on circuit
+Leaky-pipe circuit topologyDesign Goals
+Deployability
+Usability
+Flexibility
+Simple DesignDesign
+Overlay network
+Onion routers route traffic
+Onion Proxy fetches directories and creates circuits on the network
+Uses TCP
+All data is sent in fixed size cellsDiscussion Questions
+In Tor, if your entry node and exit node are compromised, you are sunk. If this is the case, what is the point of circuits with more then 2 hops?
+One of the tensions for Tor (and other anonymity systems) is that they need a good user base to improve the system. However, the anonymity the offer isn’t great. How do you get people to use such a system?
+Questions
+Tor
+Prof. Xue: 匿名通信保护隐私，保持一定的匿名但要提高用户的体验减少延迟是tor的目标，目前，每天的用户几百万
+Prof. Li: Direction Server谁负责管理？
+Baohua Yang: 一直维持通道，负载很大？用户不再使用即取消
+Kyle Wang: 与目录服务器通信是否加密？
+Prof. Li: 不考虑tor的性能，跳数越多，匿名性能越好Tags
+Prof. Li: 连通性好检测准确性要高

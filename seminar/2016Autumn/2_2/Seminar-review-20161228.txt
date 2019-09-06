@@ -1,0 +1,15 @@
+Overview[edit]Title:￼ Big Data For Security: Challenges and techniques
+Source: NSFOCUS
+Attendee: Xing Zhang, Zhi Liu, Ju Xing, Danyang Li, Shuo Wang, Qing Lv, Dongfang Li, Jun Yang.
+Speaker: Dujuan Gu
+Recorder: Zhi Liu
+Presentation[edit]背景
+安全大数据中的“看见”与“洞见”
+威胁情报之“看见”
+威胁情报之“洞见”
+外部威胁情报之“甄”
+案例Discussion[edit]Ju Xing: It is possible to solve only some specific security problems using big data, and achieve high accuracy?
+Dujuan Gu: Current works are done in this way. Some works have reached pretty high accuracy in public dataset such as KDD dataset, but the problems in real cases are much harder.
+Zhi Liu: What is the work of security experts when they troubleshoot each problem?
+Dujuan Gu: It's always a empirical procedure, some assumptions are made, some tools are used to investigate the problems and make verifications.
+Dujuan Gu: And a lot of the procedures need to be automated, varieties of security-related utilities and abilities are required.

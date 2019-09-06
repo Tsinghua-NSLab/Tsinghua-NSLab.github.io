@@ -1,0 +1,47 @@
+Overview[edit]Title:￼ Queues Don’t Matter When You Can JUMP Them!
+Source: NSDI 2015
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Jun Yang, Wenxun Zheng, Yuanjun Yao, Dongyu Meng, Dongfang Li, Luoshi Zhang, Zhaoguo Wang.
+Speaker: Yiyang Shao
+Recorder: Zhe Fu
+Presentation[edit]Key Idea
+Network Interference
+Congestion from one application causes queuing that delays traffic from another applicationSolving network interference?
+Borrow some old ideas
+Packet by Packet Generalised Processor Sharing (PGPS)
+(Weighted) Fair Queuing (WFQ)
+Differentiated Service Classes (diff-serv)
+Parekh-Gallager Theorem
+Apply in a new context : DatacentersOpportunities & Constraints
+Datacenter Opportunities
+Static network
+Single admin domain
+Cooperation
+Deployability Constraints
+Unmodified applications
+Unmodified kernel code
+Commodity hardwareKey Idea
+Rate-Limiting
+If we can find a bound for servicing delay, we can rate- limit hosts so that they never experience queuing delay
+1. Network is idle
+2. Hosts send ≤ P bytes
+3. Wait(nxP/R)secs
+4. Goto 1Eliminating Synchronization
+network epoch = 2n ⨉ P / R
+Where
+n - number of hosts
+P - bytes sent
+R - edge speed
+2 - mesochronous compensationKey Idea
+Prioritization
+Use hardware priorities to run different QJump levels together, but isolated from each other.Conclusions
+QJump applies datacenter opportunities to simplify QoS rate calculations.
+It provides service levels ranging from guaranteed latency through to line-rate throughput
+It can be deployed using without modifications to applications, kernel code or hardware.Discussion[edit]Prof. Li: 作者的工作的主要创新点在哪儿？
+Yiyang Shao: 作者借鉴了一些已有的拥塞控制方法，融合解决了DC中的拥塞问题。
+Prof. Li: DC中实际流量会不会有拥塞？情况如何？例如PTPd和hadoop会同时运行吗？
+Yiyang Shao: 作者没有提及实际环境中具体拥塞情况。作者的实验环境是PTPd，memcached和hadoop都有的。
+Xiaohe Hu: 可能是一台物理主机上起了不同的VM，每一个VM跑不同的service。这样出口会经过一个switch。Zhe Fu: 其他在DC中做拥塞控制的方法有没有也用优先级这个概念的？
+Yiyang Shao: 传统的一些解决拥塞控制的方法中用到了，在DC中好像没有看到类似工作。Xiang Wang: PTPd的更新周期频率很高吗？是不是系统启动的时候同步一下就行？
+Yiyang Shao: 作者在文中没有提及。
+Jun Li: 在工业控制系统中对时钟同步要求很高，需要经常同步。Luoshi Zhang: 优先级的控制在何处实现？
+Yiyang Shao: 在host上控制应用的发包速率，因为用的是VLAN域，交换机能支持优先级。

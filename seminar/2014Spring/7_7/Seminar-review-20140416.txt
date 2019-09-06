@@ -1,0 +1,18 @@
+Overview[edit]Title: Split/Merge System Support for Elastic Execution in Virtual Middleboxes
+Source: NSDI 2013
+Attendee: Prof. Li, Zhen Chen, Xiang Wang, Kai Wang, Yihang Luo, Feng Xie, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen (陈昌), Xiaohe Hu, Xiwei Feng, Chang Chen (陈畅), Chen Chen, Group of Prof. Xue
+Speaker: Zhi Liu
+Recorder: Zhenlong Yuan
+Presentation[edit]Problem:Elastic Applications Need Elastic Middleboxes
+Hotspots Cannot be Alleviated Quickly
+Scaling Inefficiencies Lead to Poor UtilizationInsight:Flow State is Naturally Partitioned
+Enabling Elasticity in Virtual Middleboxes
+Understanding the State Inside a MiddleboxContribution:Split/Merge: A State-Centric Approach to ElasticityImplementation(FreeFlow):A VMM based runtime that provides Split/Merge abstraction to applications
+Developers modify application code to annotate flow state
+FreeFlow takes care of the restEvaluation:Eliminating hotspots during scale-out
+Fast and efficient scale-in
+Split/Merge Bro during a load burstDiscussion[edit]Xiang Wang: Coherency需要的什么数据？Zhi Liu：比如统计所有无效SYN包有多少个，全局范围内的，在这种状态下，是一个Coherency的状态。
+Jun Li: Ephemeral、Coherent、Partitionable分别怎么设计的？Zhi Liu:这篇文章前面主要是理论说明，后面包括实验确实没有涉及。
+Xiang Wang:FreeFlow共享存储不需要Image？Zhi Liu：对。
+Xiang Wang:突然Down掉了，会不会丢失？Jun Li：主要是看速度快慢。
+Wenmao Liu:Controller需要缓存机制？Zhi Liu: 对。Wenmao Liu：通用的做法不太好做。Jun Li：对。

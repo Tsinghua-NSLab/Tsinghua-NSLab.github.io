@@ -1,0 +1,13 @@
+Motivation:
+Group Recommendations: adapted to group of usersTwo approaches for generating recommendations:
+Creating the joint profileof a group of users
+Producing individual recommendationsOptimal Aggregation:
+Borda Count
+Least Misery
+Normalized Discounted Cumulative GainEvaluations:
+Aggregation method itself has not a big influence on the quality, except for random aggregation
+There is no clear winner and the best performing method depends on the group size and inner group similarityDiscussion:
+How to identify a group?
+The items recommended to the group are not selected by each of them in the group?
+The author concluded that when the individual recommendation for the user is not good, the group recommendation will improve the effectiveness.
+Why gourp outperformance to individual?

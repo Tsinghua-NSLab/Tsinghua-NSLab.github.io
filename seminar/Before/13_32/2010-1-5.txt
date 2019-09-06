@@ -1,0 +1,27 @@
+Topic: RouteBricks: Exploiting Parallelism To Scale Software Routers
+Speaker: Chao Wu
+Attendants: Prof. Li, Prof. Xue, Zhen Chen, Hui Zhang, Li Tang, Bo Xu, Jeffrey Fong, Fei He, Jian Du, Kai Wang, Guodong Li, Zhiming Zhang, Chunlu Yan, Baohua Yang, Xinming Chen
+Recorder: Li Tang 
+Content:
+<1> Goal: Building Routers
+Fast
+Programmable
+Today: Fast or Programmable<2> RouteBricks
+Can we build Tbps router out of commodity servers?
+Interconnect: valiant load balancing
+Server optimization
+book-keeping
+queue access
+Discussion:
+1. 李老师：文章是否讨论了成本问题？
+伍超：文章未考虑成本问题。
+2. 何飞：文章中采用的三种单独server的优化都已有他人完成，作者是否引用了他人工作？
+陈震：文中都有相应引用。
+3. 李老师：作者是否处理了乱序问题？
+伍超：在不同server间转发时会做乱序处理，会对性能做成明显影响。
+4. 伍超：作者通过实验和实现，给出了实际系统中造成性能瓶颈的模块。
+5. 李老师：batching的效果非常明显，而queue的优化却要依靠网卡对多队列的支持。
+6. 何飞：是否比较了是否batching对延时的影响？
+伍超：使用batching后延时增加约24微秒。
+7. 陈震：PCIE构成了整个微体系结构的性能瓶颈。
+8. 何飞：如果PCIE本身就是点到点，且server之间全连接，本身就相当于在server之间做了switch。

@@ -1,0 +1,30 @@
+Overview[edit]Title: Detecting Large-Scale System Problems by Mining Console Logs
+Source: ICML 2010
+Attendee: Prof. Yibo Xue, Zhen Chen, Yuanyuan Bao, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Zhenghui Lai, Jun Yang, Changsheng Zhang.
+Speaker: Zhe Fu
+Recorder: Yiyang Shao
+Presentation[edit]Introduction
+Background of console logs
+Anomaly Detection
+Related work
+ContributionsKey Insights
+Insight 1: Source code is the “schema” of logs
+Insight 2: Common log structures lead to useful features
+Insight 3: Message sequences are important in problem detection
+Insight 4: Logs contain strong patterns with lots of noiseMethodology
+Step 1: Log parsing
+Step 2: Feature creation
+Step 3: Machine learning
+Step 4: VisualizationEvaluation
+Dataset
+Parsing accuracy
+ScalabilityOnline Dectection
+Stage 1: Frequent pattern based filtering
+Stage 2: PCA anomaly detectionConclusionDiscussion[edit]Yiyang Shao: 每条日志可以有多个状态变量？不然0.2N的阈值太大了？
+Zhe Fu: 应该是有多个状态变量Yiyang Shao: message count vector是否有时间窗口的概念？
+Zhe Fu: 没有，一批数据每个identifier只产生一个vectorXiaohe Hu: identifiers的物理含义是什么？
+Zhe Fu: 类似于日志的标识符，程序产生的对象标识号Feng Xie: SVD和PCA的区别是什么？两者都求解最大的特征值
+Zhen Chen: 我理解SVD是分解矩阵，PCA寻找正交投影的方向
+Zhe Fu: 应该是这样，求解特征值之和的操作有所不同Yiyang Shao: 为什么PCA降维之后得到新维度还有原来的？
+Zhe Fu: 这里我觉得也有点问题，可能是指最接近原来的维度的新维度Yibo Xue: 作者只关注异常检测？后续有没有一些其他的工作？
+Zhe Fu: 对，作者只做了日志的异常检测。后续作者将工作扩展到了不完全依赖源码，可以根据二进制码获取日志模板

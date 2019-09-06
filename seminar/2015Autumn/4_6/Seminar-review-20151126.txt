@@ -1,0 +1,28 @@
+Overview[edit]Title: 大数据驱动的移动互联网性能管理
+Attendee: Dan Pei, Yibo Xue, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Luoshi Zhang, Chengqi Yi, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang.
+Speaker: Dan Pei.
+Recorder: Zhenlong Yuan.
+Presentation[edit]网络管理：基于互联网设备log数据的大数据分析
+Network management: blessed and doomed by big data
+Big data analytics: Engineering, Science and Domain KnowledgeSmoothApp：一个移动互联网性能管理的体系结构
+Enter deep and bring home
+Goals
+性能瓶颈
+异常检测
+故障定位
+根因分析
+优化建议若干案例
+WiFiSeer：72% machines 50% latency reduction
+WiFi Union：千万台无线路由协同共享无线频谱：80% latency reduction
+自动配置无线用户的TCP初始拥塞窗口：移动搜索首屏时间减少50%，百度应用实践（10多台机器，修改内核代码）
+自动挖掘根因分析所需关联规则BRCA：rule mining－> machine learning－> rica engine（temporal and spatial limitation, ranking model -> feed back（label tool）－> machine learning；
+Focus: A high search response time (SRT) analysis framework；Machine learning（Decision Trees）
+Cake：一个适合领域专家的机器学习实验平台。DIscussion[edit]Zhe Fu: 如果迁移用户的时候，tcp连接会断开？
+Dan Pei: 对，很好的问题，让他退出来还得授权，用户比较烦，android可以做，ios比较难做。android探测当黑屏时做。
+Zhi Liu: rules mining的规则指的是什么？
+Dan Pei: 是百度内部不同的实现模块（代码编程模块）
+Zhe Fu: 异常数据很难获取怎么办？
+Dan Pei: 没有什么特别好的办法，积累，边用边学是一条途径。
+Zhenlong Yuan: frequent mining 算法？rules mining后的machine learning输入的feature是？
+Dan Pei: 分布式fp－growth； support and confidence
+Many other questions.

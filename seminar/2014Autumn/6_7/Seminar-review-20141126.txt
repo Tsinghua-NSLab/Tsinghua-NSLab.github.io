@@ -1,0 +1,16 @@
+Overview[edit]Title: Bitmap Index Design Choices and Their Performance Implications
+Source: IDEAS'07
+Attendee: Prof. Jun Li, Zhen Chen, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Wenxun Zheng, Jun Yang, Dongfang Li, Zhenghui Lai, Changsheng Zhang.
+Speaker: Wenxun Zheng
+Recorder: Yiyang Shao
+Presentation[edit]Background
+What's a bitmapPurpose
+Investigate an efficient design on modern processorsMethodology
+By comparison between two PrototypesTwo Prototye Databases
+Fastbit
+RIDbitTheoretical Analysis
+Set Query BenchmarkExperimentsConclusionDiscussion[edit]Jun Li: 现在的列数据库中的位图索引方法是用的这篇文章的工作吗？
+Wenxun Zheng: 在一些商业数据库中有一些部署，但是位图索引的大部分方法还处于学术研究状态Zhen Chen: 现在学术界做位图索引的多吗？
+Wenxun Zheng: 除了本文的作者之外见到的不多，之前看到IBM公司提了一个优化位图索引的方法Yiyang Shao: Bitmap的最新研究围绕那些方向？
+Jun Li: 主要都是围绕如何压缩展开的
+Zhen Chen: 有一些研究新的编码方式的工作

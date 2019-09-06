@@ -1,0 +1,39 @@
+Overview[edit]Title: Unveiling Core Network-Wide Communication Patterns through Application Traffic Activity Graph Decomposition
+Source: SIGMETRICS'09
+Attendee: Prof. Li, Yaxuan Qi, Baohua Yang, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu
+Speaker: Yiyang Shao
+Recorder: Zhenlong Yuan
+Presentation[edit]Unveiling Core Network-Wide Communication Patterns through Application Traffic Activity Graph Decomposition
+Outline
+Application traffic activity graph (TAG)
+Decomposing application traffic activity graphs
+Interpretation of TAG subgraphs
+Temporal properties of TAG subgraphs
+Applications
+Summary and General remarksMethodology for network graph analysis
+Decompose the graph (extracting community structures or dense subgraphs)
+Interpretation and persistence of the subgraphs (identifying non-random substructures)
+Understanding the formation of network graphs and associated applicationsInterpreting HTTP bi-mesh structures
+Most star structures are due to popular servers or active clients
+We can explain more than 80% of the HTTP bi-meshes identified in one day
+Server correlation driven
+User interests drivenSummary and General Remarks
+Many network research questions can be formulated as “graph analysis” problem
+These graphs are mostly not random and have latent structures
+We propose a co-clustering (tri-Nonnegative matrix factorization) based method for decomposing such graphs and reveal the community structures (dense subgraphs).
+Obtained subgraphs are meaningful and persistent, which help understand the formation of complicated communication graphs
+We demonstrate various applications based on the decomposition results
+Questions
+Deep learning
+xiefeng:越到上层越形象？越抽象
+baohua：数学上怎么解释？来源神经网络人脑，最大的问题没有数学上的很好表达。
+fukun：人的视觉是九层。
+yuanzhenlong:低维表示高维是人类告诉神经网络要干的事情
+xuelaoshi：张老师对神经网路什么看法？带着一帮人转到这个方向上来。
+xuelaoshi:有没有像SVM一样能直接现在拿来用的算法？没有。
+yuanzhenlong:96.8 06年的文章公布了源码和源数据。
+TAGs
+xiefeng：DCC跟TAGs图的思路很像
+yiyang：非常像社交网络里的思想
+yuanzhenlong：TAGs用到布局算法了么？Gragh view 布局算法。
+xueyibo：对我们分析skype等很有用，到NetraMark下测试一下。

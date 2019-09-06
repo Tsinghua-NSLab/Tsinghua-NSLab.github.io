@@ -1,0 +1,31 @@
+Overview[edit]Title: SDX: A Software-Defined Internet Exchange
+Source: SIGCOMM'14
+Attendee: Prof. Jun Li, Zhen Chen, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Wenxun Zheng, Dongfang Li, Changsheng Zhang.
+Speaker: Xiang Wang
+Recorder: Yiyang Shao
+Presentation[edit]Motivation
+The Interdomain Ecosystem is Evolving ...
+SDN for Interdomain Routing
+Deploy SDN at Internet ExchangesBackground
+Conventional IXPs
+SDX = SDN + IXP
+SDX Opens Up New PossibilitiesDesign
+Inbound Traffic Engineering
+Building SDX is Challenging
+Programming abstractions
+Directly Program the SDX Switch
+Conflicting Policies
+Virtual Switch Abstraction
+Combining Participant's Policies
+Interoperation with BGP
+Requirement: Forwarding Only Along BGP Advertised Routes
+Solution: Policy Augmentation
+Scalability
+Reducing Data-Plane State
+Reducing Control-Plane ComputationSDX Testbed
+Mininet-based Testbeds
+Github repoSummaryDiscussion[edit]Jun Li: Inbound/Outbound Policy在文中指的是什么？
+Xiang Wang: 在本文工作中，Outbound Policy指的是连接AS的Fabric Switch交换端口上部署的策略，Inbound Policy指的是Fabric Switch内部交换端口上的策略YiyangShao: SDN在广域网中的应用还有哪些其他工作？
+Zhen Chen: Google之前提出的B4有些类似
+Jun Li: B4主要解决的还是数据中心之间的网络问题Zhen Chen: SDX之间如何互联？
+Jun Li: SDX外部应该还是靠BGP通信

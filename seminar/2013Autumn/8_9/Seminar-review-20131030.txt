@@ -1,0 +1,39 @@
+Overview[edit]Title: Scalable High-Performance Parallel Design for NIDS on Many-Core Processors
+Source: ANCS'13
+Attendee: Jun Li, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Xiaohe Hu, YuanYuan Bao, Chengqi Yi, Zhaoguo Wang, Wei Xia, Xiaoxian Chen, Jingchi Jiang.
+Speaker: Zhi Liu
+Recorder: Zhenlong Yuan
+Presentation[edit]Background
+Network Intrusion Detection Systems
+Signature based NIDS (de-facto standard)
+Deep Packet Inspection(DPI) is a *Component of NIDS
+Performance Challenges
+Due to increase in traffic and ruleset
+Limitations of Prior Art
+Two kinds of parallel models for NIDS
+Data parallelism and Function parallelismThis work
+Goal
+High-performance
+Flexible
+Scalable
+Inexpensive
+Two Schemes
+Hybrid parallel scheme
+Hybrid load balancing schemeEvaluation Platform
+TILERAGX36 processor
+Suricata (Open Source NIDS) implementation
+Snort Ruleset
+Synthetic traffic generator Conclusion
+Two parallel designs
+Hybrid parallel scheme
+Hybrid load balancing scheme
+NIDS Evaluation on TILERAGX 36
+High throughput per dollar costQuestion & Answer
+邵熠阳：每一个网包有一个独立的MSG结构体什么意思？
+刘值：当每一个网包来的时候，分配一个新的MSG给它。
+张洛什：为什么给一个网包一个MSG，能代表包的信息还是什么？
+刘值：标注包的处理状态，不断的更新网包的信息。
+王翔：Packet Descriptors会在capture之后变空么？
+刘值：不会，会一直存在。
+王翔：MSG Pool会有冲突和lock么？
+李老师：一对一的，没有冲突和lock。

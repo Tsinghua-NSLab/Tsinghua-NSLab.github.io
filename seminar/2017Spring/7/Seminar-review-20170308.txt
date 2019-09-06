@@ -1,0 +1,20 @@
+Overview[edit]Title:￼ ddNF: An Efficient Data Structure for Header Spaces
+Source: HVC'16
+Attendee: Professor Jun Li, Professer Yibo Xue, Ali, Zhi Liu, Jun Yang, Dongfang Li, Ju Xing, Danyang Li, Shuo Wang, Shijie Sun, Hang Zhu, Linli Wan, Jiazheng Wang, Nan Zhou.
+Speaker: Zhi Liu
+Recorder: Zhi Liu
+Presentation[edit] Introduction to Network Verification
+ Static Data-plane checking
+ TBV (Ternary Bit Vector)
+ Header Space Analysis
+ Atomic Predicates
+ Single table
+ Multiple table
+ ddNF
+ Overview
+ Insertion
+ Table Conversion
+ EvaluationDiscussion[edit]Ali: Can AP across the routers guarantee that the resulting spaces consist the whole space?
+Zhi: Yes, because the AP within each router is a way decomposition of the whole space.  Ali: When calculating the none-overlaping spaces of AP, should subtract the result of each previous AP or subtract the union of the previous original rules?
+Zhi: They are the same, and use either of them if fine.Prof. Jun Li: When a node in the ddNF represents empty space, should the node be removed?
+Zhi: Deleting the node do not break the ddNF graph, but will destroy the table rewriting since that TBV in the node need to be referred to.

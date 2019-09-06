@@ -1,0 +1,36 @@
+Topic: Field-Based Branch Prediction for Packet Processing Engines
+Speaker: Baohua Yang
+Attendants: Prof. Li, Prof. Xue, Zhen Chen, Ying Zhang, Hui Zhang, Li Tang, Bo Xu, Jeffrey Fong, Jian Du, Kai Wang, Guodong Li, Zhiming Zhang, Chunlu Yan, Xinming Chen, Guanglu Sun, Ying Guo
+Recorder: Li Tang 
+Content:
+<1> Background
+Trends within NP requirements
+Methods of scaling future NP performance
+Parallelisation
+Hardware offloading
+Micro-Architectural (ILP, Branch prediction, Cache)
+Branch prediction
+Deeper pipeline incurs higher penalty for each branch taken
+Two general prediction solutions
+Static prediction
+Dynamic prediction
+Simulation framework
+SimNP Network Processor Simulator<2> Branch operations in NP applications
+Payload tasks: easier to predict
+Header tasks: more difficult to predict<3> GShare prediction performance 
+<4> Field-based branch prediction
+Packet level information can be used to guide application flow (Conditional flow)<5> Conclusion
+Highly repetitive nature of NP applications should allow high prediction rates
+Dynamic predictors
+Good performance for payload applications
+Less efficient for header applicationsField-based scheme
+Allows packet level information to be utilized in branch prediction decision
+Capable of improving prediction to over 98% for applications such as IP forwarding, classification, queuing, fragmentation, etc.
+Can be scaled to meet various network line speeds
+Transparent to the programmer, retaining NP flexibilityDiscussion:
+1. 徐波：实验平台是什么？硬件还是软件？
+保华：基于SimNP仿真平台。
+2. 薛老师：对我们的启发意义主要体现在网包和网流体现出的各种特性。
+3. 李老师：如果把packet classification的规则集视作类似于指令，由于这些规则集数据具有很强的locality特性，因此可以更好的利用NP的cache。
+4. 李老师：Field-based 是怎样在算法中具体发挥作用的？
+保华：论文中未详细说明。

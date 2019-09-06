@@ -1,0 +1,21 @@
+Overview[edit]Title: Online Dating Recommender Systems:  The Split-complex Number Approach
+Source: RecSys2012 workshop
+Attendee: Prof. Li, Prof. Xue, Zhen Chen, Baohua Yang, Kai Wang, Yang Gao, Yiyang Shao, Zhe Fu, Chang Chen, Zhenlong Yuan, Jiaji Hu
+Speaker: Feng Xie
+Associated Speaker: Zhen Chen
+Recorder: Kai Wang
+Presentation[edit]Recommendation Scenarios
+AsymmetricFriend Recommendation
+Pure Friendship
+DatingDating RecommendationContributions
+A link prediction problemLink Prediction in Friend Recommendation
+Link Prediction
+Friends' friends are friends
+Only one relationship type
+All predicted edges are this typeEnmity RecommendationLink Prediction in Dating Recommendation
+Dating Recommendation Algorithm
+Algebraic Graph Theory
+An ExampleEvaluation
+Q & A
+Prof. Li: 三角关系描述太简单，不过预测结果说明这种三角关系还是可以反映真实的婚恋关系的。
+Baohua: 微博关系和婚恋关系相似，可以把中间经过的多少跳联系点作为权重。

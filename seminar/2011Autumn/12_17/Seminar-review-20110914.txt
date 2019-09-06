@@ -1,0 +1,34 @@
+Contents
+
+1 Information
+2 Presentation
+3 Discussion
+4 Appendix
+
+Information[edit]SMILER: Towards Practical Online Traffic Classification
+Attendee: Prof. Li, Zhen Chen, Yaxuan Qi, Feng Xie, Xiang Wang, Yiyang Shao, Yang Gao, Zhenlong Yuan
+Speaker: Baohua Yang
+Recorder: Kai Wang
+Presentation[edit]Background
+What is Traffic Classification?
+Why?
+Accuracy, Early Identification, Flexibility, Update Speed-targetMotivation
+Better accuracy
+Hybrid Scheme, packet disorder
+ArchitectureEvaluation
+Precision: TP/(TP+FP)
+Recall: TP/(TP+FN)
+Accuracy: (TP+TN)/(TP+TN+FP+FN)Discussion[edit]Prof. Li: 和Supper Learning的比较问题，为什么Flexibility上也是平庸的？
+Baohua: 没有已知的算法或架构能够给出这样一个Flexible的结合机制。Yaxuan: 按理说，监督的比半监督的好，但为什么这里是半监督的好？
+Prof. Li: 因为他这里是在已知监督样本的基础上加了非监督样本。
+Baohua: 少量带标签的样本，结合大量未带标签的样本。Zhenchen: 是否可以结合端口识别的方法进一步提高效率？
+Baohua: 可以很容易的配合其他方法。Yaxuan: 是不是非监督样本越多，精确性会变更好？
+Baohua: 会存在过学习的情况，精确性也可能会变差。Prof. Li: 预处理速度是不是要比super learning慢很多？而精确性上的提升不是太remarkable的。
+Baohua: 预处理可能比监督学习要慢一些，但实验证明在较大规模的训练集情况下，预处理时间非常短，说明这块并不是瓶颈。Zhenchen: 不同国家的编码格式对包长是否会有影响，是否会导致分类效果变化？
+Baohua: 是个以后设计中要考虑的问题。Prof. Li: 你只做了6种流量的分类，对于其他的流量为什么没有进一步的实验证明结果也是和这6种流量分类结果一样好？
+Baohua: 这6个流量比较常见，比较有说服力。Yiyang Shao: 半监督学习和监督、非监督的关系
+Baohua: 监督是所有训练样本都要带标签，非监督是进行聚类，半监督是同时利用带标签和不带标签的样本进行训练。Appendix[edit]协议识别综述by Yiyang Shao
+端口识别：（硬件防火墙）
+深度检测：（开源软件，NGFW）L7-filter
+语义分析：网包载荷长度，特征字符串，OpenDPI，panabit
+统计信息：机器学习，不同网络环境的影响

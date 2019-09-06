@@ -1,0 +1,44 @@
+Contents
+
+1 Overview
+2 Related Research
+3 Social Role-Aware Emotion Contagion in Image Social Networks
+4 Discussion
+
+Overview[edit]Title:￼ Social Role-Aware Emotion Contagion in Image Social Networks
+Source: AAAI'13
+Attendee: Prof. Yibo Xue. Zhi Liu, Ju Xing, Danyang Li, Shuo Wang, Qing Lv, Dongfang Li, Jun Yang.
+Speaker: Jun Yang
+Recorder: Zhi Liu
+Related Research[edit]Background
+Emotion Classification
+Sentiment Analysis
+Knowledge-based Techniques
+Statistical Methods
+Hybrid Approaches
+Emotion Contagion
+Epidemic Model; Linear Threshold Model; Independent Cascade Model
+Some research on Facebook and some conclusionsRelated Work
+Image Emotion Inference
+Social Roles Analysis
+Opinion Leader
+Structural Hole SpannerSocial Role-Aware Emotion Contagion in Image Social Networks[edit]Background
+Problem Definition
+Exploratory Analysis
+Correlation Analysis
+Role-Aware Correlation Analysis
+Proposed Model
+Historical post logs + Previous emotion + Image features + Friends’ emotions
+Experimental Results and Analysis
+Dataset
+Results
+ConclusionDiscussion[edit]Yibo Xue: Does this work consider the action/altitude of friend's image? 
+Jun Yang: No, currently this work only consider the patterns from the friends' image and the emotion when posting the image.
+Yibo Xue: So will the proposed model consider the transition between different emotions? 
+Jun Yang: The model only calculates the possibility that the user retains the previous emotion.
+Zhi Liu: How does the emotions be inferred from text-based methods? 
+Jun Yang: In Flickr, each image is posted with a set of tags. Those tags can be matched agains a set of "word bags" that reflect different emotions. And this work is based on the assumption that the results of text-based emotion analysis is correct.
+Qing Lv: In the algorithm comparison, how do other algorithms (SVM, LR, etc) detect the emotions?
+Jun Yang: Those methods only infer poster's emotion based on the pattern of the image
+Shuo Wang: What is the size of the data?
+Jun Yang: 2 million pictures, 1 million users

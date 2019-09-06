@@ -1,0 +1,25 @@
+Overview[edit]Title: Controllability of Complex Network 
+Source: Natrue 2011
+Attendee: Prof. Li, Zhen Chen, Kai Wang, Feng Xie, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Chang Chen, Zhe Fu, Xiaohe Hu, Xiwei Feng Group of Prof. Xue
+Speaker: Yuanyuan Bao
+Recorder: Feng Xie
+Presentation[edit]Definition
+Complex Network: A complex network is a graph with non-trival topological features
+Controllability: A dynamical system is controllable if, with a suitable choice of inputs, it can be driven from any initial state to any desired final state within finite time
+Driver Nodes: the set of nodes, if driven by different signals, can offer full control over the networkMotivation
+Whether some networks are easier to control than others?
+How network topology affect a system's controllability?Questions
+What is the minimum number of driver nodes (ND) of real-world networks?
+How to locate them efficiently?
+Which topological characteristics determine ND?
+How robust of network controllability?Results
+What is the minimum number of driver nodes (ND) of real-world networks? (maximum matching)
+How to locate them efficiently? (avoid hubs)
+Which topological characteristics determine ND? (degree distribution, P(kin,kout))
+How robust of network controllability? (degree)Conclusion
+Developed the tools to address controllability for arbitrary network topologies and sizes
+The key finding, that ND is determined mainly by the degree distribution
+Use the tools of statistical physics to predict ND from P(kin,kout) analytically, offering a general formalism with which to explore the impact of network topology on controllabilityQuestion[edit]Prof. Li: ER？随着幂指数越大，scale free越来越接近ER？
+Yuanyuan Bao: 完全随机的网络
+Yiyang Shao, Kai Wang: gama趋于无穷scale free与ER等同Zhaoguo Wang: 控制是什么？控制节点的多少与复杂性的关系？
+Yuanyuan Bao: 控制网络中的节点可以使得整个网络呈现出更好的状态（从一个状态到另一个状态Prof. Li）

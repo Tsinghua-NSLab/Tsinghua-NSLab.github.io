@@ -1,0 +1,15 @@
+Overview[edit]Title:￼ Introduction of Big Data Tools
+Attendee: Jun Li, Dujuan Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang, Shuo Wang, Shijie Sun, Hang Zhu, Linli Wan.
+Speaker: Jun Yang
+Recorder: Xiaohe Hu
+Presentation[edit] Big Data Framework of Big Data Systems
+ Distributed FS
+ MapReduce
+ In-Memory Processing
+ Stream Processing Database
+ NoSQL DB
+ ELK
+ Graph DB Large-Scale Machine learning VisualisationDiscussion[edit]Zhe Fu: Is there any cache strategy used in HDFS.
+ Jun Yang: Caching metadata in clients.Xiaohe: Is the programming model of MapReduce suitable for distributed processing or the system of MapReduce suitable for distributed processing?
+ Zhi: MapReduce can be used in single machine. There are other programming models, like Split/Merge.
+ Jun Yang: MapReduce performs well for data processing, but not well for complex computing tasks. Jun Li: Flash is eating the area of Disk and DRAM in the graph of data set size and query rate.

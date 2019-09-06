@@ -1,0 +1,36 @@
+Data Center TCP (DCTCP)[edit]Spearker: Feng Xie
+Attendants: Prof Li, Prof Xue, Jin Zhou, Zhen Chen, Li Tang, Zhiming Zhang, Fei He, Hui Zhang, Jian Du, Xinming Chen, Jinli Meng, Ying Guo, Jeffrey Fong, Fan Xiang, Lingyun Ruan
+Recoder: Kai Wang
+Content:
+Background
+Data Center Transport RequirementsReview
+TCP/ECN Control LoopData Center TCP Algorithm
+1. Two Key Ideas
+1)	React in proportion to the extent of congestion, not its presence.
+2)	Mark based on instantaneous queue length.
+2. Algorithm
+1)	Switch side: Mark packets when Queue Length > K
+2)	Sender side: Maintain running average of fraction of packets marked (alpha)
+3. Why it works
+1)	High Burst Tolerance
+2)	Low Latency
+3)	High Throughput
+4. Analysis
+How low can DCTCP maintain queues without loss of throughput?
+How do we set the DCTCP parameters?
+5. Evaluation
+1)	Implemented in Windows stack
+2)	Real hardware, 1Gbps and 10Gbps experiments
+3)	Numerous benchmarks
+6. Implementation
+1)	Low latency for short flows
+2)	High throughput for long flows
+3)	High burst tolerance for query flowsConclusion
+1. DCTCP satisfies all our requirements for Data Center packet transport.
+2. Features.Discussion:
+李老师：XCP为什么一直没有被实际采用？TCP是端到端的，由于客户端不在控制之中，所以XCP的思想不太可能；而ECN的话，两端都可以控制。
+薛老师：文章中提到的节点Buffer长度是固定的还是动态变化的？
+志明：实验环境中的路径上有多少router？是所有的router都用DCTCP吗？
+薛老师：实验环境是两级拓扑。
+志明：实际中有没有类似的工作有没有被采用的？
+李老师：对于一个Application Server，如果很多请求服务的流总是要去取数据库服务器的某个数据，那么当多个这样的流进来时，可以一起作为一个fat流访问，通过Fabric直接去存取，完全可以不用考虑TCP之类的协议，反而可以提高效率。

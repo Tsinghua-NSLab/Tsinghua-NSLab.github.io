@@ -1,0 +1,51 @@
+Overview[edit]Title: A Ternary Unification Framework for Optimizing TCAM-Based Packet Classification Systems
+Source: ANCS 2014
+Attendee: Prof. Jun Li, Zhen Chen, Xiang Wang, Feng Xie, Zhe Fu, Xiaohe Hu,  Jun Yang, Changsheng Zhang.
+Speaker: Chang Chen
+Recorder: Zhe Fu
+Presentation[edit]Introduction
+Background and Motivation:
+TCAM-based packet classification
+The well known range expansion problem exacerbates the problem of limited capacity TCAMs (source and destination port fields)
+Problem Statement
+TCAM Classifier Compression problem: given a classifier C, construct a minimum size TCAM classifier T that implements C
+Limitations of Prior Art
+List based algorithms 
+Tree based algorithms 
+Proposed Approach: TUF (Ternary Unification Framework)TUF Framework
+TUF takes a classifier as input and returns an optimized TCAM classifier as output
+The first step of TUF is to represent the classifier as a BDD, where every node has zero or two children and the decisions are in the leaves. 
+The second step of TUF converts the leaves of the BDD into instances of a ternary data structure (tries, nested tries, and TCAM classifiers.).
+The third step, the core of TUF, merges these ternary data structures to form ternary data structures that encode larger sections of the input space.
+Two decisions that define a specific TUF algorithm:
+(1) the ternary data structure to represent the intermediate classifiers
+(2) the procedure to combine intermediate classifiers
+TUF requires that the ternary data structure support two operations: 
+Singleton: converts a BDD leaf to a ternary data structure
+LRMerge: joins two ternary data structures A and B into one, A + B.
+Efficient Solution MergingPrefix Minimization Using Tries
+1-Dimensional Prefix Minimization
+Multi-Dimensional Prefix MinimizationTernary Minimization Using ACLs
+Merging TCAM classifiers without factoring out any commonalities can be done by prefixing all rules in the left input by 0 and those from the right input by 1 and concatenating them: A + B = 〈0A, 1B〉. As there is no overlap between the two groups of rules, The order of concatenation doesn’t matter.
+Factoring out commonalities:〈T1, x,B1〉 + 〈T2, x,B2〉 = 〈(T1 + T2), ∗x, (B1 + B2)〉Experimental Results
+TCAM Razor v.s. TCAM Razor with TUF Trie
+Ternary Razor and BitWeaving v.s. Ternary Razor and BitWeaving with TUF ACL
+For small classifiers, TUF-based Razor can be more than 1000 times faster than the original TCAM razor. 
+For larger classifiers, the speed difference is an average of twenty times faster, achieving the exact same level of compression in much less time.
+Discussion[edit]Zhe: 三个数据结构的关系？BDD如何生成TCAM合并？
+Chang: BDD是基础。
+Prof. Li: 规则是落在一个叶子节点还是多个？
+Chang/Xiang: 会落到多个。
+Prof. Li: 要思考作者是如何根据foreground和background想到一套算子的。这需要非常抽象的能力。物理意义具体是什么？也可能先有 merge的方式，后总结数学表达？这个研究思路，之前我觉得去掉没用的规则没有意义，但是08年之后往TCAM发展之后，去掉没有用的规则就变得有意义了。作者的工作和董群峰的工作抓住了工业界的问题，大量工作需要在TCAM上实现，这些工作价值就体现了。咱们对TCAM的关注不够，这个东西还是有价值的。Zhen: 为什么08年之后火了起来？
+Prof. Li: 可能还是带宽、速度的要求，只有TCAM能达到这个要求，其他不行。TCAM从硬件的方式一下子跨过软件算法复杂度的瓶颈。
+Zhen: TCAM会用多哪些规则最多？
+Xiang: ACL查找最多。
+Prof. Li: 阿里里面大量使用。
+Xiang: 因为阿里没有做网络虚拟化，隔离关系全靠ACL来做。Changsheng: 优化是如何做到的？是否会有不完备的情况？
+Chang: 的确会舍弃一些局部解，不能保证全局最优。Feng: 规则是有优先级的，做成trie之后如何保证优先级的？
+Chang: 最长前缀匹配。
+Prof. Li: 这是个问题，优先级顺序没有了。
+Chang: redundant会被去掉，BDD已经最优化了。
+Prof. Li: 作者早期的工作用了FDD。
+Chang: Classifier->BDD可能十分复杂。
+Xiang: Sigcomm有过解决方法。

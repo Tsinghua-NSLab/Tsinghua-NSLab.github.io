@@ -1,0 +1,38 @@
+题目：网络编码理论基础简介
+报告人： 张志明
+参会人： 李老师，薛老师，陈老师，周老师，亚烜，法超，徐波，李国栋，黄石海，魏冰，王翔，马旭，志明，张瑛，张辉，唐力，杨保华，何飞，杜建，吴亦尧，周燕
+记录人： 唐力
+内容：
+ Introduction：Routing vs Network Coding
+ Network Coding can Increase Throughput
+ Single Session
+   Unicast Case
+   Broadcast Case	
+ Network Coding Achieves Multicast Capacity
+ Linear Network Coding is Sufficient
+ Network Coding Minimizes Delay
+ Network Coding Minimizes Energy (per bit)
+ Application in Real Networks
+   Wireless Network
+   P2P Network
+ Making Network Coding Practical
+   Packetization
+   Buffering
+ Overhead vs Benefits
+ Network Coding for Internet and Wireless Applications
+ Summary
+   Network Coding Theory is rich
+     e.g. multi-session capacity is still an open problem
+   Network Coding is Practical
+     Packet Format
+     Buffering
+   Network Coding can Improve Performance
+     IP or wireless networks
+		
+讨论
+ 1.李老师：现实中的问题受Multi-session的理论基础局限性如何？
+   张志明：现实中难以达到上限，但仍能通过Network Coding获得收益。
+ 2.杨宝华：解码代价如何？
+   张志明：解码代价很低。
+ 3.杨宝华：最小流问题
+ 4.周晋：Multi-Session的问题如何详细解释？

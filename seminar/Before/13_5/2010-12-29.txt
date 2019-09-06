@@ -1,0 +1,17 @@
+Can the production network be the testbed?[edit]Spearker: Jinli Meng 
+Attendants: Prof. Li, Zhen Chen, Jin Zhou, Fei He, Yaxuan Qi, Zhiming Zhang, Hui Zhang, Xinming Chen, Kai Wang, Feng Xie, Fan Xiang, Shuai Ding, Yang Gao, Yiyang Shao, Linyun Ruan, Jeffrey Fong, Beipeng Mu
+Recoder: Xinming Chen
+Content:
+Problem:Realisticly evaluating new network services is hard
+Solution Overview: Network Slicing
+FlowVisor Implemented on OpenFlow
+Isolation is critical for slicing
+Flow Space Isolation
+Topology Isolation
+Device CPU Isolation
+Generating new flow messages
+Handling requests from controller
+Bandwidth Isolation
+Flow Entry IsolationDiscussion:
+FlowVisor是一台单独的机器还是分散到各个switch上？如果做在单独的机器上，则在switch看来它就是controller。
+从switch来看，FlowVisor的虚拟化是否可以部分distribute到switch之上？做switch之上的control plane的虚拟化，这样可以利用已有技术（vmware）解决cpu分配问题（远程insert rule来解决，无法避免cpu的spikes）

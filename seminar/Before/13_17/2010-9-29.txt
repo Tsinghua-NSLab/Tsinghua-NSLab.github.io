@@ -1,0 +1,27 @@
+Scalable Flow-Based Networking with DIFANE[edit]Spearker: Kyle Wang
+Attendants: Prof. Xue, Zhen Chen, Li Tang, Zhiming Zhang, Jeffery Fong, Kai Wang, Fei He, Xinming Chen, Jian Du, Feng Xie, Fan Xiang, Ying Guo
+Recoder: Feng Xie
+Content:
+Regular Expression (RE) Matching 
+The RE matching problem is to detect all instances when a subsequence belongs to the language for an RE.Applications
+Content distribution
+Security applicationChallenge in applications
+Data arrives at very high rates
+Number of RE patterns can be very largeBasic Techniques
+DFA
+NFARE Matching System Architecture
+Grouping REs
+Static Components
+Run-time ComponentsExperimental Study
+Data sets A subset of around 250 snort rules where some had wild-cards with length restriction up to 512, and the remainder had unrestricted length wild-card terms.
+Implementation details all REs in a single group, lazily build DFA states at runtime. t=30αd, x=2, ε=1/2, αc=1000, LRU cache. dual-core, 2.2GHz Pentium 4, 1GB RAM, Ubuntu7.04
+Conclusion
+A novel agglomerative clustering technique which optimizes the trade-offs among overall DFA size and processing costto combine the space efficiency of NFA and the processing efficiency of DFA
+Concept of DFA samplesto estimate the processing cost
+Efficient techniques for extracting high frequency and densely connected DFA portions to be stored in a staticto reduce the processing burden
+A dynamic caching strategy that maintains dense connectivity among DFA states
+Outperform a state-of-the-art Network Intrusion Detection SystemDiscussion:
+何飞：怎么测Throughput？
+薛老师：这篇文章算法很难懂，用到了很多数学知识，可能是搞数学理论的人写的。对于长流需要匹配很多次，匹配是否需要分成很多次计算？
+张志明：flow和session的区别，何飞：flow表示的流要广些，如有相同源地址的packet组成flow；session表示的双方对话产生数据流。
+唐力：征求学术活动改进意见，希望以后学术活动报告人能够不光讲自己领域的内容，这样没法调动大家讨论的积极性。在讲解时应该注意听众的背景，从不同层面和不同粒度准备讲解的材料，尽量使每个同学都能听懂一部分，有所收获。

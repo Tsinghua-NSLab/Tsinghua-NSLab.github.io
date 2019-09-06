@@ -1,0 +1,44 @@
+Topology Affects the Efficiency of Network Coding in Peer-to-Peer Networks
+Speaker: Zhiming Zhang
+Attendants: Prof. Li, Jin Zhou, Zhen Chen, Yaxuan Qi, Li Tang, Zhiming Zhang, Jeffery Fong, Kai Wang, Fei He, Jinli Meng, Xinming Chen, Feng Xie, Fan Xiang, Ying Guo
+Recoder: Ying Guo
+Content:
+Introduction
+	Applications: P2P/wireless, the intermediate nodes are under control
+	advantages:
+		Achieve better network throughput
+		Offer better scalability and superb resilience to peer failures
+		Shorten downloading times 
+	the backwards put up by the article: linearly dependent blocks
+Linear Network Coding
+	coefficients in the Galois Field: influence independence
+	density
+	aggressiveness 
+The problem of linearly Dependent blocks
+	example with a small topology, with random topologies: all have linearly dependent blocks.
+Topology effects on the efficiency of network coding
+	three key performances: redundancy, distribution time, server cost
+	two key variables: randomness and network sparsity
+	small world topologies: p=0, completely regular graph; p=1, random graph
+	conclusions from the analysis of impact of randomness and sparsity
+		sharing many neighbors leads to high redundancy
+		long paths result in long distribution time
+		too few neighbors leads to high redundancy
+		global connectivity does not have the most significant impact on network coding redundancy, but the local connectivity ( peer degree)
+		the best d=6
+Conclusion
+	the P2P topologies offering the best overall performance are small-world topologies with low rewiring probability (around p = 0.1) with peer degree of six.
+	Small-world networks with low rewiring probability p exhibit significantly lower server cost than corresponding networks with more randomness
+Discussion
+周晋老师：PPT 15页中，研究Server cost的最下面的图表，server cost有一段是增加的，文章并没有对这种情况加以解释。
+李军老师：这篇文章结论的意义：the best degree d=6. 为什么是6个？六度分割理论， 
+亓亚烜：小世界模型和P2P模型的关系？这篇文章用这个模型的意义？
+周晋老师：小世界模型在研究中经常使用
+张志明：之前介绍的文章中，出于比较有无网络编码性能的不同，研究的拓扑有：
+完全图，随机图，局部聚集图，随时间变化图。说明拓扑可以更换，这篇文章构建的拓扑环境没有太大意义。
+亓亚烜：网络编码理论有无真实的应用背景？
+张志明：在P2P应用中，Baochun Li从理论到系统实现，都做得很多，例如网络编码在UUSee中的应用。在无线应用中，可以减小传输时延，节省能耗。但是目前网络编码炒得很热，但是真正应用不多，缺点是计算量比较复杂，消耗CPU资源。
+其它讨论结论：
+在本身可以达到最大容量的情况下，网络编码没有什么意义，针对无法达到最大容量的情况下，网络编码才有意义。
+多路传输上的网络编码：有线，TCP；无线，也有人在做。
+网络编码还要考虑代价与收益的关系，即使代价很容易测定，但是由于网络在不断动态变化，收益很难测控，无法评价网络编码的性能结果。

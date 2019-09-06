@@ -1,0 +1,40 @@
+Overview[edit]Title:￼ Offline Downloading in China: A Comparative Study.
+Source: ACM IMC 2015
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Chengqi Yi, Luoshi Zhang, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Jun Yang, Dongfang Li.
+Speaker: Dongfang Li
+Recorder: Zhenlong Yuan
+Presentation[edit]Background
+Internet Access across the World
+Pains of the Developing World
+The Case of Modern China
+Low access bandwidth
+Unstable/unreliable connection
+ISP barrier
+Other reasons
+Typical Implementation
+Cloud-based
+Smart AP-based
+Great Success in IndustryProblem
+Is offline downloading really effective in most cases?
+Which offline downloading approach should be selected?
+When is offline downloading useless or even worse?
+General Problem: Selection DilemmaSystem
+Xuanfeng Cloud
+Smart APsWorkload
+Xuanfeng Dataset
+File Type, Size & Transfer Protocol
+File Popularity
+Smart APs: BenchmarkPerformance
+Xuanfeng
+Pre-downloading Speed and Fetching Speed
+Unsatisfactory Fetching Speed
+Shortage of Cloud Bandwidth
+Pre-downloading Failure
+Smart APs
+Pre-downloading Failure
+Pre-downloading Speed
+Performance SummaryOptimization
+ODR Middleware
+ODR Web Site
+ODR Design & Performance
+SummaryDiscussion[edit]

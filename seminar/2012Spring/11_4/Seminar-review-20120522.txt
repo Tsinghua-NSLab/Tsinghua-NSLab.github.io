@@ -1,0 +1,37 @@
+Information[edit]Topic: 1) Prospex: Tunnel Hunter: Detecting Application-Layer Tunnels with Statistical Fingerprinting 
+Attendee: Jun Li, Yibo Xue, Yaxuan Qi, Baohua Yang, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Xiaoqi Ren, Lu Li, Qing Xu, Yang Wu, Jingjie Jiang
+Speaker: Zhenlong Yuan
+Recorder: Zhi Liu
+Presentation[edit]Motivation:
+Several techniques tunnels one application-layer protocol into another one.
+encapsulate all outgoing traffic into semantically valid HTTP requests
+tunnel TCP traffic through an SSH connection by means of cryptography.
+tunnel non-legitimate traffic through the network boundary.Key Ideas:
+Characterizing legitimate uses of a given application-layer protocol.
+The information carried by packets at the network layer, such as packet-size and inter-arrival time between consecutive packets, are enough to infer the nature of the application protocol.Contributions:
+The formalization of a statistical model, based on established pattern recognition approaches, that can be used to characterize application-layer protocols.
+The definition of a simple classification algorithm that can discriminate when an application protocol, characterized with the technique mentioned above, is being used to tunnel another protocol on top of it.
+The report on a series of experiments carried out on a real network that prove the effectiveness of the technique we propose here.
+The analysis of how adding knowledge to the classifier, even when not directly related to the classification target, can significantly improve the accuracy of the tunnel detector.Stages in Pattern Recognition:
+Data collection.
+Feature selection or feature extraction.
+Definition of patterns and classes.
+Definition and application of the discrimination procedure.
+Assessment and interpretation of results.Measurement of Features:
+The packet size s and the inter-arrival time Δt between two consecutive packets.Class Model:
+One class classifier
+requires to train the classifier only with flows from a single legitimate class.
+Multi-class classifier
+new classes composed of outlier flows are added to the analysis.
+Prospex can automatically infer protocol
+Parzen method
+filter the density estimations matrices using either a Gaussian or a hyperbolic secant kernel.
+each one defined in a N (s) · N (Δ t) domain.Potential Attacks:
+Opens a tunnel over SSH and initially uses it for remote administration. After this allowed stage, he starts exploiting the session to tunnel other kinds of application protocol.
+It is sensitive to packet-size and timing value manipulation.Discussion:
+Yibo Xue：实际问题中出现的很多问题这篇文章没有提到
+Yaxuan Qi：高维空间中少样本的模式识别
+Baohua Yang：关于解密的问题
+Jun Li：在tunnel中去识别非法流量是非常困难的
+Xiang Wang：可以作为前端的处理，后续加深度检测的设备
+Jun Li：实际工程实践的时候，没有办法加检测同时维持流的正常转发

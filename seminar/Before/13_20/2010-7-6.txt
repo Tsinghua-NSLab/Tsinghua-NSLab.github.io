@@ -1,0 +1,24 @@
+Hash Based Data Structure and Functions,Bloom Filters and further[edit]Spearker: Zhen Chen
+Attendants: Prof. Li, Prof. Xue, Jin Zhou, Li Tang, Hui Zhang, Zhiming Zhang, Jeffrey Fong, Jian Du, Kai Wang, Jinli Meng, Baohua Yang, Bo Xu, Wei Shi
+Recoder: Xinming Chen
+Content:
+Hash Functions
+Hash for key, quick search
+Hash for BalancingYet Another Hash: CryptoHash
+Universal Hash Families
+Applications:Power of Two Choices
+Hashing n items to n buckets
+load balancing in high-speed router and switchLinear Probing
+Hash elements into an arrayCuckoo Hashing
+Multiple-choice Hashing yields tables
+FailuresHash Trie
+Bloom Filter
+False Positive ProbilityBloomier Filter
+ACSM
+Discussion:
+李老师：写论文时可以参考别的文献中的数据计算后对比自己的结果，不一定要自己都实现
+志明：Hash函数能不能控制映射后的值的分布，使其不均匀，用以处理输入不均匀的情况。
+李老师：如果知道输入分布，就可以直接设计一个Hash算法使其均匀
+
+李老师：venus分流经常要用到Hash，用途广泛，基本要掌握的东西。
+CRC可以用作Hash，可以用硬件。如果要反运算则不能冲突，需要m=n。

@@ -1,0 +1,52 @@
+Topic: Variable-Stride Multi-Pattern Matching For Scalable Deep Packet Inspection
+Speaker: Fei He
+Attendants: Prof. Li, Prof. Xue, Zhen Chen, Fachao Deng, Ying Zhang, Yiyao Wu, Guodong Li, Baohua Yang, Fei He, Guangyu Zhu, Xiang Wang, Xinming Chen, Kai Wang, Jin Zhou, Hui Zhang, Chunlu Yan, Lianghong Xu, Bing Wei, Yin Huai, Li Tang
+Recorder: Baohua Yang
+Focus of this paper
+<1>Fixed String Pattern Matching
+<2>Why important?
+Key component of signature-based DPI system
+The basis for advanced inspection
+Performance bottleneck<3>Requirement
+High speed, real time in-line processing
+Low memory storage and bandwidth consumption
+Low false positive rate and low miss rate
+Resilient to the worst case scenariosThe content of the paper
+<1>Classical Algorithm: AC
+Too many state transitions even for such a small set<2>Increasing Throughput Through Parallelism
+Goal: Improving throughput without exploding the memory <3>Some solutions
+A Naive realization of multi-byte pattern matching
+Input alignment problem. 
+Still one character per lookup, but speedup can be achieved by Combining all possible offsets into one state machine
+leading to memory explosion<4>Key Idea of Variable Stride DFA
+Using words as atomic units separated by space and punctuation
+Identifying Atomic Units using Winnowing 
+Segmenting Strings to Blocks using Winnowing<5>Building and pattern matching with VS-DFA
+Using TCAM to Handle Short Patterns
+Defending Against the Single-byte blocks<6>Evaluation Pattern Sets & Memory Efficiency
+Larger w or k results in smaller memory
+Larger w or k results in larger TCAM
+Larger w results in higher throughput<7>Conclusion & Future Work
+Multi-pattern matching is a key building block of a DPI system
+VS-DFA can process multiple bytes per step with small memory size and memory bandwidth consumption 
+A single VS-DFA search engine can support 10Gbps+ throughput
+Future Work
+Find other segmentation algorithms instead of Winnowing that are more suitable for our application
+Use larger stride for higher throughput without incurring the short pattern penalty
+Extend the algorithm to support regular expression matchingDiscussion:
+1.	周晋：K越大了为何内存需求越小呢？
+	何飞：K是跟hash值有关的参数；输入流也被切分，中间的切分跟串切分是一致的，但是头尾要特殊匹配。小的用TCAM来做。
+2.	周晋：这个算法提高了throughput，代价是？
+	何飞：代价是小的串没法做。throughput是通过pipeline等来提高。
+3.	李老师：为什么这样hash就一定能把中间弄出来？这个有没有什么证明？后面状态爆炸的很厉害。
+	何飞：串和文本的组合是一致的。winnowing跟naive比，主要解决了alignment的问题。
+4.	陈震：解释下论文中的图4
+	何飞：开头和结尾跟上下文有关，特殊拿出来做，中间的部分无关。用中间的部分编了一个DFA，匹配后再匹配头和尾。
+5.	薛老师：如果冲突的多了会否有问题？
+	何飞：多了会比较麻烦
+6.	李老师：实际上是一种编码方式，可能有更好的技术，通信中的技术可以借鉴进来。
+7.	陈震：为何要跟TCAM结合？
+	何飞：实际上是因为它很难处理短pattern
+8.	李老师：有没有跟其他工作的结果比较？
+	何飞：只有一个数据可以比较，在硬件上性能上未必会提高很多。
+9.	其他讨论等

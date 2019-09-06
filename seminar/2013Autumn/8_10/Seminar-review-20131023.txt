@@ -1,0 +1,37 @@
+Overview[edit]Title: A Provider-side View of Web Search Response Time
+Source: SIGCOMM'13
+Attendee: Zhen Chen, Kai Wang, Xiang Wang, Yiyang Shao, Zhi Liu, Zhe Fu, Chang Chen, Xiaohe Hu, Chengqi Yi, Zhaoguo Wang, Wei Xia, Xiaoxian Chen, Jingchi Jiang.
+Speaker: Yiyang Shao
+Recorder: Xiang Wang
+Presentation[edit]Background
+Web service latency is critical to service providers as well
+Observation: Search Response Time (SRT) is lower at peak timeThis work
+Explaining systemic SRT variation
+Identify SRT anomalies
+Root cause localizationImpact Factors of SRT
+server, network, browser, query
+Primary factors: network characteristics, browser speed, query type
+Server side processing time has a relatively small impact
+Variation in network characteristics
+Residential networks send a higher fraction of queries during off peak hours than peak hours
+Residential networks are slower
+Variation in query type
+Server processing time
+Richness of response page
+Summarizing systemic SRT variation
+Server: Little impact
+Network: Poorer during off peak hours
+Query: Richer during off peak hours
+Browser: Faster during off peak hoursImplications
+Performance monitoring
+Should understand performance equivalent classes
+Performance management
+Should consider the impact of network, browser, and query
+Performance debugging
+End to end measures are tainted by user behavior changesQuestion & Answer
+陈老师：浏览器缓存、DNS影响文章中没有仔细考虑，这样得到的结论是否成立？
+熠阳：搜索的页面做缓存情况与内容都比较少；SRT不包括DNS的请求应答
+向阳：故障包括？
+熠阳：客户端、服务端、网络传输三种类型
+兆国：高峰时间？如何判定？
+熠阳：上班时间，根据CDN接入带宽判定高峰；采集的数据是美国境内的Client&Server

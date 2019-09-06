@@ -1,0 +1,29 @@
+Overview[edit]Title:￼ Embark: Securely Outsourcing Middleboxes to the Cloud
+Source: NSDI 2016
+Attendee: Dujuan Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang, Shuo Wang, Shijie Sun, Hang Zhu.
+Speaker: Zhi Liu
+Recorder: Xiaohe Hu
+Presentation[edit]Preliminary
+Middlebox
+Packet ClassificationBackground
+Middlebox Outsourcing
+Unencrypted Packet Header
+Contribution: PrefixMatchService Model
+Initialisation
+Packet Flow
+Service Model
+Encrypted Packet FormatPerfix Match
+EncryptRanges
+Construct Interval mapping
+EncryptValue
+Use pseudorandom function
+Use IPv6 to avoid collisions
+Pseudorandom function seeded by 5-tupleEvaluationConclusionDiscussion[edit]Xiaohe: Why upload encrypted payload to cloud?
+Zhi: Otherwise enterprise gateway need to cache all the packets uploaded to the cloud.Jiaqi: How to deal with large prefix?
+Zhi: mapping is from range to range.
+Yiyang: IPv6 length is long enough.Dujuan: What happens if two rules with port 8080 and port 1234 mapped to one interval?
+Zhi: Collision is in one interval.Shijie: How to deal with the condition that ruleset has large amounts of IPv6?
+Yiyang: The mapped IPv6 field is like a private protocol. We can enlarge this field further.
+Zhi: MBs should be enable to process IPv6.Xiaohe: The throughput is measured for Gateways or MBs of cloud?
+Zhi: For Gateways, to measure encryption overhead.Zhe: keywords only for string match?
+Zhi: In BlindBox the regex need to be decrypted first.

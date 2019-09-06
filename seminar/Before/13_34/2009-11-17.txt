@@ -1,0 +1,23 @@
+Topic: Some Thoughts on Cloud Storage Security based on Tahoe-LAFS
+Speaker: Li Tang
+Attendants: Prof. Li, Prof. Xue, Jin Zhou, Guodong Li, Kai Wang, Jian Du, Zhiming Zhang, Chunlu Yan, Jeffrey Fong, Hui Zhang, Bo Xu, Fei He, Feng Xie, Jing Zhang
+Recorder: Zhiming Zhang
+Content:
+一、背景：
+急速增长的个人数据量 + 个人存储设备容量的增长率限制 --> 云存储，即大量数据存储在网络存储公司提供的服务器上。
+由此带来的安全问题：
+大量用户使用同一物理介质；
+数据存取的自由性和可靠性。相关概念：云存储 vs. 云计算：  云计算涵盖的范围更广，云存储主要关注数据的可靠性和安全性。
+
+二、数据分类：
+公共数据，如热门电影等；
+自己精心收藏的数据，如客人喜欢的电影，爱好资料；
+涉及自己隐私和私密的数据；
+三、问题
+云存储类似于将钱存在银行，由于涉及隐私和私密数据，现在人们对云存储还没有足够的认可，不像人们认可银行那样将钱存在银行。
+传统网络存储 vs. 云存储：不同点是提供存储服务的服务器的差异，传统上是一个或一些固定的服务器，云存储的服务器不固定，地理位置也不确定，对用户是透明的。
+四、Tahoe系统介绍
+失去了物理控制。
+安全性高度依赖服务提供者。
+Tahos解决方案：解决如果数据的拥有者（Owner）和持有者（Holder）不信任时的问题：通过加密解决
+UTahoe提供的安全性服务：提供了私密性和完整性，但不提供隐私性和匿名性。

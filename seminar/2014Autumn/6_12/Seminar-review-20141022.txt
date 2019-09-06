@@ -1,0 +1,52 @@
+Overview[edit]Title: OpenNF: Enabling Innovation in Network Function Control
+Source: SIGCOMM 2014
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Zhen Chen, Xiang Wang, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, YuanYuan Bao, Chengqi Yi, Wenxun Zheng, Changsheng Zhang.
+Speaker: Xiaohe Hu
+Recorder: Chang Chen
+Presentation[edit]Motivation and requirements
+NF trends:
+NFV -> dynamically allocate NF instances
+SDN -> dynamically reroute flows
+SDN+NFV -> dynamically reallocating of packet processing
+NF deployment goals: 
+1. Satisfy performance SLA
+2. Minimize operating costs
+3. Accurately monitor traffic
+Problem:
+NFV+SDN is insufficient
+SLAs + cost + accuracy: a control plane architecture
+Quickly move, copy, or share internal NF state alongside updates to network forwarding state
+Guarantees: loss-free, order-preservingRelated work and challenges
+Related work: Virtual machine replication, Split/Merge
+Challenges:
+1. Supporting many NFs with minimal changes
+2. Dealing with race conditions
+3. Bounding overheadOpenNF architecture
+Overview: NF state manager & Flow manager
+NF state taxonomy: per-flow state, multiflow state, all-flows state
+NF API: export/import state, observe/prevent updates using events
+Control operations:
+move: use events for loss-free & order-preserving move
+copy: no or eventual consistency
+share: strong or strict consistency
+SLAs + cost + accuracy
+1. Dealing with diversity: export/import state based on its association with flows
+2. Dealing with race conditions: events + lock-step forwarding updates
+Implementation
+Controller, Communication library, Modified NFsEvaluation
+Bro IDS processing 10K pkts/sec
+SLAs: 260ms to move (loss-free)
+Accuracy: same log entries as using one IDS
+Cost: scale down after state is moved
+state export/import
+operations: efficient, but guarantees come at a costDiscussion[edit]Prof. Li: "why NFV+SDN falls short"，没搬对才有accuracy问题。
+Prof. Li: control operations前后不太consistent。
+Prof. Li: order-preserving move，controller可以让switch buffer住（坚决不在switch上做buffer？）。做法很多，或许有更合适的：本文仅比的是有packet loss和没loss，有order-preserving和无order-preserving。
+Prof. Li: 北向state operation定义的有意思。
+Prof. Li：move time时间过长？（数百毫秒）
+Prof. Xue：搬状态，状态要buffer，具体如何做，在哪做？
+xiaohe：本文对switch模型得很简单。
+yiyang: putflow/getflow中，iptables和bro的时间差是为什么？
+Prof. Li: 数据结构复杂性的原因（一个session table vs. 一个chain上挂东西）
+Zhen Chen/Xiang: 归到序列化和解序列化上有问题。
+Prof. Li: 文章把事儿推到NF上，所以要做改动。如果只推到switch上，就省事。

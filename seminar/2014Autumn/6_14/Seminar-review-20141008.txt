@@ -1,0 +1,32 @@
+Overview[edit]Title: Balancing Accountability and Privacy in the Network
+Source: SIGCOMM 2014
+Attendee: Prof. Yibo Xue, Zhen Chen, Yihang Luo, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Changsheng Zhang, Jun Yang.
+Speaker: Yiyang Shao
+Recorder: Xiang Wang
+Presentation[edit]Motivation
+A novel framework to achieve both accountability and privacy
+Previous efforts offer stronger guarantees for one of the twoAccountable and Private Internet Protocol (APIP)
+The key point: the source address
+The five distinct roles of source address are:
+return address
+sender identity
+error reporting
+flow ID
+accountabilityThe APIP framework
+splits the source address into two separate fields:
+accountability address
+return address
+introduces delegated accountability
+specialized companies as delegates
+source domains as delegate
+employs hidden return address
+end-to-end encryption
+address translationDelegated accountability
+Sender -> Delegate: brief(P)
+Verifier -> Delegate: verify(P)
+Receiver -> Delegate: shutoff(P)Discussion[edit]Prof. Xue: 有没有实际的部署？
+Yiyang: 抓取实际流量进行模拟Prof. Xue: Core switches是否需要运行该协议？
+Yiyang: 文中没有做讨论
+Xiang: APIP更改了源地址，核心网中如有基于源的策略路由怎么办？Zhe Fu: 接收端对于问责地址和回传地址都知道？
+Yiyang: 是。问责地址是问责服务器的地址，回传地址是问责服务器给出的原发送端的“地址”Prof. Xue: APIP的wire format以及源地址如何定义的？能否与现有网络兼容？
+Yiyang: 文中没有描述。根据delegate的部署方式：第一种需要把IP层替换掉，第二种可以基于现有TCP/IP

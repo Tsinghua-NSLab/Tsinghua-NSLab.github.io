@@ -1,0 +1,37 @@
+Contents
+
+1 Information
+2 Presentation
+3 Discussion
+4 Appendix
+
+Information[edit]NetLord: A Scalable Multi-Tenant Network Architecture for Virtualized Datacenters
+Attendee: Jun Li, Zhen Chen, Yaxuan Qi, Baohua Yang, Kai Wang, Feng Xie, Zhenlong Yuan, Yang Gao, Ming Xu, Xiaoqi Ren, Lu Li
+Speaker: Xiang Wang
+Recorder: Yiyang Shao
+Presentation[edit]Background
+The Goal
+Cloud Datacenter
+The Right Network
+The Challenge
+State of the Art-ScaleNetLord
+A Tenant's View of NetLord
+NetLord Components
+NetLord Encapsulation
+Switch Configuration
+Evaluation
+Evaluation - Overhead of NLA
+Evaluation - Scalability of NetLord
+SummaryDiscussion[edit]Jun Li: What nature difference result in the difference between Traditional and Spain?
+Baohua Yang: What does it mean by Goodput?
+Yaxuan Qi: What kind of protocol can peel the packet header?
+Baohua Yang: Discussion why there are both Layer-2 and Layer-3 in the current Internet design?
+Jun Li: Difference of Layer-2 protocol
+Yaxuan Qi: the scale of Layer-2
+Kai Wang: From the disign of WLAN up to Layer-3
+Baohua Yang: Layer-2 without cluster, can not use prefix to presentAppendix[edit]Network Science Introduction. By Prof. Jun Li
+What is network science?
+Three major problems in network science.
+Different application of network science.
+Compressive sensing approach for NP hard problems.
+Sigcomm'11 network science.

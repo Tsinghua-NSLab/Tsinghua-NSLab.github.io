@@ -1,0 +1,14 @@
+Topic: 	  Quality Driven Web Services Composition  
+Speaker: Jinli Meng
+Recorder: Li Tang
+Attendants: Prof. Li, Zhen Chen, Fei He, Bo Xu, Hui Zhang, Zhiming Zhang, Ying Guo, Jeffrey Fong, Guodong Li, Feng Xie, Jian Du, Baohua Yang, Xinming Chen
+Discussion:
+1 杜剑： 第一篇文章中的Queue是否相当于一个评价函数，作者是否给出了一个显示的评价模型，具体怎样计算？
+蒙金莉： 公式中的5个变量是相互独立的，通过用户制定权重来加权求得评价函数值
+2. 陈老师： 在WS执行过程中需要经过多个组件，具体的每个组件的故障率如何测量？
+3. 李老师： 执行中的各个变量如何实时测量？
+蒙金莉： 一般是采用统计的方法根据历史测量值进行估计
+李老师： 需要对系统随时间的变化频率、变化特点进行假设，否则怎样跟随系统变化进行随动测量
+4. 何飞： WS的思想是每个Provider提供各种Service，然后通过把多个Provider的Service拼接起来构成一种Application。目前WS的应用情况如何？
+蒙金莉： Amazon和IBM等大型公司对外提供一定的公用服务。
+5. 李老师： 如果你基于对模型已经被广泛认可，则可以考虑是否有好的想法来改进模型的解法。否则，如果模型尚未得到公认，则可能在浮沙上筑台，根基不稳。

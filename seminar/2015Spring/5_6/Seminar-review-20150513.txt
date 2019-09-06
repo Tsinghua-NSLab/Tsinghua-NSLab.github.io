@@ -1,0 +1,23 @@
+Overview[edit]Title:￼ The Design and Implementation of Open vSwitch
+Source: NSDI 2015
+Attendee: Prof. Jun Li, Prof. Yibo Xue, Zhen Chen, Feng Xie, Yiyang Shao, Zhe Fu, Chang Chen, Xiaohe Hu, Wenxun Zheng, Jun Yang, Yuanjun Yao, Dongyu Meng, Dongfang Li, Changsheng Zhang, Danyang Li.
+Speaker: Xiaohe Hu
+Recorder: Yiyang Shao
+Presentation[edit]Open vSwitch
+Programmability demanded by network virtualization
+Architectural tension: expressibilityv.s. performanceDesign constraints
+Resource sharing
+Placement
+SDNOpen vSwitchArchitecure
+Packet classification
+Tuple Space Search in OVS
+Flow caching in kernel
+Caching-aware Packet Classification
+Tuple Priority Sorting
+Staged Lookup
+Prefix Tracking
+Cache invalidationEvaluationOngoing and FutureDiscussion[edit]Chang Chen: 作者最终为什么选择了Tuple Space Search作为OvS中的Packet classification方法？
+Xiaohe Hu: 我理解主要是因为"Decision tree classifiers come with complex tree update logic and in practice developers may favor simplicity over optimality"Zhe Fu: Hash都可以用BloomFilter的方法来优化吗？
+Xiaohe Hu: 可以通过计算得出BloomFilter是否可以对hash进行优化Yiyang Shao: 能否增量更新主要是由算法决定还是由数据结构决定？
+Xiaohe Hu: 我认为算法的决定性更大，如果算法需要基于全局信息来进行pre-process，那么相应的更新代价就会更大
+Chang Chen: 数据结构的影响也很大，感觉我们可以用堆做一下试试

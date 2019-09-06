@@ -1,0 +1,14 @@
+Allocation Properties
+Share Guarantee
+Every user should get 1/n of at least one resource
+Strategy proofness
+A user should not be able to increase her allocation by lying about her demand vector
+Envy freeness
+Pareto efficiency
+Conclusion
+DRF provides multiple-resource fairness in the presence of heterogenous demand
+First generalization of max-min fairness to multiple-resources
+DRF’s properties
+Share guarantee
+Strategy-proofness
+Performs better than current approaches

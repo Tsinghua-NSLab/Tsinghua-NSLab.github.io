@@ -1,0 +1,49 @@
+Information
+Topic: 1) Prospex: Protocol Specification Extraction 
+Attendee: Jun Li, Yibo Xue, Zhen Chen, Yaxuan Qi, Baohua Yang, Kai Wang, Xiang Wang, Feng Xie, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Xiaoqi Ren, Lu Li, Qing Xu, Yang Wu, Jingjie Jiang
+Speaker: Yiyang Shao
+Recorder: Zhenlong Yuan
+Presentation
+Motivation:
+• Stateful protocol specifications can be used for Blackbox vulnerability analysis
+• Fingerprinting
+• Testing
+Manual network protocol reverse engineering is a
+timeconsuming and tedious task
+• Goal: Automatic extraction of application level
+protocol specifications
+• Several systems exist that can automatically extract
+precise message formats for individual messages,
+however they do not aim at extracting a protocol state
+machine
+• Prospex aims at producing detailed specifications for
+stateful protocols
+Contributions
+• We present
+– a technique for automatically determining message types
+– a novel way for inferring a minimal automaton that is
+consistent with a set of application sessions (state machine)
+• Our system is the first to automatically infer
+specifications for stateful protocols
+• Specifications for fuzz testing are automatically
+generated from the recovered specifications
+Session Analysis Phase
+• How is the server processing messages?
+– Behavior based approach
+• Record an execution trace
+• Run the application (server) in a dynamic data tainting
+environment
+• Assign a label to each input byte, track its propagation during
+the execution
+• Do this while engaging the server in a series of application
+sessions (using a client)
+• For example, observe sendmail (SMTP daemon) while using
+a mail client to send mail
+• Yields an execution trace for a session, containing all executed
+instruction and taint labels of all instruction operands
+Conclusion
+• Prospex can automatically infer protocol
+specifications for stateful protocols
+• Automatically identify message types
+• Infer the protocol state machine
+• Generate protocol specifications for a stateful fuzzer

@@ -1,0 +1,23 @@
+Information[edit]Topic:
+Internet Traffic Classification Demystified:On the Sources of the Discriminative Power
+Attendee: Zhen Chen, Baohua Yang, Kai Wang, Xiang Wang, Zhenlong Yuan, Yiyang Shao, Yang Gao, Zhi Liu, Xiaoqi Ren,Yang Wu ,Qing Xu, Jingjie Jiang
+Speaker: Zhenlong Yuan and Xiang Wang
+Recorder: Zhi Liu
+Presentation[edit]Desires for Classification Algorithms
+	No Payload Inspection
+	Independence of flow directions
+      Real-time Classification
+      Low Computational OverheadKey Questions
+	Why do those MLs work so well for traffic classification? Any "Common Sources"of their discriminative Power?Discriminative Power of Features
+	Port number and packet sizes are most important features for classifying uni-directional flows.Real-time Classification
+      Sizes of first few packets in uni-directional flows are expressive enough.Role of Discretization
+      Discretization makes every tested ML algorithms achieve high(er) accuracies.Conclusion
+      We compared classification-performance of several commonly used ML algorithms on broad range of data sets.
+      For real-time classification of uni-directional flows,port numbers and 1~5th packet sizes are important features.
+      Discretization makes ML algorithms perform better.Discussions
+      Baohua Yang：F-measure如何定义？
+      Yiyang Shao：为什么离散反而效果好？离散化是如何具体操作的？
+      Baohua Yang：离散提高准确性如何理解，另外由于个人的编程习惯区别很大，离散化的方法是否合适？
+      Feng Xie：许多临近端口的协议不一样，如何做离散化？是否和文章实际测试时选择的协议有关？
+      Kai Wang：C4.5和离散化的关系？
+      Zhi Liu：匹配速度是如何比较的？哪些限制条件？

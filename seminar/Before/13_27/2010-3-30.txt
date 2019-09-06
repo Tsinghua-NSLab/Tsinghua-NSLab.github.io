@@ -1,0 +1,33 @@
+NOX: Towards an Operating System for Networks[edit]Speaker: Baohua Yang
+Attendants: Prof. Xue, Zhen Chen, Li Tang, Bo Xu, Hui Zhang, Zhiming
+Zhang, Ying Guo, Jeffrey Fong, Guodong Li, Feng Xie, Jian Du, Fei He, Xinming
+Chen, Kai Wang
+Recorder: Fei He
+Content:
+1. Computer vs. Network, from low level to high level.
+2. Introduction to NOX:
+two concepts: centralized programming, high-level names
+challenges: distributed algorithms, low-level addresses
+NOX: to build an network operating system at a significate scale
+3. NOX Overview
+1) Components: apps over NOX Controller + NOX Controller over PC Server (+ Network view) + OF Switch
+2) Granularity
+ Overservation Granularity
+ Switch-level topology
+ locations of users, hosts, middlesboxes, etc.
+ But NO traffic state3) Operation
+4) Scaling: centralization for slow operations, and parallelism for rapid operations
+4. Programming Interface
+ Events
+ Namespace
+ Libraries
+ Routing
+ Packet Classification
+ DNS
+ Network Filtering5. Example Applications
+1) Detecting Scanning Hosts
+2) Ehane Project: one network-wide access-control system
+6. Summary
+ Netowrk management framework
+ Good scalability for large systems
+ flexible programming with high-level abstraction

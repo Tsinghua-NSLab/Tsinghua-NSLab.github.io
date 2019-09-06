@@ -1,0 +1,30 @@
+Overview[edit]Title: Scalable TCAM-based Regular Expression Matching with Compressed Finite Automata 
+Source: ACM/IEEE ANCS 2013
+Attendee: Prof. Li, Prof. Xue, Yang Xiang, Wenmao Liu, Kai Wang, Feng Xie, Xiang Wang, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Chang Chen, Zhe Fu, Xiaohe Hu, Group of Prof. Xue
+Speaker: Kai Wang
+Recorder: Xiang Wang
+Presentation[edit]Background
+Increase in rule-set sizes and complexity
+NOT handle a full set of RegEx patternsCompressed Finite Automata
+Goal: Compress large-scale RegEx patterns into small TCAMs
+Convert a set of RegEx patterns to XFA
+XFA eliminates the state-space explosion problem
+But requires large memory space due to the transition redundancyThree compression techniques
+Transition Compression
+Basic idea: transition grouping
+Combines multiple transitions with the same input character and destination state by encoding source states in a wildcard state
+Character Compression
+Basic idea: character merging
+Combines multiple transitions with the same source state and destination state by encoding input characters in a ternary code
+State Compression
+Basic idea: state encoding
+Combines multiple transitions with the same input character and destination state by encoding source states in a ternary masked codeExperimental Evaluation
+TCAM space
+DFA: reduces up to 83%
+Non-DFA: reduces up to 95%
+TCAM throughput
+DFA: achieves up to 10.9Gbps
+Non-DFA: increases up to 1.7 timesQuestion[edit]Prof. Xue: Throughput如何测得？
+Kai Wang: 一般都是根据TCAM频率换算Yang Xiang: 只用第三种压缩，或者先执行第三种压缩更好？
+Kai Wang: XFA on TCAM是本质创新，三种压缩思路在前人工作中均有体现Prof. Xue: 规则数上升，编码长度过长，TCAM是否能实现？
+Kai Wang: 受TCAM容量限制，支持的规则集规模应该会受影响；与规则集本身特性也有关

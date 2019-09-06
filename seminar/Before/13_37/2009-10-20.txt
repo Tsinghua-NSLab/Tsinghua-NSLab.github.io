@@ -1,0 +1,23 @@
+Topic: Enriching Network Security Analysis with Time Travel
+Speaker: Bo Xu
+Attendants: Prof. Xue, Jin Zhou, Ying Zhang, Baohua Yang, Li Tang, Yaxuan Qi, Guodong Li, Xinming Chen, Kai Wang, Jian Du, Zhiming Zhang, Chunlu Yan, Jeffrey Fong
+Recorder: Yaxuan Qi
+Discussion:
+1. Q: Yaxuan, 每个流几分钟？1Gbps仅1G内存？
+A: Bo, 100M抓包速率就够支持1G的data rate, 只抓6%就够了。
+2. Q: Yaxuan, 何为HTTP offloading？
+A: Bo，NIDS的HTTP流量只看发起，发现问题了再看双方流量。
+3. Q: Kyle, 对于重复的网络流量，如大量访问的网站，能否复用time machine存储
+A: Bo,可以实现; Dujian, 相似性难以识别。
+4. Q: Baohua, IDS规则是否有关于时间的配置？
+A: Bo, Forensic概念认为检测到一个可疑的包后，之前的包会需要扫描。
+5. Q: DHCP的用户IP变化，如何定位攻击发起？
+A: Bo，能检测出流。
+6. Q: yaxuan，为何会记录死流？
+A: Bo，NIDS可能会有处理瓶颈，但TM能够记录所有包，因此可以提供重扫的机制。
+7. Q: Prof. Xue，15KB什么意思？小流统计是否合理？
+A: Bo，一个流的前几个包大小累加；近期paper符合统计。
+8 Q: Dujian，为何CPU利用率有俩峰值？
+A: Bo，昼夜上网行为变化导致。
+9. Q: Zhiming，何为aggregation instead of direct eviction
+A: Bo，从汇聚的层面重新审查流量。

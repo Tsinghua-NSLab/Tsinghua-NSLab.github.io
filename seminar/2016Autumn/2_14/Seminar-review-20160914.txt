@@ -1,0 +1,47 @@
+Contents
+
+1 Overview
+2 Presentation
+
+2.1 Part one: Overview of Regular Expression
+2.2 Part two: Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice
+
+
+3 Discussion
+
+Overview[edit]Title:￼ Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice
+Attendee: Jun Li, Dujuan Gu, Qing Lv, Shuo Wang, Dongfang Li, Jun Yang, Danyang Li, Ju Xing, Zhe Fu, Zhi Liu
+Speaker: Zhe Fu
+Recorder: Zhi Liu
+Presentation[edit]Part one: Overview of Regular Expression[edit] Two approaches for regex
+ Perl (backtracking): sometimes very very slow  
+ Thompson NFA: typically okHistory
+Regular Expression
+Meta characters
+Alternate, Concatenate
+backreferencesFinite Automata
+DFA
+NFARegular Expression search algorithmsNFA to DFA constructionNFA DFA space and time complexityReal world regular expressionsPart two: Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice[edit] Introduction to regex
+ What is regular expression matching
+ How to implement a regex lookup engine What is the problem:
+ Too many algorithms
+ Too many different systems
+ Too many memory configurations
+ Different performance metrics Our goal
+ Given the result, traffic configurations -> regular expression technique, determine system implementation
+ Systematic evaluation Design Space Exploration
+ Two types of solutions: Memory-based and Logic based
+ Automaton domain: NFA, DFA, Multi-stride DFA
+ Implementation domain
+ Non-compression, Linear encoding, Bitmapped encoding
+ Logic based solution: Stride-1, Software-based multi-stride, Hardware-based multi-stride System domain: Memory based and Logic based
+ Results
+ Results from hardware
+ Results from Processor Simulation Optimal Regular Expression Matching Configuration
+ Optimal Memory-based configruations
+ Optimal Logic-based configruations ConclusionDiscussion[edit] Jun:  What implications these evaluations give us? DFA without compression is the best?
+ Zhe: Since the evaluation use multi-thread
+ Zhi: The results are generated after grouping, each ruleset is small enough so that DFA is fast and small in size  Jun: Can we evaluate the algorithms based on the methodology in this paper and compare our methods?
+ Zhe: We need to do it with the same setup of the hardware to generate results comparable with the numbers in the paper Qing Lv: How does the NFA-to-DFA conversion algorithm find out that no more states will appear?
+ Zhe: Since new DFA states are generated when new combination of activated NFA state combination appears, the algorithm can find it out by looking up the states existed    Zhi: Why hardware DFA-4 stride does not consume the most chip resource?
+ Zhe: Because there are duplicated circuits and EDA will optmize them

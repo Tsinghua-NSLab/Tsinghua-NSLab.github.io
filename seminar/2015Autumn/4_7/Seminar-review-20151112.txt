@@ -1,0 +1,32 @@
+Overview[edit]Title:￼ Scaling Up Clustered Network Appliances with ScaleBricks
+Source: SIGCOMM 2015
+Attendee: Jun Li, Yibo Xue, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Ju Xing, Luoshi Zhang, Jun Yang, Dongfang Li, Danyang Li.
+Speaker: Ju Xing.
+Recorder: Luoshi Zhang.
+Presentation[edit]Throughput Scaling
+scale with number of servers
+FIB Scaling
+total size of forwarding table (the number of supported keys)
+Update Scaling
+update rate of the FIBDiscussion[edit]问：node节点是否可以扩展？
+答：可以扩展，但是数量不是特别大
+问：找hash函数怎么找？key和node可以冲突吗？
+答：cluster最多由32个node，所以map是对的情况下，可以不冲突
+问：初始的separation是怎么分的？
+答：根据预先设定的限制条件，规定好每个key在哪个位置处理
+问：信息熵是计算谁的？
+答：随机变量，hash函数的序号是一个随机变量
+问：G1和G2是什么？
+答：没有提具体是什么
+问：m值从哪来？m是node数吗？
+答：m不是node数，用m bit存储hash函数的映射结果
+问：空间换时间是什么意思？
+答：减少了可能的碰撞，就等于提高了成功的概率，构建的时间换了运行的时间
+问：找到hash函数的目的是什么？
+答：把m bit当成mod的操作，更灵活，hash先到0-（m-1），再查找
+问：把1个真值表拆成2个真值表？
+答：是，把原有问题转换为找两个hash函数的问题
+问：group跟K的关系
+答：group数目跟k没关系，只是为了降低每个group里面k的数量，然后再把k映射到node，找到正确的函数
+问：为什么要分group？
+答：因为k的数量很多，所以先把所有的k分成多个group，尝试要找到一个hash函数把所有key-value覆盖

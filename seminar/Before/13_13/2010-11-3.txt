@@ -1,0 +1,17 @@
+DONAR: Decentralized Server Selection for Cloud Services[edit]Speaker: Jian Du
+Recorder: Li Tang
+Attendents: Prof. Li, Zhen Chen, Zhiming Zhang, Kai Wang, Feng Xie, Fei He, Jinli Meng, Xinming Chen, Lingyun Ruan, Shuai Ding, Fan Xiang, Jefferey Fong, Jian Du
+Content:
+Server selection backgroundConstraint-based policy interfaceScalable optimization algorithmProduction deploymentDiscussion:
+1. 李老师：用一种简单的方法综合考虑距离近邻性和负载是否也能够达到较好的效果？
+杜剑：作者就是提出了一种分布式方法权衡了这两项指标。
+李老师：作者的方法是否仍然需要依靠反馈来确定是否超过了期望的负载？
+杜剑：是的。作者方法的主要特点就是要求终端的服务器节点参与，并提供一定的信息。
+2. 唐力：作者的相关工作都有哪些，为什么不跟其他负载均衡方法进行比较？
+杜剑：作者文中讨论的三项相关工作主要是作为文章的基础，而并没有提到其他同类算法或方案。
+3. 李老师：怎么保证用户的请求能够被平均分到DONAR的节点上？
+杜剑：可能通过DNS解析实现负载均衡。
+4. 何飞：在当前的系统中，DONAR节点已经具备了距离信息，但似乎作者没有充分利用这些信息。
+杜剑：我猜测作者认为未来的每个DC中都有很多服务器，需要有好的方法进行任务分配和调度，这种需求是有意义的。作者为解决这个问题，定义了cost，抽象出了一个优化问题，在实际情况中cost可能并不是延时，而是其他具有实际意义的度量指标。
+李老师：在同一个DC内部，延时和近邻性基本不存在差别，很难想象出除了负载因素外，还有什么其他优化目标，需要进行双目标优化。
+何飞：目前的情况可能是一个DONAR节点对应一个DC，而作者假设各个DC的服务器都是同质的，但这样仍然无法解决如何为客户端选择DONAR节点的问题。

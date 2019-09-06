@@ -1,0 +1,12 @@
+title: Topological Properties Affect the Power of Network Coding in Decentralized Broadcast
+reporter: Zhiming Zhang
+attender: all NSLab staff except Guodong Li, Rongxiao Liang
+Q&A:
+Baohua: Are there any theory analysis for these conclusions?
+Dr. Li: Performance changes greatly?
+Zhen Chen: useful info. in Cluster's structure?
+	NC is slightly better than random?
+Jin Zhou: how to do this simulation? Over all or individually? What is convincing?
+		What extent the performance of algorithms is affected by Time-varying Topology is not very clear.
+Baohua: validation specification of NC ...
+	The need for interaction between peers for each algorithm?

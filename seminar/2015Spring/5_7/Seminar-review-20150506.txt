@@ -1,0 +1,34 @@
+Overview[edit]Title:￼ Early Detection of Spam Mobile Apps
+Source: WWW 2015
+Attendee: Zhen Chen, Xiang Wang, Feng Xie, Yiyang Shao, Zhe Fu, Xiaohe Hu,  Jun Yang, Wenxun Zheng, Yuanjun Yao, Dongyu Meng, Dongfang Li, Changsheng Zhang, Zhaoguo Wang.
+Speaker: Chengqi Yi
+Recorder: Yiyang Shao
+Presentation[edit]BackgroundMotivation
+Spam apps vitiate the app market experience and its usefulness
+Detect spam apps quickly and accurately
+ContributionsEarly Detection of Spam Mobile Apps
+Dataset
+App labeling process
+Agreement Among the Reviewers
+Spam Checkpoints
+Reviewer Agreement on Spam Checkpoints
+Feature Mapping
+Checkpoint S1 - Does the app description describe the app function clearly and concisely?
+Checkpoint S2 - Does the app description contain too much details, incoherent text, or unrelated text?
+Checkpoint S3 - Does the app description contain a noticeable repetition of words or keywords?
+Checkpoint S4 - Does the app description contain unrelated keywords or references?
+Checkpoint S5 - Does the app description contain excessive references to other applications from the same developer?
+Checkpoint S6 - Does the developer have multiple apps with approximately the same description?
+Checkpoint S7 - Does the app identifier (appid) make sense and have some relevance to the functionality of the application or does it appear to be auto generated?
+Other MetadataEvaluationConclusionsDiscussion[edit]Zhaoguo Wang: 作者为什么要进行特征选择呢？会对准确率有帮助吗？
+Chengqi Yi: 特征选择主要是为了筛选一些具有干扰或者没用的特征，对于的提升不一定，作者这里应该是通过实验进行了验证Zhaoguo Wang: 作者为什么用Adaboost分类器呢？准确率较高吗？
+Chengqi Yi: 应该是通过实验来选择的
+Zhaoguo Wang: 我之前做实验的时候用不同的分类器准确率差的很多
+Yiyang Shao: 跟要分类的问题有关，不同的分类器对应的模型不一样，结果会有一定差异；我之前做的实验，通过参数调优、核函数等手段，不同分类器的准确率略有差别，但是不大Zhaoguo Wang: 作者的分析和实验是基于3个专家对于app的人工标定意见，对结论是否会有影响？
+Chengqi Yi: 从作者的实验结果来看，3个专家的意见比较一致，40%的app三个专家的标定是相同的，90%的app至少有两个专家的标定相同Zhen Chen: 这个文章的分析思路和工作方法有点像自然语言处理？
+Chengqi Yi: 对，是比较相似，作者分析spam app没有从app本身，而是从description的角度分析Zhaoguo Wang: 本文中spam指的是什么类型的应用？是如何定义的呢？
+Chengqi Yi: 
+Zhaoguo Wang: 作者提取的特征围绕description等checkpoints，这些描述反应出的spam是否一定对应app的spam？
+Chengqi Yi: 是对应的，spam app的特点决定了其文字描述包含的特征，作者正是通过这种对应，来检测spam app的Zhen Chen: 本文作者分析的app数据都是英文的app吗？
+Chengqi Yi: 对，都是英文的
+Zhaoguo Wang: 可以爬取国内的一些应用市场，用类似的方法分析一下试试
