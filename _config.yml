@@ -1,4 +1,5 @@
-theme: jekyll-theme-time-machine
+# jekyll-theme-time-machine
+theme: jekyll-theme-leap-day 
 title: NSLab Seminar
 description: The seminar information for NSLab, Tsinghua Univ.
 show_downloads: false
