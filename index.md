@@ -1,39 +1,17 @@
 # Network Security Lab
 [About us](./about.md)
-## Overview
-- [Network Security Lab](#network-security-lab)
-  * [Overview](#overview)
-  * [2019 Autumn](#2019-autumn)
-  * [2019 Spring](#2019-spring)
-  * [2018 Autumn](#2018-autumn)
-  * [2018 Spring](#2018-spring)
-  * [2017 Autumn](#2017-autumn)
-  * [2017 Spring](#2017-spring)
-  * [2016 Autumn](#2016-autumn)
-  * [2016 Spring](#2016-spring)
-  * [2015 Autumn](#2015-autumn)
-  * [2015 Spring](#2015-spring)
-  * [2014 Autumn](#2014-autumn)
-  * [2014 Spring](#2014-spring)
-  * [2013 Autumn](#2013-autumn)
-  * [2013 Spring](#2013-spring)
-  * [2012 Autumn](#2012-autumn)
-  * [2012 Spring](#2012-spring)
-  * [2011 Autumn](#2011-autumn)
-  * [Before](#before)
 
-## 2019 Autumn
+# 2019 Autumn
 
+# 2019 Spring
 
-## 2019 Spring
+# 2018 Autumn
 
-## 2018 Autumn
+# 2018 Spring
 
-## 2018 Spring
+# 2017 Autumn
 
-## 2017 Autumn
-
-## 2017 Spring
+# 2017 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -47,7 +25,7 @@
 | 2017/03/01 |	Ali         | O3FA: A Scalable Finite Automata-based Pattern-Matching Engine for Out-of-Order Deep Packet Inspection|	ANCS'16|	slides|	review |
 | 2017/02/22 |	Jun Li      | Network Verification: When Clarke Meets Cerf	|	slides|	review |
 
-## 2016 Autumn
+# 2016 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -65,7 +43,7 @@
 | 2016/09/21 | 	Zhi Liu |	BitCuts: A Fast Packet Classification Algorithm Using Bit-Level Cuts |	Confidential |	Confidential |	review |
 | 2016/09/14 | 	Zhe Fu |	Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice |	ANCS'13 |	slides |	review |
 
-## 2016 Spring
+# 2016 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -82,7 +60,7 @@
 | 03/03/2016 | Dongfang Li | Offline Downloading in China: A Comparative Study | IMC'15 | slides | review |
 | 02/25/2016 | Chengqi Yi and Luoshi Zhang | Phd defense: Social network and Traffic classification, respectively | Presentation | Confidential | review |
 
-## 2015 Autumn
+# 2015 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -101,7 +79,7 @@
 | 09/17/2015 | Zhe Fu | Efficient Coflow Scheduling with Varys | SIGCOMM'14 | slides | review |
 
 
-## 2015 Spring
+# 2015 Spring
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
 | 06/17/2015 | Zhe Fu | Accelerating Regular Expression Matching Over Compressed HTTP | INFOCOM'15 | slides | review |
@@ -118,7 +96,7 @@
 | 03/04/2015 | Yiyang Shao | Deep Packet Inspection as a Service | CoNEXT'14 | slides | review |
 
 
-## 2014 Autumn
+# 2014 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -138,7 +116,7 @@
 | 09/22/2014 | Changming Liu | Wireless Trends | Invited Report | Confidential | review |
 
 
-## 2014 Spring
+# 2014 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -155,7 +133,7 @@
 | 03/05/2014 | Chengqi Yi | Mining Structural Hole Spanners Through Information Diffusion in Social Networks | WWW'13 | slides | review |
 | 02/26/2014 | Xiang Wang | Network Virtualization in Multi-tenant Datacenters | VMWare TR | slides | review |
 
-## 2013 Autumn
+# 2013 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -173,7 +151,7 @@
 | 09/25/2013 | Xiang Wang | SIMPLE-fying Middlebox Policy Enforcement Using SDN | SIGCOMM'13 | slides | review |
 
 
-## 2013 Spring
+# 2013 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -192,7 +170,7 @@
 | 03/06/2013 | Feng Xie | Application of Dimensionality Reduction in Recommender Systems - A Case Study | WebKDD'00 | slides | review |
 | 02/27/2013 | Xiang Wang | Design and Implementation of a Consolidated Middlebox Architecture | NSDI'12 | slides | review |
 
-## 2012 Autumn
+# 2012 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -211,7 +189,7 @@
 | 11/09/2012 | Dr. Liwei Ren | Overview of Data Loss Prevention (DLP) Technology | Invited Report | slides | review |
 
 
-## 2012 Spring
+# 2012 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -231,7 +209,7 @@
 | 02/21/2012 | Prof. Yibo Xue | Network Security and Infomation Penetration | Presentation | Confidential | review |
 
 
-## 2011 Autumn
+# 2011 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -252,7 +230,7 @@
 | 09/21/2011 | Feng Xie | Recommender System and Link Prediction | Presentation | slide | review |
 | 09/14/2011 | Baohua Yang | SMILER: Towards Practical Online Traffic Classification | ANCS'11 | slide | review |
 
-## Before
+# Before
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
