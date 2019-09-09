@@ -1,20 +1,14 @@
 [TOC]
 
-# Network Security Lab
+### Network Security Lab
 
 [About us](./about.md)
-
-# 2019 Autumn
-
-# 2019 Spring
-
-# 2018 Autumn
-
-# 2018 Spring
-
-# 2017 Autumn
-
-# 2017 Spring
+### 2019 Autumn
+### 2019 Spring
+### 2018 Autumn
+### 2018 Spring
+### 2017 Autumn
+### 2017 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -27,7 +21,7 @@
 | 2017/03/08 |	Zhi Liu     | [ddNF: An Efficient Data Structure for Header Spaces](./seminar/2017Spring/7/Ddnf.pdf)|	HVC'16|	slides|[	review](./seminar/2017Spring/7/Seminar-review-20170308.txt)|
 | 2017/03/01 |	Ali         | [O3FA: A Scalable Finite Automata-based Pattern-Matching Engine for Out-of-Order Deep Packet Inspection](./seminar/2017Spring/8/O3FA.pdf)|	ANCS'16|[	slides](./seminar/2017Spring/8/O3FA_slides.pdf)|[	review](./seminar/2017Spring/8/Seminar-review-20170301.txt)|
 | 2017/02/22 |	Jun Li      | Network Verification: When Clarke Meets Cerf	|	Presentation |[slides](./seminar/2017Spring/9/Network_verification.pdf)|	review |
-# 2016 Autumn
+### 2016 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -45,7 +39,7 @@
 | 2016/09/21 | 	Zhi Liu |	BitCuts: A Fast Packet Classification Algorithm Using Bit-Level Cuts |	Confidential |	Confidential |[	review](./seminar/2016Autumn/2_13/Seminar-review-20160921.txt)|
 | 2016/09/14 | 	Zhe Fu |[	Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice](./seminar/2016Autumn/2_14/Picking_pesky_parameters.pdf)|	ANCS'13 |[	slides](./seminar/2016Autumn/2_14/Picking_pesky_parameters_slides.pdf)|[	review](./seminar/2016Autumn/2_14/Seminar-review-20160914.txt)|
 
-# 2016 Spring
+### 2016 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -62,7 +56,7 @@
 | 03/03/2016 | Dongfang Li |[Offline Downloading in China: A Comparative Study](./seminar/2016Spring/3_12/Offline.pdf)| IMC'15 |[slides](./seminar/2016Spring/3_12/Offline-slides.pdf)|[review](./seminar/2016Spring/3_12/Seminar-review-20160303.txt)|
 | 02/25/2016 | Chengqi Yi and Luoshi Zhang | Phd defense: Social network and Traffic classification, respectively | Presentation | Confidential |[review](./seminar/2016Spring/3_13/Seminar-review-20160225.txt)|
 
-# 2015 Autumn
+### 2015 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -80,7 +74,7 @@
 | 09/24/2015 | Zhaoguo Wang |[AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications](./seminar/2015Autumn/4_13/AppSealer-NDSS14.pdf)| NDSS'14 |[slides](./seminar/2015Autumn/4_13/AppSealer-Slides.pdf)|[review](./seminar/2015Autumn/4_13/Seminar-review-20150924.txt)|
 | 09/17/2015 | Zhe Fu |[Efficient Coflow Scheduling with Varys](./seminar/2015Autumn/4_14/Varys-paper.pdf)| SIGCOMM'14 |[slides](./seminar/2015Autumn/4_14/Varys-slides.pdf)|[review](./seminar/2015Autumn/4_14/Seminar-review-20150917.txt)|
 
-# 2015 Spring
+### 2015 Spring
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
 | 06/17/2015 | Zhe Fu |[Accelerating Regular Expression Matching Over Compressed HTTP](./seminar/2015Spring/5_2/Infocom15_regex_paper.pdf)| INFOCOM'15 |[slides](./seminar/2015Spring/5_2/Infocom15_regex_slides.pdf)|[review](./seminar/2015Spring/5_2/Seminar-review-20150617.txt)|
@@ -96,8 +90,7 @@
 | 03/18/2015 | Xiaohe Hu |[Dynamic Scheduling of Network Updates](./seminar/2015Spring/5_12/Dionysus14.pdf)| SIGCOMM'14 |[slides](./seminar/2015Spring/5_12/Sigcomm14-dionysus.pdf)|[review](./seminar/2015Spring/5_12/Seminar-review-20150318.txt)|
 | 03/04/2015 | Yiyang Shao |[Deep Packet Inspection as a Service](./seminar/2015Spring/5_13/DPIaaS.pdf)| CoNEXT'14 |[slides](./seminar/2015Spring/5_13/Conext14_dpi.pdf)|[review](./seminar/2015Spring/5_13/Seminar-review-20150304.txt)|
 
-
-# 2014 Autumn
+### 2014 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -116,8 +109,7 @@
 | 10/08/2014 | Yiyang Shao |[Balancing Accountability and Privacy in the Network](./seminar/2014Autumn/6_14/SIGCOMM-APIP-paper.pdf)| SIGCOMM'14 |[slides](./seminar/2014Autumn/6_14/SIGCOMM-APIP-slides.pdf)|[review](./seminar/2014Autumn/6_14/Seminar-review-20141008.txt)|
 | 09/22/2014 | Changming Liu | Wireless Trends | Invited Report | Confidential | review |
 
-
-# 2014 Spring
+### 2014 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -134,7 +126,7 @@
 | 03/05/2014 | Chengqi Yi |[Mining Structural Hole Spanners Through Information Diffusion in Social Networks](./seminar/2014Spring/7_12/Structural_hole.pdf)| WWW'13 |[slides](./seminar/2014Spring/7_12/Structural_hole_slides.pdf)|[review](./seminar/2014Spring/7_12/Seminar-review-20140305.txt)|
 | 02/26/2014 | Xiang Wang |[Network Virtualization in Multi-tenant Datacenters](./seminar/2014Spring/7_13/NV_MTD.pdf)| VMWare TR |[slides](./seminar/2014Spring/7_13/NV_MTD_slides.pdf)|[review](./seminar/2014Spring/7_13/Seminar-review-20140226.txt)|
 
-# 2013 Autumn
+### 2013 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -151,7 +143,7 @@
 | 10/09/2013 | Dr. Wenmao Liu | Software-Defined Network Security in Practice | Invited Report | Confidential |[review](./seminar/2013Autumn/8_12/Seminar-review-20131009.txt)|
 | 09/25/2013 | Xiang Wang |[SIMPLE-fying Middlebox Policy Enforcement Using SDN](./seminar/2013Autumn/8_13/SIMPLE.pdf)| SIGCOMM'13 |[slides](./seminar/2013Autumn/8_13/SIMPLE-slides.pdf)|[review](./seminar/2013Autumn/8_13/Seminar-review-20130925.txt)|
 
-# 2013 Spring
+### 2013 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -170,7 +162,7 @@
 | 03/06/2013 | Feng Xie |[Application of Dimensionality Reduction in Recommender Systems - A Case Study](./seminar/2013Spring/9_14/SVD.pdf)| WebKDD'00 |[slides](./seminar/2013Spring/9_14/SVD.ppt)|[review](./seminar/2013Spring/9_14/Seminar-review-20130306.txt)|
 | 02/27/2013 | Xiang Wang |[Design and Implementation of a Consolidated Middlebox Architecture](./seminar/2013Spring/9_15/Mbox_nsdi12.pdf)| NSDI'12 |[slides](./seminar/2013Spring/9_15/Mbox.pdf)|[review](./seminar/2013Spring/9_15/Seminar-review-20130227.txt)|
 
-# 2012 Autumn
+### 2012 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -188,8 +180,7 @@
 | 19/09/2012 | Dr. Yaxuan Qi | Rethinking Software-Defined Networking | Invited Report | slides |[review](./seminar/2012Autumn/10_13/Seminar-review-20120919.txt)|
 | 11/09/2012 | Dr. Liwei Ren | Overview of Data Loss Prevention (DLP) Technology | Invited Report |[slides](./seminar/2012Autumn/10_14/DLP-Overview-Liwei-Ren.ppt)| review |
 
-
-# 2012 Spring
+### 2012 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -208,8 +199,7 @@
 | 02/28/2012 | Kai Wang |[A Multi-Dimensional Progressive Perfect Hashing for High-Speed String Matching](./seminar/2012Spring/11_14/2D_progressive_perfect_hashing.pdf)| ANCS'11 |[slide](./seminar/2012Spring/11_14/A_Multi-dimensional_Progressive_Perfect_Hashing_for_High-Speed_String_Matching.pdf)|[review](./seminar/2012Spring/11_14/Seminar-review-20120228.txt)|
 | 02/21/2012 | Prof. Yibo Xue | Network Security and Infomation Penetration | Presentation | Confidential |[review](./seminar/2012Spring/11_15/Seminar-review-20120221.txt)|
 
-
-# 2011 Autumn
+### 2011 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
@@ -227,7 +217,7 @@
 | 10/19/2011 | Prof. Xieyuan Wang | EstiNet Network Simulator and Emulator | Invited Report | Confidential | review |
 | 10/12/2011 | Prof. Qunfeng Dong | Accommodating Two Genies Into One Jar -- How Can Packet Inspection Become Both Fast and Scalable? | Invited Report | Confidential | review |
 | 09/28/2011 | Kai Wang |[Chain-based DFA Deflation - Novel Approaches for Fast and Scalable Regular Expression Matching](./seminar/2011Autumn/12_15/Chain_based_REM.rar)| Presentation |[slide](./seminar/2011Autumn/12_15/Chain_based_DFA_Deflation.pdf)|[review](./seminar/2011Autumn/12_15/Seminar-review-20110928.txt)|
-# Before
+### Before
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
