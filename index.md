@@ -18,82 +18,80 @@
 | 2017/05/10 | Danyang Li   | [Checking Beliefs in Dynamic Networks](./seminar/2017Spring/1/Nsdi15-paper-lopes.pdf)  | NSDI'16 | [slides](seminar/2017Spring/1/Checking_beliefs_in_dynamic_networks.pdf)  | None |
 | 2017/04/26 |	Shuo Wang   | [Bitcoin-NG: A Scalable Blockchain Protocol](seminar/2017Spring/2/Bitcoin-NG_A_Scalable_Blockchain_Protocol.pdf) | NSDI'16 |	[slides](seminar/2017Spring/2/Nsdi16_slides_Bitcoin-NG.pdf) | [review](seminar/2017Spring/2/Seminar-review-20170426.md) |
 | 2017/04/19 |	Dongfang Li | [Splinter: Practical Private Queries on Public Data](seminar/2017Spring/3/Splinter_Practical_Private_Queries_on_Public_Data.pdf) |	NSDI'17 | [slides](seminar/2017Spring/3/Slides_Splinter_Practical_Private_Queries_on_Public_Data.pdf) |	[review](seminar/2017Spring/3/Seminar-review-20170419.md) |
-| 2017/04/12 |	Qing Lyu    | Exploiting Order Independence forScalable and Expressive Packet Classification|	TON'16|	slides|	review |
-| 2017/03/29 |	Jun Yang    | A New Approach to Bot Detection: Striking the Balance Between Precision and Recall|	ASONAM'16|	slides|	review|
-| 2017/03/22 |	Ju Xing     | Early Detection of Configuration Errors to Reduce Failure Damage|	OSDI'16|	slides|	review|
-| 2017/03/08 |	Zhi Liu     | ddNF: An Efficient Data Structure for Header Spaces|	HVC'16|	slides|	review |
-| 2017/03/01 |	Ali         | O3FA: A Scalable Finite Automata-based Pattern-Matching Engine for Out-of-Order Deep Packet Inspection|	ANCS'16|	slides|	review |
-| 2017/02/22 |	Jun Li      | Network Verification: When Clarke Meets Cerf	|	slides|	review |
-
+| 2017/04/12 |	Qing Lyu    | [ Exploiting Order Independence forScalable and Expressive Packet Classification](./seminar/2017Spring/4/Order-independent_paper.pdf)|	TON'16|[	slides](./seminar/2017Spring/4/Orderindependence-slides-Seminar20170412-QingLyu.pdf)|[	review ](./seminar/2017Spring/4/Seminar-review-20170412.txt)|
+| 2017/03/29 |	Jun Yang    | [ A New Approach to Bot Detection: Striking the Balance Between Precision and Recall](./seminar/2017Spring/5/Asonam16.pdf)|	ASONAM'16|[	slides](./seminar/2017Spring/5/Seminar_slides_jy.pdf)|[	review](./seminar/2017Spring/5/Seminar-review-20170329.txt)|
+| 2017/03/22 |	Ju Xing     | [ Early Detection of Configuration Errors to Reduce Failure Damage](./seminar/2017Spring/6/Pcheck.pdf)|	OSDI'16|[	slides](./seminar/2017Spring/6/Pcheck_slides.pdf)|[	review](./seminar/2017Spring/6/Seminar-review-20170322.txt)|
+| 2017/03/08 |	Zhi Liu     | [ ddNF: An Efficient Data Structure for Header Spaces](./seminar/2017Spring/7/Ddnf.pdf)|	HVC'16|	slides|[	review ](./seminar/2017Spring/7/Seminar-review-20170308.txt)|
+| 2017/03/01 |	Ali         | [ O3FA: A Scalable Finite Automata-based Pattern-Matching Engine for Out-of-Order Deep Packet Inspection](./seminar/2017Spring/8/O3FA.pdf)|	ANCS'16|[	slides](./seminar/2017Spring/8/O3FA_slides.pdf)|[	review ](./seminar/2017Spring/8/Seminar-review-20170301.txt)|
+| 2017/02/22 |	Jun Li      | Network Verification: When Clarke Meets Cerf	|	Presentation |[ slides](./seminar/2017Spring/9/Network_verification.pdf)|	review |
 # 2016 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
-| 2016/12/28 | 	Dujuan Gu |	Big Data For Security: Challenges and techniques |	NSFOCUS |	Confidential |	review |
-| 2016/12/07 | 	Jun Yang |	Social Role-Aware Emotion Contagion in Image Social Networks |	AAAI'13 |	slides |	review |
-| 2016/11/30 | 	Ali |	Payload Attribution via Character Dependent Multi-bloom Filters |	IEEE Transactions on Information Forensics and Security'13 |	slides |	review |
-| 2016/11/23 | 	Qing Lv |	ABC: Adaptive Binary Cuttings for Multidimensional Packet Classification |	ToN'13 |	slides |	review |
-| 2016/11/16 | 	Howie Xu, Tianpeng Zhang and Ben Pfaff |	SDN: Frontiers and Future Technologies |	Presentation |	Confidential |	review |
-| 2016/11/09 | 	Danyang Li |	Efficient Network Security Policy Enforcement With Policy Space Analysis |	ToN'16 |	Confidential |	review |
-| 2016/11/02 | 	Shuo Wang |	Bitcoin: A Peer-to-Peer Electronic Cash System |	https://bitcoin.org/en/bitcoin-paper |	slides |	review |
-| 2016/10/26 | 	Zhaoguo Wang |	Towards Automatic Generation of Security-Centric Descriptions for Android Apps |	CCS'15 |	slides |	review |
-| 2016/10/19 | 	Dongfang Li |	Examining How The Great Firewall Discovers Hidden Circumvention Servers |	IMC'15 |	slides |	review |
-| 2016/10/12 | 	Ju Xing |	Heading Off Correlated Failures through Independence-as-a-Service |	OSDI'16 |	slides |	review |
-| 2016/09/28 | 	Zhen Chen |	Vast: A Unified Platform for Interactive Network Forensics |	NSDI'16 |	slides |	review |
-| 2016/09/21 | 	Zhi Liu |	BitCuts: A Fast Packet Classification Algorithm Using Bit-Level Cuts |	Confidential |	Confidential |	review |
-| 2016/09/14 | 	Zhe Fu |	Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice |	ANCS'13 |	slides |	review |
+| 2016/12/28 | 	Dujuan Gu |	Big Data For Security: Challenges and techniques |	NSFOCUS |	Confidential |[	review ](./seminar/2016Autumn/2_2/Seminar-review-20161228.txt)|
+| 2016/12/07 | 	Jun Yang |[	Social Role-Aware Emotion Contagion in Image Social Networks ](./seminar/2016Autumn/2_3/AAAI16-Yang-et-al-role-emotion.pdf)|	AAAI'13 |[	slides ](./seminar/2016Autumn/2_3/Social-role-emotion-slides-seminar.pdf)|[	review ](./seminar/2016Autumn/2_3/Seminar-review-20161207.txt)|
+| 2016/11/30 | 	Ali |[	Payload Attribution via Character Dependent Multi-bloom Filters ](./seminar/2016Autumn/2_4/06478806-2.pdf)|	IEEE Transactions on Information Forensics and Security'13 |[	slides ](./seminar/2016Autumn/2_4/Network_Forensics.pdf)|[	review ](./seminar/2016Autumn/2_4/Seminar-review-20161130.txt)|
+| 2016/11/23 | 	Qing Lv |[	ABC: Adaptive Binary Cuttings for Multidimensional Packet Classification ](./seminar/2016Autumn/2_5/ABC.pdf)|	ToN'13 |[	slides ](./seminar/2016Autumn/2_5/ABC-slides.pdf)|[	review ](./seminar/2016Autumn/2_5/Seminar-review-20161123.txt)|
+| 2016/11/16 | 	Howie Xu, Tianpeng Zhang and Ben Pfaff |	SDN: Frontiers and Future Technologies |	Presentation |	Confidential |[	review ](./seminar/2016Autumn/2_6/Seminar-review-20161116.txt)|
+| 2016/11/09 | 	Danyang Li |[	Efficient Network Security Policy Enforcement With Policy Space Analysis ](./seminar/2016Autumn/2_7/Distributed_Network_Service_Policy_Enforcement.pdf)|	ToN'16 |	Confidential |[	review ](./seminar/2016Autumn/2_7/Seminar-review-20161109.txt)|
+| 2016/11/02 | 	Shuo Wang |[	Bitcoin: A Peer-to-Peer Electronic Cash System ](./seminar/2016Autumn/2_8/Bitcoin.pdf)|	https://bitcoin.org/en/bitcoin-paper |[	slides ](./seminar/2016Autumn/2_8/Bitcoin_slides.pdf)|[	review ](./seminar/2016Autumn/2_8/Seminar-review-20161102.txt)|
+| 2016/10/26 | 	Zhaoguo Wang |[	Towards Automatic Generation of Security-Centric Descriptions for Android Apps ](./seminar/2016Autumn/2_9/DescribeMe_Zhang_CCS15.pdf)|	CCS'15 |[	slides ](./seminar/2016Autumn/2_9/Describeme.pdf)|[	review ](./seminar/2016Autumn/2_9/Seminar-review-20161026.txt)|
+| 2016/10/19 | 	Dongfang Li |[	Examining How The Great Firewall Discovers Hidden Circumvention Servers ](./seminar/2016Autumn/2_10/Imc15_paper_zhai.pdf)|	IMC'15 |[	slides ](./seminar/2016Autumn/2_10/Imc15_slides_zhai.pdf)|[	review ](./seminar/2016Autumn/2_10/Seminar-review-21061019.txt)|
+| 2016/10/12 | 	Ju Xing |[	Heading Off Correlated Failures through Independence-as-a-Service ](./seminar/2016Autumn/2_11/Osdi14_paper_zhai.pdf)|	OSDI'16 |[	slides ](./seminar/2016Autumn/2_11/Osdi14_slides_zhai.pdf)|[	review ](./seminar/2016Autumn/2_11/Seminar-review-21061012.txt)|
+| 2016/09/28 | 	Zhen Chen |[	Vast: A Unified Platform for Interactive Network Forensics ](./seminar/2016Autumn/2_12/Vast.pdf)|	NSDI'16 |[	slides ](./seminar/2016Autumn/2_12/Vast_nsdi16_slides_vallentin.pdf)|[	review ](./seminar/2016Autumn/2_12/Seminar-review-20160928.txt)|
+| 2016/09/21 | 	Zhi Liu |	BitCuts: A Fast Packet Classification Algorithm Using Bit-Level Cuts |	Confidential |	Confidential |[	review ](./seminar/2016Autumn/2_13/Seminar-review-20160921.txt)|
+| 2016/09/14 | 	Zhe Fu |[	Picking Pesky Parameters: Optimizing Regular Expression Matching in Practice ](./seminar/2016Autumn/2_14/Picking_pesky_parameters.pdf)|	ANCS'13 |[	slides ](./seminar/2016Autumn/2_14/Picking_pesky_parameters_slides.pdf)|[	review ](./seminar/2016Autumn/2_14/Seminar-review-20160914.txt)|
 
 # 2016 Spring
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
 | 05/18/2016 | Ju Xing | Mobile Web Traffic Optimization(Google Flywheel & Baidu Traffic Guard | NSDI'16 | slides | review |
-| 05/11/2016 | Zhe Fu | DFC: Accelerating String Pattern Matching for Network Applications | NSDI'16 | slides | review |
-| 04/27/2016 | Zhaoguo Wang | Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks | USENIX'14 | slides | review |
+| 05/11/2016 | Zhe Fu |[ DFC: Accelerating String Pattern Matching for Network Applications ](./seminar/2016Spring/3_3/Nsdi16-paper-choi.pdf)| NSDI'16 |[ slides ](./seminar/2016Spring/3_3/Nsdi16-slides-choi.pdf)|[ review ](./seminar/2016Spring/3_3/Seminar-review-20160511.txt)|
+| 04/27/2016 | Zhaoguo Wang |[ Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks ](./seminar/2016Spring/3_4/USENIX-2014.pdf)| USENIX'14 |[ slides ](./seminar/2016Spring/3_4/USENIX-2014-slides.pdf)|[ review ](./seminar/2016Spring/3_4/Seminar-review-20160427.txt)|
 | 04/20/2016 | Jiaqi Gao | FlowRadar & MOZART | NSDI'16 SOSR'16 | slides | review |
-| 04/13/2016 | Xiaohe Hu | Universal Packet Scheduling | NSDI'16 | slides | review |
-| 04/06/2016 | Jun Yang | Introduction of Big Data Tools | Presentation | slides | review |
-| 03/30/2016 | Zhi Liu | Embark: Securely Outsourcing Middleboxes to the Cloud | SIGCOMM'15 | slides | review |
-| 03/23/2016 | Yiyang Shao | Multi-Context TLS (mcTLS): Enabling Secure In-Network Functionality in TLS | SIGCOMM'15 | slides | review |
-| 03/16/2016 | Zhenlong Yuan | Opprentice: Towards Practical and Automatic Anomaly Detection Through Machine Learning | IMC'15 | slides | review |
-| 03/10/2016 | Dujuan Gu | Share Achievements in NSFOCUS | Presentation | Confidential | review |
-| 03/03/2016 | Dongfang Li | Offline Downloading in China: A Comparative Study | IMC'15 | slides | review |
-| 02/25/2016 | Chengqi Yi and Luoshi Zhang | Phd defense: Social network and Traffic classification, respectively | Presentation | Confidential | review |
+| 04/13/2016 | Xiaohe Hu | Universal Packet Scheduling | NSDI'16 |[ slides ](./seminar/2016Spring/3_6/Ups_nsdi16_slides.pdf)|[ review ](./seminar/2016Spring/3_6/Seminar-review-20160413.txt)|
+| 04/06/2016 | Jun Yang | Introduction of Big Data Tools | Presentation |[ slides ](./seminar/2016Spring/3_7/IntroBigDataTools_slides.pdf)|[ review ](./seminar/2016Spring/3_7/Seminar-review-20160406.txt)|
+| 03/30/2016 | Zhi Liu |[ Embark: Securely Outsourcing Middleboxes to the Cloud ](./seminar/2016Spring/3_8/Embark_paper.pdf)| SIGCOMM'15 |[ slides ](./seminar/2016Spring/3_8/Embark_slides.pdf)|[ review ](./seminar/2016Spring/3_8/Seminar-review-20160330.txt)|
+| 03/23/2016 | Yiyang Shao |[ Multi-Context TLS (mcTLS): Enabling Secure In-Network Functionality in TLS ](./seminar/2016Spring/3_9/McTLS_paper.pdf)| SIGCOMM'15 |[ slides ](./seminar/2016Spring/3_9/McTLS_slides.pdf)|[ review ](./seminar/2016Spring/3_9/Seminar-review-20160323.txt)|
+| 03/16/2016 | Zhenlong Yuan |[ Opprentice: Towards Practical and Automatic Anomaly Detection Through Machine Learning ](./seminar/2016Spring/3_10/Opprentice-paper.pdf)| IMC'15 |[ slides ](./seminar/2016Spring/3_10/Opprentice-slides.pdf)|[ review ](./seminar/2016Spring/3_10/Seminar-review-20160316.txt)|
+| 03/10/2016 | Dujuan Gu | Share Achievements in NSFOCUS | Presentation | Confidential |[ review ](./seminar/2016Spring/3_11/Seminar-review-20160310.txt)|
+| 03/03/2016 | Dongfang Li |[ Offline Downloading in China: A Comparative Study ](./seminar/2016Spring/3_12/Offline.pdf)| IMC'15 |[ slides ](./seminar/2016Spring/3_12/Offline-slides.pdf)|[ review ](./seminar/2016Spring/3_12/Seminar-review-20160303.txt)|
+| 02/25/2016 | Chengqi Yi and Luoshi Zhang | Phd defense: Social network and Traffic classification, respectively | Presentation | Confidential |[ review ](./seminar/2016Spring/3_13/Seminar-review-20160225.txt)|
 
 # 2015 Autumn
 
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
-| 12/24/2015 | Dongfang Li | Poptrie: A Compressed Trie with Population Count for Fast and Scalable Software IP Routing Table Lookup | SIGCOMM'15 | slides | review |
-| 12/17/2015 | Jun Yang | Throughput-Optimal Broadcast on Directed Acyclic Graphs | INFOCOM'15 | slides | review |
-| 12/10/2015 | Chengqi Yi | Global Diffusion via Cascading Invitations: Structure, Growth, and Homophily | WWW'15 | slides | review |
-| 12/03/2015 | Luoshi Zhang | Seeing through Network-Protocol Obfuscation | CCS'15 | slides | review |
-| 11/26/2015 | Dan Pei | Performance Management of Mobile Internet Driven by Big Data | Presentation | Confidential | review |
-| 11/12/2015 | Ju Xing | Scaling Up Clustered Network Appliances with ScaleBricks | SIGCOMM'15 | slides | review |
-| 11/05/2015 | Baohua Yang | Recent trend of Docker and related techniques of container | Presentation | Confidential | review |
-| 10/29/2015 | Zhenlong Yuan | Internet/Network Traffic Classification: Problems and Challenges | Presentation | Confidential | review |
-| 10/22/2015 | Xiaohe Hu | PGA: Using Graphs to Express and Automatically Reconcile Network Policies | SIGCOMM'15 | slides | review |
-| 10/15/2015 | Zhi Liu | Rollback-Recovery for Middleboxes | SIGCOMM'15 | slides | review |
-| 10/08/2015 | Yiyang Shao | BlindBox: Deep Packet Inspection over Encrypted Traffic | SIGCOMM'15 | slides | review |
-| 09/24/2015 | Zhaoguo Wang | AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications | NDSS'14 | slides | review |
-| 09/17/2015 | Zhe Fu | Efficient Coflow Scheduling with Varys | SIGCOMM'14 | slides | review |
-
+| 12/24/2015 | Dongfang Li |[ Poptrie: A Compressed Trie with Population Count for Fast and Scalable Software IP Routing Table Lookup ](./seminar/2015Autumn/4_2/Poptrie-paper.pdf)| SIGCOMM'15 |[ slides ](./seminar/2015Autumn/4_2/Poptrie.pdf)|[ review ](./seminar/2015Autumn/4_2/Seminar-review-20151224.txt)|
+| 12/17/2015 | Jun Yang |[ Throughput-Optimal Broadcast on Directed Acyclic Graphs ](./seminar/2015Autumn/4_3/1411.6172v1.pdf)| INFOCOM'15 |[ slides ](./seminar/2015Autumn/4_3/INFOCOM_2015_Conference_Talk_seminar.pdf)|[ review ](./seminar/2015Autumn/4_3/Seminar-review-20151217.txt)|
+| 12/10/2015 | Chengqi Yi |[ Global Diffusion via Cascading Invitations: Structure, Growth, and Homophily ](./seminar/2015Autumn/4_4/Linkedin-www15.pdf)| WWW'15 |[ slides ](./seminar/2015Autumn/4_4/Linkedin-www15_slides.pdf)|[ review ](./seminar/2015Autumn/4_4/Seminar-review-20151210.txt)|
+| 12/03/2015 | Luoshi Zhang |[ Seeing through Network-Protocol Obfuscation ](./seminar/2015Autumn/4_5/Seeing.pdf)| CCS'15 |[ slides ](./seminar/2015Autumn/4_5/Ccs2015.pdf)|[ review ](./seminar/2015Autumn/4_5/Seminar-review-20151203.txt)|
+| 11/26/2015 | Dan Pei | Performance Management of Mobile Internet Driven by Big Data | Presentation | Confidential |[ review ](./seminar/2015Autumn/4_6/Seminar-review-20151126.txt)|
+| 11/12/2015 | Ju Xing |[ Scaling Up Clustered Network Appliances with ScaleBricks ](./seminar/2015Autumn/4_7/Scaling.pdf)| SIGCOMM'15 |[ slides ](./seminar/2015Autumn/4_7/ScaleBricks.pdf)|[ review ](./seminar/2015Autumn/4_7/Seminar-review-20151112.txt)|
+| 11/05/2015 | Baohua Yang | Recent trend of Docker and related techniques of container | Presentation | Confidential |[ review ](./seminar/2015Autumn/4_8/Seminar-review-20151105.txt)|
+| 10/29/2015 | Zhenlong Yuan | Internet/Network Traffic Classification: Problems and Challenges | Presentation | Confidential |[ review ](./seminar/2015Autumn/4_9/Seminar-review-20151029.txt)|
+| 10/22/2015 | Xiaohe Hu |[ PGA: Using Graphs to Express and Automatically Reconcile Network Policies ](./seminar/2015Autumn/4_10/PGA.pdf)| SIGCOMM'15 |[ slides ](./seminar/2015Autumn/4_10/PGA-slides.pdf)|[ review ](./seminar/2015Autumn/4_10/Seminar-review-20151022.txt)|
+| 10/15/2015 | Zhi Liu |[ Rollback-Recovery for Middleboxes ](./seminar/2015Autumn/4_11/Ftmb.pdf)| SIGCOMM'15 |[ slides ](./seminar/2015Autumn/4_11/Ftmb-slides.pdf)|[ review ](./seminar/2015Autumn/4_11/Seminar-review-20151015.txt)|
+| 10/08/2015 | Yiyang Shao |[ BlindBox: Deep Packet Inspection over Encrypted Traffic ](./seminar/2015Autumn/4_12/Blindbox.pdf)| SIGCOMM'15 |[ slides ](./seminar/2015Autumn/4_12/Blindbox-slides.pdf)|[ review ](./seminar/2015Autumn/4_12/Seminar-review-20151008.txt)|
+| 09/24/2015 | Zhaoguo Wang |[ AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications ](./seminar/2015Autumn/4_13/AppSealer-NDSS14.pdf)| NDSS'14 |[ slides ](./seminar/2015Autumn/4_13/AppSealer-Slides.pdf)|[ review ](./seminar/2015Autumn/4_13/Seminar-review-20150924.txt)|
+| 09/17/2015 | Zhe Fu |[ Efficient Coflow Scheduling with Varys ](./seminar/2015Autumn/4_14/Varys-paper.pdf)| SIGCOMM'14 |[ slides ](./seminar/2015Autumn/4_14/Varys-slides.pdf)|[ review ](./seminar/2015Autumn/4_14/Seminar-review-20150917.txt)|
 
 # 2015 Spring
 | Date  |  Presenter | Topic | Source | Slides | Review |
 | --- | --- | --- | --- | --- | --- |
-| 06/17/2015 | Zhe Fu | Accelerating Regular Expression Matching Over Compressed HTTP | INFOCOM'15 | slides | review |
-| 06/10/2015 | Yiyang Shao | Queues don't matter when you can JUMP them! | NSDI'15 | slides | review |
-| 05/27/2015 | Xiang Wang | Enforcing Customizable Consistency Properties in Software-Defined Networks | NSDI'15 | slides | review |
-| 05/20/2015 | Feng Xie | RecMax: Exploiting Recommender Systems for Fun and Profit | KDD'12 | slides | review |
-| 05/13/2015 | Xiaohe Hu | The Design and Implementation of Open vSwitch | NSDI'15 | slides | review |
-| 05/06/2015 | Chengqi Yi | Early Detection of Spam Mobile Apps | WWW'15 | slides | review |
-| 04/15/2015 | Zhe Fu | Enforcing Network-Wide Policies in the Presence of Dynamic Middlebox Actions using FlowTags | NSDI'14 | slides | review |
-| 04/08/2015 | Luoshi Zhang | Be Appropriate and Fun: Automatic Entity Morph Encoding | ACL'14 | slides | review |
-| 04/01/2015 | Chang Chen | Meta-algorithms for Software-based Packet Classification | ICNP'14 | slides | review |
-| 03/25/2015 | Zhaoguo Wang | Screenmilker: How to Milk Your Android Screen for Secrets | NDSS'14 | slides | review |
-| 03/18/2015 | Xiaohe Hu | Dynamic Scheduling of Network Updates | SIGCOMM'14 | slides | review |
-| 03/04/2015 | Yiyang Shao | Deep Packet Inspection as a Service | CoNEXT'14 | slides | review |
+| 06/17/2015 | Zhe Fu |[ Accelerating Regular Expression Matching Over Compressed HTTP ](./seminar/2015Spring/5_2/Infocom15_regex_paper.pdf)| INFOCOM'15 |[ slides ](./seminar/2015Spring/5_2/Infocom15_regex_slides.pdf)|[ review ](./seminar/2015Spring/5_2/Seminar-review-20150617.txt)|
+| 06/10/2015 | Yiyang Shao |[ Queues don't matter when you can JUMP them! ](./seminar/2015Spring/5_3/Nsdi15-paper-grosvenor_update.pdf)| NSDI'15 |[ slides ](./seminar/2015Spring/5_3/Nsdi15_slides_grosvenor.pdf)|[ review ](./seminar/2015Spring/5_3/Seminar-review-20150610.txt)|
+| 05/27/2015 | Xiang Wang |[ Enforcing Customizable Consistency Properties in Software-Defined Networks ](./seminar/2015Spring/5_4/Nsdi15_CCG.pdf)| NSDI'15 |[ slides ](./seminar/2015Spring/5_4/Nsdi15_CCG_slides.pdf)|[ review ](./seminar/2015Spring/5_4/Seminar-review-20150527.txt)|
+| 05/20/2015 | Feng Xie |[ RecMax: Exploiting Recommender Systems for Fun and Profit ](./seminar/2015Spring/5_5/KDD12_RecMax.pdf)| KDD'12 |[ slides ](./seminar/2015Spring/5_5/KDD12_RecMax_slides.pdf)|[ review ](./seminar/2015Spring/5_5/Seminar-review-20150520.txt)|
+| 05/13/2015 | Xiaohe Hu |[ The Design and Implementation of Open vSwitch ](./seminar/2015Spring/5_6/Nsdi15_ovs.pdf)| NSDI'15 |[ slides ](./seminar/2015Spring/5_6/Nsdi15_ovs_slides.pdf)|[ review ](./seminar/2015Spring/5_6/Seminar-review-20150513.txt)|
+| 05/06/2015 | Chengqi Yi |[ Early Detection of Spam Mobile Apps ](./seminar/2015Spring/5_7/Www15_spam.pdf)| WWW'15 |[ slides ](./seminar/2015Spring/5_7/Www15_spam_slides.pdf)|[ review ](./seminar/2015Spring/5_7/Seminar-review-20150506.txt)|
+| 04/15/2015 | Zhe Fu |[ Enforcing Network-Wide Policies in the Presence of Dynamic Middlebox Actions using FlowTags ](./seminar/2015Spring/5_8/Nsdi14_paper_fayazbakhsh.pdf)| NSDI'14 |[ slides ](./seminar/2015Spring/5_8/Nsdi14_slides_fayazbakhsh.pdf)|[ review ](./seminar/2015Spring/5_8/Seminar-review-20150415.txt)|
+| 04/08/2015 | Luoshi Zhang |[ Be Appropriate and Fun: Automatic Entity Morph Encoding ](./seminar/2015Spring/5_9/Morphencoding.pdf)| ACL'14 |[ slides ](./seminar/2015Spring/5_9/Morphencodingslides.pdf)|[ review ](./seminar/2015Spring/5_9/Seminar-review-20150408.txt)|
+| 04/01/2015 | Chang Chen |[ Meta-algorithms for Software-based Packet Classification ](./seminar/2015Spring/5_10/Meta.pdf)| ICNP'14 |[ slides ](./seminar/2015Spring/5_10/Meta-slides.pdf)|[ review ](./seminar/2015Spring/5_10/Seminar-review-20150401.txt)|
+| 03/25/2015 | Zhaoguo Wang |[ Screenmilker: How to Milk Your Android Screen for Secrets ](./seminar/2015Spring/5_11/Screenmilker.pdf)| NDSS'14 |[ slides ](./seminar/2015Spring/5_11/Screenmilker-slides.pdf)|[ review ](./seminar/2015Spring/5_11/Seminar-review-20150325.txt)|
+| 03/18/2015 | Xiaohe Hu |[ Dynamic Scheduling of Network Updates ](./seminar/2015Spring/5_12/Dionysus14.pdf)| SIGCOMM'14 |[ slides ](./seminar/2015Spring/5_12/Sigcomm14-dionysus.pdf)|[ review ](./seminar/2015Spring/5_12/Seminar-review-20150318.txt)|
+| 03/04/2015 | Yiyang Shao |[ Deep Packet Inspection as a Service ](./seminar/2015Spring/5_13/DPIaaS.pdf)| CoNEXT'14 |[ slides ](./seminar/2015Spring/5_13/Conext14_dpi.pdf)|[ review ](./seminar/2015Spring/5_13/Seminar-review-20150304.txt)|
 
 
 # 2014 Autumn
