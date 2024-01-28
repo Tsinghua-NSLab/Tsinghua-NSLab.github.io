@@ -1,5 +1,0 @@
-Overview[edit]Title:￼ Mobile Web Traffic Optimization(Google Flywheel & Baidu Traffic Guard
-Source: NSDI 2016
-Attendee: Jun Li, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang, Shuo Wang, Shijie Sun, Hang Zhu.
-Speaker: Ju Xing
-Recorder: Zhenlong Yuan

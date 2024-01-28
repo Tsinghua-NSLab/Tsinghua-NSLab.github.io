@@ -1,5 +1,0 @@
-Overview[edit]Title:￼ DFC: Accelerating String Pattern Matching for Network Applications
-Source: NSDI 2016
-Attendee: Jun Li, Dujuan Gu, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Xiaohe Hu, Jun Yang, Dongfang Li, Danyang Li, Jiaqi Gao, Changsheng Zhang, Shuo Wang, Shijie Sun, Hang Zhu.
-Speaker: Zhe Fu
-Recorder: Ju Xing

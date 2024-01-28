@@ -1,6 +1,0 @@
-Overview[edit]Title: Application of Dimensionality Reduction in Recommender System - A Case Study
-Source: WebKDD'00
-Attendee: Prof. Xue, Zhen Chen, Kai Wang, Xiang Wang, Feng Xie, Yang Gao, Yiyang Shao, Zhenlong Yuan, Zhi Liu, Zhe Fu, Chang Chen, Jiaji Hu, Siyuan Hu
-Speaker: Feng Xie
-Recorder: Kai Wang
-Presentation[edit]Introduction to Recommender SystemsChallengesDementionality Reduction as a solutionExperimental Setup and ResultsConclusionQuestion[edit]对数据特性的要求？可否应用到其他领域？
